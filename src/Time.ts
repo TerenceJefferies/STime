@@ -9,7 +9,7 @@ class Time {
 	}
 
 	/**
-	* Return the unix timestamp representation of the current time
+	* Get unix timestamp representation
 	* @return Unix timestamp
 	*/
 	toTimestamp(): Number {
@@ -17,11 +17,27 @@ class Time {
 	}
 
 	/**
-	* Get the current day of the month
-	* @return The current day of the month
+	* Get the day of the month
+	* @return Day of the month
 	*/
 	getDay(): Number {
 		return this.root.getDate();
+	}
+
+	/**
+	* Get the month number
+	* @return Month number from 1 to 12
+	*/
+	getMonth(): Number {
+		return (this.root.getMonth() + 1);
+	}
+
+	/**
+	* Get the year
+	* @return 4-digit representation of the year
+	*/
+	getYear(): Number {
+		return this.root.getFullYear();
 	}
 }
 

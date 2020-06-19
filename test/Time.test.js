@@ -12,4 +12,16 @@ describe('Time', () => {
 
 		expect(time.getDay()).toEqual(6);
 	});
+
+	it('Should return the month', () => {
+		const time = new Time(new Date('04-06-2020'));
+
+		expect(time.getMonth()).toEqual(4);
+	});
+
+	it('Should return the year', () => {
+		const time = new Time(new Date('04-06-2020'));
+
+		expect(time.getYear()).toEqual(2020);
+	});
 });
