@@ -44,6 +44,30 @@ class Time {
 	getYear(): Number {
 		return this.root.getFullYear();
 	}
+
+	/**
+	* Get the seconds
+	* @return Seconds
+	*/
+	getSeconds(): Number {
+		return this.root.getSeconds();
+	}
+
+	/**
+	* Get minutes
+	* @return Minutes
+	*/
+	getMinutes(): Number {
+		return this.root.getMinutes();
+	}
+
+	/**
+	* Get hours
+	* @return Hours
+	*/
+	getHours(): Number {
+		return this.root.getHours();
+	}
 }
 
 export default Time;
