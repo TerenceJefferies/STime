@@ -12,7 +12,7 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12
-      - run: npm install && npm run test
+      - run: node bin/bump-version.js ${{GITHUB_REF}} && npm install && npm run test
 
   publish-npm:
     needs: build
