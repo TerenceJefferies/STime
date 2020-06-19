@@ -12,7 +12,7 @@ class Time {
 	* Return the unix timestamp representation of the current time
 	*/
 	toTimestamp(): Number {
-		return (this.root.getTime() / 1000);
+		return Math.trunc((this.root.getTime() / 1000));
 	}
 }
 
