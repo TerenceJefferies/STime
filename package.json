@@ -1,0 +1,23 @@
+{
+  "name": "stime",
+  "version": "0.0.1",
+  "description": "Time package for easy time maniupulation",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest test"
+  },
+  "keywords": [
+    "time"
+  ],
+  "author": "Terence Jefferies",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/preset-typescript": "^7.10.1",
+    "@types/jest": "^26.0.0",
+    "babel-preset-env": "^1.7.0",
+    "jest": "^26.0.1",
+    "ts-jest": "^26.1.0",
+    "typescript": "^3.9.5"
+  }
+}
