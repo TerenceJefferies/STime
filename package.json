@@ -1,9 +1,14 @@
 {
   "name": "stime",
-  "version": "0.0.1",
+  "version": "0.0.5",
   "description": "Time package for easy time maniupulation",
   "main": "index.js",
   "types": "dist/STime.d.ts",
+  "files": ["dist/*"],
+  "repository": {
+        "type": "git",
+        "url": "git+https://github.com/TerenceJefferies/STime.git"
+  },
   "scripts": {
     "build": "tsc",
     "test": "jest test",
