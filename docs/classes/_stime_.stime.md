@@ -27,9 +27,9 @@
 
 \+ **new STime**(`timeFactory`: [TimeFactory](_timefactory_.timefactory.md)): *[STime](_stime_.stime.md)*
 
-*Defined in [STime.ts:5](https://github.com/TerenceJefferies/STime/blob/cda2b03/src/STime.ts#L5)*
+*Defined in [STime.ts:5](https://github.com/TerenceJefferies/STime/blob/75a525a/src/STime.ts#L5)*
 
-A new STime
+Create a new instance of STime
 
 **Parameters:**
 
@@ -45,7 +45,7 @@ Name | Type |
 
 • **timeFactory**: *[TimeFactory](_timefactory_.timefactory.md)*
 
-*Defined in [STime.ts:5](https://github.com/TerenceJefferies/STime/blob/cda2b03/src/STime.ts#L5)*
+*Defined in [STime.ts:5](https://github.com/TerenceJefferies/STime/blob/75a525a/src/STime.ts#L5)*
 
 ## Methods
 
@@ -53,9 +53,14 @@ Name | Type |
 
 ▸ **fromDate**(`date`: Date): *[Time](_time_.time.md)*
 
-*Defined in [STime.ts:31](https://github.com/TerenceJefferies/STime/blob/cda2b03/src/STime.ts#L31)*
+*Defined in [STime.ts:36](https://github.com/TerenceJefferies/STime/blob/75a525a/src/STime.ts#L36)*
 
 Create a new Time from a native Date
+*Example Usage:*
+```
+const date = new Date();
+const time = stime.fromDate(date);
+```
 
 **Parameters:**
 
@@ -65,7 +70,7 @@ Name | Type |
 
 **Returns:** *[Time](_time_.time.md)*
 
-Time representing the date provided
+Time created from the date provided
 
 ___
 
@@ -73,7 +78,7 @@ ___
 
 ▸ **now**(): *[Time](_time_.time.md)*
 
-*Defined in [STime.ts:23](https://github.com/TerenceJefferies/STime/blob/cda2b03/src/STime.ts#L23)*
+*Defined in [STime.ts:23](https://github.com/TerenceJefferies/STime/blob/75a525a/src/STime.ts#L23)*
 
 Get the current time
 *Example Usage:*

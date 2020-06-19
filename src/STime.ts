@@ -5,7 +5,7 @@ class STime {
 	readonly timeFactory: TimeFactory;
 
 	/**
-	* A new STime
+	* Create a new instance of STime
 	*/
 	constructor(timeFactory: TimeFactory) {
 		this.timeFactory = timeFactory;
@@ -26,7 +26,12 @@ class STime {
 
 	/**
 	* Create a new Time from a native Date
-	* @return Time representing the date provided
+	* *Example Usage:*
+	* ```
+	* const date = new Date();
+	* const time = stime.fromDate(date);
+	* ```
+	* @return Time created from the date provided
 	*/
 	fromDate(date: Date): Time {
 		return this.timeFactory.fromDate(date);

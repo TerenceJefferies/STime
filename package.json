@@ -15,7 +15,8 @@
     "build": "tsc",
     "test": "jest test",
     "prepare": "npm run build",
-    "prepublishOnly": "npm run test"
+    "prepublishOnly": "npm run test",
+    "make-docs": "typedoc --plugin typedoc-plugin-markdown"
   },
   "keywords": [
     "time"

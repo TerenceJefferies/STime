@@ -29,15 +29,15 @@
 
 \+ **new Time**(`root`: Date): *[Time](_time_.time.md)*
 
-*Defined in [Time.ts:2](https://github.com/TerenceJefferies/STime/blob/cda2b03/src/Time.ts#L2)*
+*Defined in [Time.ts:2](https://github.com/TerenceJefferies/STime/blob/75a525a/src/Time.ts#L2)*
 
 Create a new Time instance
 
 **Parameters:**
 
-Name | Type |
------- | ------ |
-`root` | Date |
+Name | Type | Description |
+------ | ------ | ------ |
+`root` | Date | Native date to base the time on  |
 
 **Returns:** *[Time](_time_.time.md)*
 
@@ -47,7 +47,7 @@ Name | Type |
 
 • **root**: *Date*
 
-*Defined in [Time.ts:2](https://github.com/TerenceJefferies/STime/blob/cda2b03/src/Time.ts#L2)*
+*Defined in [Time.ts:2](https://github.com/TerenceJefferies/STime/blob/75a525a/src/Time.ts#L2)*
 
 ## Methods
 
@@ -55,7 +55,7 @@ Name | Type |
 
 ▸ **getDay**(): *Number*
 
-*Defined in [Time.ts:23](https://github.com/TerenceJefferies/STime/blob/cda2b03/src/Time.ts#L23)*
+*Defined in [Time.ts:28](https://github.com/TerenceJefferies/STime/blob/75a525a/src/Time.ts#L28)*
 
 Get the day of the month
 
@@ -69,7 +69,7 @@ ___
 
 ▸ **getMonth**(): *Number*
 
-*Defined in [Time.ts:31](https://github.com/TerenceJefferies/STime/blob/cda2b03/src/Time.ts#L31)*
+*Defined in [Time.ts:36](https://github.com/TerenceJefferies/STime/blob/75a525a/src/Time.ts#L36)*
 
 Get the month number
 
@@ -83,7 +83,7 @@ ___
 
 ▸ **getYear**(): *Number*
 
-*Defined in [Time.ts:39](https://github.com/TerenceJefferies/STime/blob/cda2b03/src/Time.ts#L39)*
+*Defined in [Time.ts:44](https://github.com/TerenceJefferies/STime/blob/75a525a/src/Time.ts#L44)*
 
 Get the year
 
@@ -97,10 +97,14 @@ ___
 
 ▸ **toTimestamp**(): *Number*
 
-*Defined in [Time.ts:15](https://github.com/TerenceJefferies/STime/blob/cda2b03/src/Time.ts#L15)*
+*Defined in [Time.ts:20](https://github.com/TerenceJefferies/STime/blob/75a525a/src/Time.ts#L20)*
 
 Get unix timestamp representation
+*Example Usage:*
+```
+const unixTimestamp =time.toTimestamp();
+```
 
 **Returns:** *Number*
 
-Unix timestamp
+Unix timetamp

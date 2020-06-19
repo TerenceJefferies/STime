@@ -1,12 +1,30 @@
 # STime
 Simple time package for Javascript
 
+## Installation
+
+`npm install stime`
+
 ## Usage
 
-```
-const time = require('stime');
+### Basic Usage
 
-const time = time.now();
+```javascript
+const stime = require('stime');
+
+const time = stime.now();
 
 console.log(time.toTimestamp());
 ```
+
+### Creating a new date from a native date
+
+```javascript
+const stime = require('stime');
+
+const time = stime.fromDate(new Date());
+```
+
+
+
+

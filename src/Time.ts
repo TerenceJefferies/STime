@@ -3,6 +3,7 @@ class Time {
 
 	/**
 	* Create a new Time instance
+	* @param root Native date to base the time on
 	*/
 	constructor(root: Date) {
 		this.root = root;
@@ -10,7 +11,11 @@ class Time {
 
 	/**
 	* Get unix timestamp representation
-	* @return Unix timestamp
+	* *Example Usage:*
+	* ```
+	* const unixTimestamp =time.toTimestamp();
+	* ```
+	* @return Unix timetamp
 	*/
 	toTimestamp(): Number {
 		return parseInt((this.root.getTime() / 1000).toFixed(0));
