@@ -3,9 +3,12 @@
   "version": "0.0.1",
   "description": "Time package for easy time maniupulation",
   "main": "index.js",
+  "types": "dist/STime.d.ts",
   "scripts": {
     "build": "tsc",
-    "test": "jest test"
+    "test": "jest test",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run test"
   },
   "keywords": [
     "time"
