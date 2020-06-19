@@ -6,4 +6,10 @@ describe('Time', () => {
 
 		expect(Number.isInteger(time.toTimestamp())).toBeTruthy();
 	});
+
+	it('Should return the day of the month', () => {
+		const time = new Time(new Date('04-06-2020'));
+
+		expect(time.getDay()).toEqual(6);
+	});
 });
