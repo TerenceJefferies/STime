@@ -4,10 +4,12 @@
   "description": "Time package for easy time maniupulation",
   "main": "index.js",
   "types": "dist/STime.d.ts",
-  "files": ["dist/*"],
+  "files": [
+    "dist/*"
+  ],
   "repository": {
-        "type": "git",
-        "url": "git+https://github.com/TerenceJefferies/STime.git"
+    "type": "git",
+    "url": "git+https://github.com/TerenceJefferies/STime.git"
   },
   "scripts": {
     "build": "tsc",
@@ -26,6 +28,8 @@
     "babel-preset-env": "^1.7.0",
     "jest": "^26.0.1",
     "ts-jest": "^26.1.0",
+    "typedoc": "^0.17.7",
+    "typedoc-plugin-markdown": "^2.3.1",
     "typescript": "^3.9.5"
   }
 }

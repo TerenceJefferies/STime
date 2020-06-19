@@ -5,15 +5,20 @@ class STime {
 	readonly timeFactory: TimeFactory;
 
 	/**
-	* Create a new STime instance
+	* A new STime
 	*/
 	constructor(timeFactory: TimeFactory) {
 		this.timeFactory = timeFactory;
 	}
 
 	/**
-	* Create a new representation of time at the current date and time
-	* @return Time The current time
+	* Get the current time
+	* *Example Usage:* 
+	* ```
+	* const currentTime = stime.now();
+	* console.log(currentTime.getTimestamp());
+	* ```
+	* @return Current time
 	*/
 	now(): Time {
 		return this.timeFactory.create();
@@ -21,7 +26,7 @@ class STime {
 
 	/**
 	* Create a new Time from a native Date
-	* @return Time
+	* @return Time representing the date provided
 	*/
 	fromDate(date: Date): Time {
 		return this.timeFactory.fromDate(date);
