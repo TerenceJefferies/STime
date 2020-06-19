@@ -18,6 +18,14 @@ class STime {
 	now(): Time {
 		return this.timeFactory.create();
 	}
+
+	/**
+	* Create a new Time from a native Date
+	* @return Time
+	*/
+	fromDate(date: Date): Time {
+		return this.timeFactory.fromDate(date);
+	}
 }
 
 export default STime;

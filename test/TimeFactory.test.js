@@ -13,4 +13,13 @@ describe('TimeFactory', () => {
 			&& time.root.getFullYear() === fixture.getFullYear()
 		).toBeTruthy();
 	});
+
+	it('Should return a time with the matching native date', () => {
+		const factory = new TimeFactory();
+		const fixture = new Date();
+		
+		const time = factory.fromDate(fixture);
+
+		expect(time.root).toStrictEqual(fixture);
+	});
 });
