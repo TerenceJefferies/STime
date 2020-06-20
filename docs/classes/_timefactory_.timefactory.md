@@ -19,7 +19,7 @@
 
 ▸ **create**(): *[Time](_time_.time.md)*
 
-*Defined in [TimeFactory.ts:7](https://github.com/TerenceJefferies/STime/blob/00508aa/src/TimeFactory.ts#L7)*
+*Defined in [TimeFactory.ts:7](https://github.com/TerenceJefferies/STime/blob/7c73384/src/TimeFactory.ts#L7)*
 
 Create a new time at the current date
 
@@ -31,7 +31,7 @@ ___
 
 ▸ **fromDate**(`date`: Date): *[Time](_time_.time.md)*
 
-*Defined in [TimeFactory.ts:15](https://github.com/TerenceJefferies/STime/blob/00508aa/src/TimeFactory.ts#L15)*
+*Defined in [TimeFactory.ts:15](https://github.com/TerenceJefferies/STime/blob/7c73384/src/TimeFactory.ts#L15)*
 
 Retrieve a new instance from a javascript date
 

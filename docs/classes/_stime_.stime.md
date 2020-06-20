@@ -28,7 +28,7 @@
 
 \+ **new STime**(`timeFactory`: [TimeFactory](_timefactory_.timefactory.md)): *[STime](_stime_.stime.md)*
 
-*Defined in [STime.ts:7](https://github.com/TerenceJefferies/STime/blob/00508aa/src/STime.ts#L7)*
+*Defined in [STime.ts:7](https://github.com/TerenceJefferies/STime/blob/7c73384/src/STime.ts#L7)*
 
 Create a new instance of STime
 
@@ -46,7 +46,7 @@ Name | Type |
 
 • **timeFactory**: *[TimeFactory](_timefactory_.timefactory.md)*
 
-*Defined in [STime.ts:7](https://github.com/TerenceJefferies/STime/blob/00508aa/src/STime.ts#L7)*
+*Defined in [STime.ts:7](https://github.com/TerenceJefferies/STime/blob/7c73384/src/STime.ts#L7)*
 
 ## Methods
 
@@ -54,7 +54,7 @@ Name | Type |
 
 ▸ **difference**(`timeOne`: [Time](_time_.time.md), `timeTwo`: [Time](_time_.time.md)): *[Difference](_difference_difference_.difference.md)*
 
-*Defined in [STime.ts:49](https://github.com/TerenceJefferies/STime/blob/00508aa/src/STime.ts#L49)*
+*Defined in [STime.ts:45](https://github.com/TerenceJefferies/STime/blob/7c73384/src/STime.ts#L45)*
 
 Get the difference between two times
 
@@ -79,14 +79,13 @@ ___
 
 ▸ **fromDate**(`date`: Date): *[Time](_time_.time.md)*
 
-*Defined in [STime.ts:38](https://github.com/TerenceJefferies/STime/blob/00508aa/src/STime.ts#L38)*
+*Defined in [STime.ts:34](https://github.com/TerenceJefferies/STime/blob/7c73384/src/STime.ts#L34)*
 
 Create a new Time from a native Date
-*Example Usage:*
-```
+
+**`example`** 
 const date = new Date();
 const time = stime.fromDate(date);
-```
 
 **Parameters:**
 
@@ -104,14 +103,13 @@ ___
 
 ▸ **now**(): *[Time](_time_.time.md)*
 
-*Defined in [STime.ts:25](https://github.com/TerenceJefferies/STime/blob/00508aa/src/STime.ts#L25)*
+*Defined in [STime.ts:23](https://github.com/TerenceJefferies/STime/blob/7c73384/src/STime.ts#L23)*
 
 Get the current time
-*Example Usage:*
-```
+
+**`example`** 
 const currentTime = stime.now();
 console.log(currentTime.getTimestamp());
-```
 
 **Returns:** *[Time](_time_.time.md)*
 
