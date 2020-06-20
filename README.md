@@ -5,7 +5,15 @@ Simple time package for Javascript
 
 `npm install stime`
 
-## Usage
+## API
+
+| Method | Returns |
+| ------ | -------- |
+| `now()` | The current time |
+| `fromDate(Date date)` | Create a new time from a native date |
+| `difference(Time timeOne, Time timeTwo)` | Get the difference between two times |
+
+## Example Usage
 
 ### Basic Usage
 
