@@ -12,7 +12,7 @@ class Time {
 	/**
 	* Get unix timestamp representation
 	* @example
-	* const unixTimestamp = time.toTimestamp();
+	* `const unixTimestamp = time.toTimestamp();`
 	* @return Unix timetamp
 	*/
 	toTimestamp(): number {

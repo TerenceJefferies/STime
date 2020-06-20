@@ -8,7 +8,7 @@ class Difference {
 	/**
 	* Get total number of seconds between two times
 	* @example
-	* difference.getTotalSeconds();
+	* `difference.getTotalSeconds();`
 	* @return Total number of seconds between two dates
 	*/
 	getTotalSeconds(): number {

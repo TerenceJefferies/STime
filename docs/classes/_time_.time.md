@@ -32,7 +32,7 @@
 
 \+ **new Time**(`root`: Date): *[Time](_time_.time.md)*
 
-*Defined in [Time.ts:2](https://github.com/TerenceJefferies/STime/blob/7c73384/src/Time.ts#L2)*
+*Defined in [Time.ts:2](https://github.com/TerenceJefferies/STime/blob/69d415a/src/Time.ts#L2)*
 
 Create a new Time instance
 
@@ -50,7 +50,7 @@ Name | Type | Description |
 
 • **root**: *Date*
 
-*Defined in [Time.ts:2](https://github.com/TerenceJefferies/STime/blob/7c73384/src/Time.ts#L2)*
+*Defined in [Time.ts:2](https://github.com/TerenceJefferies/STime/blob/69d415a/src/Time.ts#L2)*
 
 ## Methods
 
@@ -58,7 +58,7 @@ Name | Type | Description |
 
 ▸ **getDay**(): *number*
 
-*Defined in [Time.ts:26](https://github.com/TerenceJefferies/STime/blob/7c73384/src/Time.ts#L26)*
+*Defined in [Time.ts:26](https://github.com/TerenceJefferies/STime/blob/69d415a/src/Time.ts#L26)*
 
 Get the day of the month
 
@@ -72,7 +72,7 @@ ___
 
 ▸ **getHours**(): *number*
 
-*Defined in [Time.ts:66](https://github.com/TerenceJefferies/STime/blob/7c73384/src/Time.ts#L66)*
+*Defined in [Time.ts:66](https://github.com/TerenceJefferies/STime/blob/69d415a/src/Time.ts#L66)*
 
 Get hours
 
@@ -86,7 +86,7 @@ ___
 
 ▸ **getMinutes**(): *number*
 
-*Defined in [Time.ts:58](https://github.com/TerenceJefferies/STime/blob/7c73384/src/Time.ts#L58)*
+*Defined in [Time.ts:58](https://github.com/TerenceJefferies/STime/blob/69d415a/src/Time.ts#L58)*
 
 Get minutes
 
@@ -100,7 +100,7 @@ ___
 
 ▸ **getMonth**(): *number*
 
-*Defined in [Time.ts:34](https://github.com/TerenceJefferies/STime/blob/7c73384/src/Time.ts#L34)*
+*Defined in [Time.ts:34](https://github.com/TerenceJefferies/STime/blob/69d415a/src/Time.ts#L34)*
 
 Get the month number
 
@@ -114,7 +114,7 @@ ___
 
 ▸ **getSeconds**(): *number*
 
-*Defined in [Time.ts:50](https://github.com/TerenceJefferies/STime/blob/7c73384/src/Time.ts#L50)*
+*Defined in [Time.ts:50](https://github.com/TerenceJefferies/STime/blob/69d415a/src/Time.ts#L50)*
 
 Get the seconds
 
@@ -128,7 +128,7 @@ ___
 
 ▸ **getYear**(): *number*
 
-*Defined in [Time.ts:42](https://github.com/TerenceJefferies/STime/blob/7c73384/src/Time.ts#L42)*
+*Defined in [Time.ts:42](https://github.com/TerenceJefferies/STime/blob/69d415a/src/Time.ts#L42)*
 
 Get the year
 
@@ -142,12 +142,12 @@ ___
 
 ▸ **toTimestamp**(): *number*
 
-*Defined in [Time.ts:18](https://github.com/TerenceJefferies/STime/blob/7c73384/src/Time.ts#L18)*
+*Defined in [Time.ts:18](https://github.com/TerenceJefferies/STime/blob/69d415a/src/Time.ts#L18)*
 
 Get unix timestamp representation
 
 **`example`** 
-const unixTimestamp = time.toTimestamp();
+`const unixTimestamp = time.toTimestamp();`
 
 **Returns:** *number*
 

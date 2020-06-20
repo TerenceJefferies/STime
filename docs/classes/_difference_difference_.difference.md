@@ -30,7 +30,7 @@
 
 \+ **new Difference**(`differenceInSeconds`: number): *[Difference](_difference_difference_.difference.md)*
 
-*Defined in [Difference/Difference.ts:2](https://github.com/TerenceJefferies/STime/blob/7c73384/src/Difference/Difference.ts#L2)*
+*Defined in [Difference/Difference.ts:2](https://github.com/TerenceJefferies/STime/blob/69d415a/src/Difference/Difference.ts#L2)*
 
 **Parameters:**
 
@@ -46,7 +46,7 @@ Name | Type |
 
 • **differenceInSeconds**: *number*
 
-*Defined in [Difference/Difference.ts:2](https://github.com/TerenceJefferies/STime/blob/7c73384/src/Difference/Difference.ts#L2)*
+*Defined in [Difference/Difference.ts:2](https://github.com/TerenceJefferies/STime/blob/69d415a/src/Difference/Difference.ts#L2)*
 
 ## Methods
 
@@ -54,7 +54,7 @@ Name | Type |
 
 ▸ **getTotalDays**(): *number*
 
-*Defined in [Difference/Difference.ts:38](https://github.com/TerenceJefferies/STime/blob/7c73384/src/Difference/Difference.ts#L38)*
+*Defined in [Difference/Difference.ts:38](https://github.com/TerenceJefferies/STime/blob/69d415a/src/Difference/Difference.ts#L38)*
 
 Get total days between to times
 
@@ -68,7 +68,7 @@ ___
 
 ▸ **getTotalHours**(): *number*
 
-*Defined in [Difference/Difference.ts:30](https://github.com/TerenceJefferies/STime/blob/7c73384/src/Difference/Difference.ts#L30)*
+*Defined in [Difference/Difference.ts:30](https://github.com/TerenceJefferies/STime/blob/69d415a/src/Difference/Difference.ts#L30)*
 
 Get total hours between two times
 
@@ -82,7 +82,7 @@ ___
 
 ▸ **getTotalMinutes**(): *number*
 
-*Defined in [Difference/Difference.ts:22](https://github.com/TerenceJefferies/STime/blob/7c73384/src/Difference/Difference.ts#L22)*
+*Defined in [Difference/Difference.ts:22](https://github.com/TerenceJefferies/STime/blob/69d415a/src/Difference/Difference.ts#L22)*
 
 Get total minutes between dates
 
@@ -96,12 +96,12 @@ ___
 
 ▸ **getTotalSeconds**(): *number*
 
-*Defined in [Difference/Difference.ts:14](https://github.com/TerenceJefferies/STime/blob/7c73384/src/Difference/Difference.ts#L14)*
+*Defined in [Difference/Difference.ts:14](https://github.com/TerenceJefferies/STime/blob/69d415a/src/Difference/Difference.ts#L14)*
 
 Get total number of seconds between two times
 
 **`example`** 
-difference.getTotalSeconds();
+`difference.getTotalSeconds();`
 
 **Returns:** *number*
 
@@ -113,7 +113,7 @@ ___
 
 ▸ **getTotalWeeks**(): *number*
 
-*Defined in [Difference/Difference.ts:46](https://github.com/TerenceJefferies/STime/blob/7c73384/src/Difference/Difference.ts#L46)*
+*Defined in [Difference/Difference.ts:46](https://github.com/TerenceJefferies/STime/blob/69d415a/src/Difference/Difference.ts#L46)*
 
 Get total weeks between two times
 

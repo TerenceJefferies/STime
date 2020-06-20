@@ -16,8 +16,10 @@ class STime {
 	/**
 	* Get the current time
 	* @example
+	* ```
 	* const currentTime = stime.now();
 	* console.log(currentTime.getTimestamp());
+	* ```
 	* @return Current time
 	*/
 	now(): Time {
@@ -27,8 +29,10 @@ class STime {
 	/**
 	* Create a new Time from a native Date
 	* @example
+	* ```
 	* const date = new Date();
 	* const time = stime.fromDate(date);
+	* ```
 	* @return Time created from the date provided
 	*/
 	fromDate(date: Date): Time {
@@ -38,8 +42,10 @@ class STime {
 	/**
 	* Get the difference between two times
 	* @example 
+	* ```
 	* const difference = stime.difference(timeOne, timeTwo);
 	* const secondsBetweenTimes = difference.getTotalSeconds();
+	* ```
 	* @return Difference between the two times
 	*/
 	difference(timeOne: Time, timeTwo: Time): Difference {

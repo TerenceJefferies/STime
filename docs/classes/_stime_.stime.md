@@ -28,7 +28,7 @@
 
 \+ **new STime**(`timeFactory`: [TimeFactory](_timefactory_.timefactory.md)): *[STime](_stime_.stime.md)*
 
-*Defined in [STime.ts:7](https://github.com/TerenceJefferies/STime/blob/7c73384/src/STime.ts#L7)*
+*Defined in [STime.ts:7](https://github.com/TerenceJefferies/STime/blob/69d415a/src/STime.ts#L7)*
 
 Create a new instance of STime
 
@@ -46,7 +46,7 @@ Name | Type |
 
 • **timeFactory**: *[TimeFactory](_timefactory_.timefactory.md)*
 
-*Defined in [STime.ts:7](https://github.com/TerenceJefferies/STime/blob/7c73384/src/STime.ts#L7)*
+*Defined in [STime.ts:7](https://github.com/TerenceJefferies/STime/blob/69d415a/src/STime.ts#L7)*
 
 ## Methods
 
@@ -54,13 +54,15 @@ Name | Type |
 
 ▸ **difference**(`timeOne`: [Time](_time_.time.md), `timeTwo`: [Time](_time_.time.md)): *[Difference](_difference_difference_.difference.md)*
 
-*Defined in [STime.ts:45](https://github.com/TerenceJefferies/STime/blob/7c73384/src/STime.ts#L45)*
+*Defined in [STime.ts:51](https://github.com/TerenceJefferies/STime/blob/69d415a/src/STime.ts#L51)*
 
 Get the difference between two times
 
 **`example`** 
+```
 const difference = stime.difference(timeOne, timeTwo);
 const secondsBetweenTimes = difference.getTotalSeconds();
+```
 
 **Parameters:**
 
@@ -79,13 +81,15 @@ ___
 
 ▸ **fromDate**(`date`: Date): *[Time](_time_.time.md)*
 
-*Defined in [STime.ts:34](https://github.com/TerenceJefferies/STime/blob/7c73384/src/STime.ts#L34)*
+*Defined in [STime.ts:38](https://github.com/TerenceJefferies/STime/blob/69d415a/src/STime.ts#L38)*
 
 Create a new Time from a native Date
 
 **`example`** 
+```
 const date = new Date();
 const time = stime.fromDate(date);
+```
 
 **Parameters:**
 
@@ -103,13 +107,15 @@ ___
 
 ▸ **now**(): *[Time](_time_.time.md)*
 
-*Defined in [STime.ts:23](https://github.com/TerenceJefferies/STime/blob/7c73384/src/STime.ts#L23)*
+*Defined in [STime.ts:25](https://github.com/TerenceJefferies/STime/blob/69d415a/src/STime.ts#L25)*
 
 Get the current time
 
 **`example`** 
+```
 const currentTime = stime.now();
 console.log(currentTime.getTimestamp());
+```
 
 **Returns:** *[Time](_time_.time.md)*
 

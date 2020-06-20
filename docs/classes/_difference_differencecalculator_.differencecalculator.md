@@ -19,7 +19,7 @@
 
 ▸ **calculate**(`timeOne`: [Time](_time_.time.md), `timeTwo`: [Time](_time_.time.md)): *[Difference](_difference_difference_.difference.md)*
 
-*Defined in [Difference/DifferenceCalculator.ts:10](https://github.com/TerenceJefferies/STime/blob/7c73384/src/Difference/DifferenceCalculator.ts#L10)*
+*Defined in [Difference/DifferenceCalculator.ts:10](https://github.com/TerenceJefferies/STime/blob/69d415a/src/Difference/DifferenceCalculator.ts#L10)*
 
 Calculate the difference between two times
 
@@ -40,7 +40,7 @@ ___
 
 ▸ **getDifferenceInSeconds**(`timeOne`: [Time](_time_.time.md), `timeTwo`: [Time](_time_.time.md)): *number*
 
-*Defined in [Difference/DifferenceCalculator.ts:20](https://github.com/TerenceJefferies/STime/blob/7c73384/src/Difference/DifferenceCalculator.ts#L20)*
+*Defined in [Difference/DifferenceCalculator.ts:20](https://github.com/TerenceJefferies/STime/blob/69d415a/src/Difference/DifferenceCalculator.ts#L20)*
 
 Get the difference between two times in seconds
 
