@@ -8,6 +8,10 @@ class DifferenceCalculator {
 		);
 	}
 
+	/**
+	* Get the difference between two times in seconds
+	* @return Total number of seconds between the two times
+	*/
 	getDifferenceInSeconds(timeOne: Time, timeTwo: Time): number {
 		const difference = (timeOne.toTimestamp() - timeTwo.toTimestamp());
 		return Math.abs(difference);
