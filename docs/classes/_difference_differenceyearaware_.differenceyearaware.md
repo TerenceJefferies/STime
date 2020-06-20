@@ -25,7 +25,7 @@
 
 • **timeOne**: *[Time](_time_.time.md)*
 
-*Defined in [Difference/DifferenceYearAware.ts:4](https://github.com/TerenceJefferies/STime/blob/8f5d348/src/Difference/DifferenceYearAware.ts#L4)*
+*Defined in [Difference/DifferenceYearAware.ts:4](https://github.com/TerenceJefferies/STime/blob/7ad9543/src/Difference/DifferenceYearAware.ts#L4)*
 
 ___
 
@@ -33,7 +33,7 @@ ___
 
 • **timeTwo**: *[Time](_time_.time.md)*
 
-*Defined in [Difference/DifferenceYearAware.ts:6](https://github.com/TerenceJefferies/STime/blob/8f5d348/src/Difference/DifferenceYearAware.ts#L6)*
+*Defined in [Difference/DifferenceYearAware.ts:6](https://github.com/TerenceJefferies/STime/blob/7ad9543/src/Difference/DifferenceYearAware.ts#L6)*
 
 ## Methods
 
@@ -41,7 +41,7 @@ ___
 
 ▸ **getTotalYears**(): *number*
 
-*Defined in [Difference/DifferenceYearAware.ts:12](https://github.com/TerenceJefferies/STime/blob/8f5d348/src/Difference/DifferenceYearAware.ts#L12)*
+*Defined in [Difference/DifferenceYearAware.ts:12](https://github.com/TerenceJefferies/STime/blob/7ad9543/src/Difference/DifferenceYearAware.ts#L12)*
 
 Get total years between two times
 

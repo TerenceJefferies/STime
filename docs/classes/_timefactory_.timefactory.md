@@ -2,6 +2,8 @@
 
 # Class: TimeFactory
 
+A time factory used to create new instances of Time
+
 ## Hierarchy
 
 * **TimeFactory**
@@ -19,11 +21,13 @@
 
 ▸ **create**(): *[Time](_time_.time.md)*
 
-*Defined in [TimeFactory.ts:7](https://github.com/TerenceJefferies/STime/blob/8f5d348/src/TimeFactory.ts#L7)*
+*Defined in [TimeFactory.ts:11](https://github.com/TerenceJefferies/STime/blob/7ad9543/src/TimeFactory.ts#L11)*
 
 Create a new time at the current date
 
 **Returns:** *[Time](_time_.time.md)*
+
+An instance of time
 
 ___
 
@@ -31,16 +35,16 @@ ___
 
 ▸ **fromDate**(`date`: Date): *[Time](_time_.time.md)*
 
-*Defined in [TimeFactory.ts:15](https://github.com/TerenceJefferies/STime/blob/8f5d348/src/TimeFactory.ts#L15)*
+*Defined in [TimeFactory.ts:20](https://github.com/TerenceJefferies/STime/blob/7ad9543/src/TimeFactory.ts#L20)*
 
 Retrieve a new instance from a javascript date
 
 **Parameters:**
 
-Name | Type |
------- | ------ |
-`date` | Date |
+Name | Type | Description |
+------ | ------ | ------ |
+`date` | Date | Date to create time from |
 
 **Returns:** *[Time](_time_.time.md)*
 
-Time
+An instance of time from the provided date
