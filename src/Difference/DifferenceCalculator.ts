@@ -2,6 +2,11 @@ import Difference from './Difference';
 import Time from '../Time';
 
 class DifferenceCalculator {
+
+	/**
+	* Calculate the difference between two times
+	* @return Difference between two times
+	*/
 	calculate(timeOne: Time, timeTwo: Time): Difference {
 		return new Difference(
 			this.getDifferenceInSeconds(timeOne, timeTwo)
