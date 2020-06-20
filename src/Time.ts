@@ -11,13 +11,11 @@ class Time {
 
 	/**
 	* Get unix timestamp representation
-	* *Example Usage:*
-	* ```
-	* const unixTimestamp =time.toTimestamp();
-	* ```
+	* @example
+	* const unixTimestamp = time.toTimestamp();
 	* @return Unix timetamp
 	*/
-	toTimestamp(): Number {
+	toTimestamp(): number {
 		return parseInt((this.root.getTime() / 1000).toFixed(0));
 	}
 
@@ -25,7 +23,7 @@ class Time {
 	* Get the day of the month
 	* @return Day of the month
 	*/
-	getDay(): Number {
+	getDay(): number {
 		return this.root.getDate();
 	}
 
@@ -33,7 +31,7 @@ class Time {
 	* Get the month number
 	* @return Month number from 1 to 12
 	*/
-	getMonth(): Number {
+	getMonth(): number {
 		return (this.root.getMonth() + 1);
 	}
 
@@ -41,7 +39,7 @@ class Time {
 	* Get the year
 	* @return 4-digit representation of the year
 	*/
-	getYear(): Number {
+	getYear(): number {
 		return this.root.getFullYear();
 	}
 
@@ -49,7 +47,7 @@ class Time {
 	* Get the seconds
 	* @return Seconds
 	*/
-	getSeconds(): Number {
+	getSeconds(): number {
 		return this.root.getSeconds();
 	}
 
@@ -57,7 +55,7 @@ class Time {
 	* Get minutes
 	* @return Minutes
 	*/
-	getMinutes(): Number {
+	getMinutes(): number {
 		return this.root.getMinutes();
 	}
 
@@ -65,7 +63,7 @@ class Time {
 	* Get hours
 	* @return Hours
 	*/
-	getHours(): Number {
+	getHours(): number {
 		return this.root.getHours();
 	}
 }
