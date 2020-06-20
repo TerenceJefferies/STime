@@ -1,5 +1,7 @@
 import TimeFactory from './TimeFactory';
 import Time from './Time';
+import DifferenceCalculator from './Difference/DifferenceCalculator';
+import Difference from './Difference/Difference';
 
 class STime {
 	readonly timeFactory: TimeFactory;
@@ -35,6 +37,17 @@ class STime {
 	*/
 	fromDate(date: Date): Time {
 		return this.timeFactory.fromDate(date);
+	}
+
+	/**
+	* Get the difference between two times
+	* @example 
+	* const difference = stime.difference(timeOne, timeTwo);
+	* const secondsBetweenTimes = difference.getTotalSeconds();
+	* @return Difference between the two times
+	*/
+	difference(timeOne: Time, timeTwo: Time): Difference {
+		return (new DifferenceCalculator).calculate(timeOne, timeTwo);
 	}
 }
 
