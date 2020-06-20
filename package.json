@@ -19,7 +19,8 @@
     "make-docs": "typedoc --plugin typedoc-plugin-markdown"
   },
   "keywords": [
-    "time"
+    "time",
+    "date"
   ],
   "author": "Terence Jefferies",
   "license": "MIT",
