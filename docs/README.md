@@ -16,6 +16,8 @@ Simple time package for Javascript
 | `now()` | The current time |
 | `fromDate(Date date)` | Create a new time from a native date |
 | `difference(Time timeOne, Time timeTwo)` | Get the difference between two times |
+| `tomorrow()` | Get a time representing tomorrow |
+| `yesterday()` | Get a time representing yesterday |
 
 ## Example Usage
 

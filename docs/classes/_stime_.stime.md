@@ -23,6 +23,8 @@ STime facade used to access the Simple Time
 * [difference](_stime_.stime.md#difference)
 * [fromDate](_stime_.stime.md#fromdate)
 * [now](_stime_.stime.md#now)
+* [tomorrow](_stime_.stime.md#tomorrow)
+* [yesterday](_stime_.stime.md#yesterday)
 
 ## Constructors
 
@@ -30,7 +32,7 @@ STime facade used to access the Simple Time
 
 \+ **new STime**(`timeFactory`: [TimeFactory](_timefactory_.timefactory.md)): *[STime](_stime_.stime.md)*
 
-*Defined in [STime.ts:12](https://github.com/TerenceJefferies/STime/blob/7ad9543/src/STime.ts#L12)*
+*Defined in [STime.ts:12](https://github.com/TerenceJefferies/STime/blob/6bae059/src/STime.ts#L12)*
 
 Create a new instance of STime
 
@@ -48,7 +50,7 @@ Name | Type | Description |
 
 • **timeFactory**: *[TimeFactory](_timefactory_.timefactory.md)*
 
-*Defined in [STime.ts:12](https://github.com/TerenceJefferies/STime/blob/7ad9543/src/STime.ts#L12)*
+*Defined in [STime.ts:12](https://github.com/TerenceJefferies/STime/blob/6bae059/src/STime.ts#L12)*
 
 Time factory to create new instances of time
 
@@ -58,7 +60,7 @@ Time factory to create new instances of time
 
 ▸ **difference**(`timeOne`: [Time](_time_.time.md), `timeTwo`: [Time](_time_.time.md)): *[Difference](_difference_difference_.difference.md)*
 
-*Defined in [STime.ts:60](https://github.com/TerenceJefferies/STime/blob/7ad9543/src/STime.ts#L60)*
+*Defined in [STime.ts:76](https://github.com/TerenceJefferies/STime/blob/6bae059/src/STime.ts#L76)*
 
 Get the difference between two times
 
@@ -85,7 +87,7 @@ ___
 
 ▸ **fromDate**(`date`: Date): *[Time](_time_.time.md)*
 
-*Defined in [STime.ts:45](https://github.com/TerenceJefferies/STime/blob/7ad9543/src/STime.ts#L45)*
+*Defined in [STime.ts:61](https://github.com/TerenceJefferies/STime/blob/6bae059/src/STime.ts#L61)*
 
 Create a new Time from a native Date
 
@@ -111,7 +113,7 @@ ___
 
 ▸ **now**(): *[Time](_time_.time.md)*
 
-*Defined in [STime.ts:31](https://github.com/TerenceJefferies/STime/blob/7ad9543/src/STime.ts#L31)*
+*Defined in [STime.ts:31](https://github.com/TerenceJefferies/STime/blob/6bae059/src/STime.ts#L31)*
 
 Get the current time
 
@@ -124,3 +126,31 @@ console.log(currentTime.getTimestamp());
 **Returns:** *[Time](_time_.time.md)*
 
 Current time
+
+___
+
+###  tomorrow
+
+▸ **tomorrow**(): *[Time](_time_.time.md)*
+
+*Defined in [STime.ts:47](https://github.com/TerenceJefferies/STime/blob/6bae059/src/STime.ts#L47)*
+
+Create a time representing tomorrow
+
+**Returns:** *[Time](_time_.time.md)*
+
+Representation of tomorrow
+
+___
+
+###  yesterday
+
+▸ **yesterday**(): *[Time](_time_.time.md)*
+
+*Defined in [STime.ts:39](https://github.com/TerenceJefferies/STime/blob/6bae059/src/STime.ts#L39)*
+
+Create a time representing yesterday at the current time
+
+**Returns:** *[Time](_time_.time.md)*
+
+Representation of yesterday

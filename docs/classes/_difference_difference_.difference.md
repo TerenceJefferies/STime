@@ -2,6 +2,8 @@
 
 # Class: Difference
 
+Representation of a diff between two dates
+
 ## Hierarchy
 
   ↳ [DifferenceMonthAware](_difference_differencemonthaware_.differencemonthaware.md)
@@ -36,14 +38,16 @@
 
 \+ **new Difference**(`timeOne`: [Time](_time_.time.md), `timeTwo`: [Time](_time_.time.md)): *[Difference](_difference_difference_.difference.md)*
 
-*Defined in [Difference/Difference.ts:7](https://github.com/TerenceJefferies/STime/blob/7ad9543/src/Difference/Difference.ts#L7)*
+*Defined in [Difference/Difference.ts:19](https://github.com/TerenceJefferies/STime/blob/6bae059/src/Difference/Difference.ts#L19)*
+
+Create a difference
 
 **Parameters:**
 
-Name | Type |
------- | ------ |
-`timeOne` | [Time](_time_.time.md) |
-`timeTwo` | [Time](_time_.time.md) |
+Name | Type | Description |
+------ | ------ | ------ |
+`timeOne` | [Time](_time_.time.md) | First time to compare |
+`timeTwo` | [Time](_time_.time.md) | Second time to compare to timeOne  |
 
 **Returns:** *[Difference](_difference_difference_.difference.md)*
 
@@ -53,7 +57,9 @@ Name | Type |
 
 • **differenceInSeconds**: *number*
 
-*Defined in [Difference/Difference.ts:5](https://github.com/TerenceJefferies/STime/blob/7ad9543/src/Difference/Difference.ts#L5)*
+*Defined in [Difference/Difference.ts:11](https://github.com/TerenceJefferies/STime/blob/6bae059/src/Difference/Difference.ts#L11)*
+
+**`var`** {number} differenceInSeconds Difference in seconds
 
 ___
 
@@ -63,7 +69,9 @@ ___
 
 *Overrides [DifferenceMonthAware](_difference_differencemonthaware_.differencemonthaware.md).[timeOne](_difference_differencemonthaware_.differencemonthaware.md#abstract-timeone)*
 
-*Defined in [Difference/Difference.ts:6](https://github.com/TerenceJefferies/STime/blob/7ad9543/src/Difference/Difference.ts#L6)*
+*Defined in [Difference/Difference.ts:15](https://github.com/TerenceJefferies/STime/blob/6bae059/src/Difference/Difference.ts#L15)*
+
+**`var`** {Time} timeOne First time to compare
 
 ___
 
@@ -73,7 +81,9 @@ ___
 
 *Overrides [DifferenceMonthAware](_difference_differencemonthaware_.differencemonthaware.md).[timeTwo](_difference_differencemonthaware_.differencemonthaware.md#abstract-timetwo)*
 
-*Defined in [Difference/Difference.ts:7](https://github.com/TerenceJefferies/STime/blob/7ad9543/src/Difference/Difference.ts#L7)*
+*Defined in [Difference/Difference.ts:19](https://github.com/TerenceJefferies/STime/blob/6bae059/src/Difference/Difference.ts#L19)*
+
+**`var`** {Time} timeTwo Time to compare to timeOne
 
 ## Methods
 
@@ -81,7 +91,7 @@ ___
 
 ▸ **getTotalDays**(): *number*
 
-*Defined in [Difference/Difference.ts:46](https://github.com/TerenceJefferies/STime/blob/7ad9543/src/Difference/Difference.ts#L46)*
+*Defined in [Difference/Difference.ts:64](https://github.com/TerenceJefferies/STime/blob/6bae059/src/Difference/Difference.ts#L64)*
 
 Get total days between to times
 
@@ -95,7 +105,7 @@ ___
 
 ▸ **getTotalHours**(): *number*
 
-*Defined in [Difference/Difference.ts:38](https://github.com/TerenceJefferies/STime/blob/7ad9543/src/Difference/Difference.ts#L38)*
+*Defined in [Difference/Difference.ts:56](https://github.com/TerenceJefferies/STime/blob/6bae059/src/Difference/Difference.ts#L56)*
 
 Get total hours between two times
 
@@ -109,7 +119,7 @@ ___
 
 ▸ **getTotalMinutes**(): *number*
 
-*Defined in [Difference/Difference.ts:30](https://github.com/TerenceJefferies/STime/blob/7ad9543/src/Difference/Difference.ts#L30)*
+*Defined in [Difference/Difference.ts:48](https://github.com/TerenceJefferies/STime/blob/6bae059/src/Difference/Difference.ts#L48)*
 
 Get total minutes between dates
 
@@ -125,7 +135,7 @@ ___
 
 *Inherited from [DifferenceMonthAware](_difference_differencemonthaware_.differencemonthaware.md).[getTotalMonths](_difference_differencemonthaware_.differencemonthaware.md#gettotalmonths)*
 
-*Defined in [Difference/DifferenceMonthAware.ts:21](https://github.com/TerenceJefferies/STime/blob/7ad9543/src/Difference/DifferenceMonthAware.ts#L21)*
+*Defined in [Difference/DifferenceMonthAware.ts:30](https://github.com/TerenceJefferies/STime/blob/6bae059/src/Difference/DifferenceMonthAware.ts#L30)*
 
 Get the number of months between the two times
 
@@ -148,7 +158,7 @@ ___
 
 ▸ **getTotalSeconds**(): *number*
 
-*Defined in [Difference/Difference.ts:22](https://github.com/TerenceJefferies/STime/blob/7ad9543/src/Difference/Difference.ts#L22)*
+*Defined in [Difference/Difference.ts:40](https://github.com/TerenceJefferies/STime/blob/6bae059/src/Difference/Difference.ts#L40)*
 
 Get total number of seconds between two times
 
@@ -165,7 +175,7 @@ ___
 
 ▸ **getTotalWeeks**(): *number*
 
-*Defined in [Difference/Difference.ts:54](https://github.com/TerenceJefferies/STime/blob/7ad9543/src/Difference/Difference.ts#L54)*
+*Defined in [Difference/Difference.ts:72](https://github.com/TerenceJefferies/STime/blob/6bae059/src/Difference/Difference.ts#L72)*
 
 Get total weeks between two times
 
@@ -181,7 +191,7 @@ ___
 
 *Inherited from [DifferenceYearAware](_difference_differenceyearaware_.differenceyearaware.md).[getTotalYears](_difference_differenceyearaware_.differenceyearaware.md#gettotalyears)*
 
-*Defined in [Difference/DifferenceYearAware.ts:12](https://github.com/TerenceJefferies/STime/blob/7ad9543/src/Difference/DifferenceYearAware.ts#L12)*
+*Defined in [Difference/DifferenceYearAware.ts:15](https://github.com/TerenceJefferies/STime/blob/6bae059/src/Difference/DifferenceYearAware.ts#L15)*
 
 Get total years between two times
 

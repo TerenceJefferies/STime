@@ -2,6 +2,8 @@
 
 # Class: DifferenceYearAware
 
+Making a difference year aware
+
 ## Hierarchy
 
 * **DifferenceYearAware**
@@ -25,7 +27,7 @@
 
 • **timeOne**: *[Time](_time_.time.md)*
 
-*Defined in [Difference/DifferenceYearAware.ts:4](https://github.com/TerenceJefferies/STime/blob/7ad9543/src/Difference/DifferenceYearAware.ts#L4)*
+*Defined in [Difference/DifferenceYearAware.ts:7](https://github.com/TerenceJefferies/STime/blob/6bae059/src/Difference/DifferenceYearAware.ts#L7)*
 
 ___
 
@@ -33,7 +35,7 @@ ___
 
 • **timeTwo**: *[Time](_time_.time.md)*
 
-*Defined in [Difference/DifferenceYearAware.ts:6](https://github.com/TerenceJefferies/STime/blob/7ad9543/src/Difference/DifferenceYearAware.ts#L6)*
+*Defined in [Difference/DifferenceYearAware.ts:9](https://github.com/TerenceJefferies/STime/blob/6bae059/src/Difference/DifferenceYearAware.ts#L9)*
 
 ## Methods
 
@@ -41,7 +43,7 @@ ___
 
 ▸ **getTotalYears**(): *number*
 
-*Defined in [Difference/DifferenceYearAware.ts:12](https://github.com/TerenceJefferies/STime/blob/7ad9543/src/Difference/DifferenceYearAware.ts#L12)*
+*Defined in [Difference/DifferenceYearAware.ts:15](https://github.com/TerenceJefferies/STime/blob/6bae059/src/Difference/DifferenceYearAware.ts#L15)*
 
 Get total years between two times
 

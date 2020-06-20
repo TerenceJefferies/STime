@@ -33,6 +33,22 @@ class STime {
     }
 
     /**
+     * Create a time representing yesterday at the current time
+     * @return {Time} Representation of yesterday
+     */
+    yesterday(): Time {
+      return this.timeFactory.createForYesterday();
+    }
+
+    /**
+     * Create a time representing tomorrow
+     * @return {Time} Representation of tomorrow
+     */
+    tomorrow(): Time {
+      return this.timeFactory.createForTomorrow();
+    }
+
+    /**
      * Create a new Time from a native Date
      * @example
      * ```

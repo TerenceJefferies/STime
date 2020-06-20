@@ -2,6 +2,8 @@
 
 # Class: DifferenceMonthAware
 
+Making a difference month aware
+
 ## Hierarchy
 
 * [DifferenceYearAware](_difference_differenceyearaware_.differenceyearaware.md)
@@ -30,7 +32,9 @@
 
 *Overrides [DifferenceYearAware](_difference_differenceyearaware_.differenceyearaware.md).[timeOne](_difference_differenceyearaware_.differenceyearaware.md#abstract-timeone)*
 
-*Defined in [Difference/DifferenceMonthAware.ts:5](https://github.com/TerenceJefferies/STime/blob/7ad9543/src/Difference/DifferenceMonthAware.ts#L5)*
+*Defined in [Difference/DifferenceMonthAware.ts:11](https://github.com/TerenceJefferies/STime/blob/6bae059/src/Difference/DifferenceMonthAware.ts#L11)*
+
+**`var`** {Time} timeOne First time to compare
 
 ___
 
@@ -40,7 +44,9 @@ ___
 
 *Overrides [DifferenceYearAware](_difference_differenceyearaware_.differenceyearaware.md).[timeTwo](_difference_differenceyearaware_.differenceyearaware.md#abstract-timetwo)*
 
-*Defined in [Difference/DifferenceMonthAware.ts:7](https://github.com/TerenceJefferies/STime/blob/7ad9543/src/Difference/DifferenceMonthAware.ts#L7)*
+*Defined in [Difference/DifferenceMonthAware.ts:16](https://github.com/TerenceJefferies/STime/blob/6bae059/src/Difference/DifferenceMonthAware.ts#L16)*
+
+**`var`** {Time} timeTwo Time to compare to timeOne
 
 ## Methods
 
@@ -48,7 +54,7 @@ ___
 
 ▸ **getTotalMonths**(): *number*
 
-*Defined in [Difference/DifferenceMonthAware.ts:21](https://github.com/TerenceJefferies/STime/blob/7ad9543/src/Difference/DifferenceMonthAware.ts#L21)*
+*Defined in [Difference/DifferenceMonthAware.ts:30](https://github.com/TerenceJefferies/STime/blob/6bae059/src/Difference/DifferenceMonthAware.ts#L30)*
 
 Get the number of months between the two times
 
@@ -73,7 +79,7 @@ ___
 
 *Inherited from [DifferenceYearAware](_difference_differenceyearaware_.differenceyearaware.md).[getTotalYears](_difference_differenceyearaware_.differenceyearaware.md#gettotalyears)*
 
-*Defined in [Difference/DifferenceYearAware.ts:12](https://github.com/TerenceJefferies/STime/blob/7ad9543/src/Difference/DifferenceYearAware.ts#L12)*
+*Defined in [Difference/DifferenceYearAware.ts:15](https://github.com/TerenceJefferies/STime/blob/6bae059/src/Difference/DifferenceYearAware.ts#L15)*
 
 Get total years between two times
 
