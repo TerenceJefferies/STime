@@ -1,6 +1,9 @@
 import Unit from '../Unit';
 import Time from '../Time';
 
+/**
+ * Unit of time representing an hour
+ */
 class Hour implements Unit {
   /**
    * @inheritdoc
