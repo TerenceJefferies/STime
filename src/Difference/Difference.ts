@@ -1,8 +1,16 @@
-class Difference {
-	readonly differenceInSeconds: number;
+import Time from '../Time';
+import DifferenceMonthAware from './DifferenceMonthAware';
 
-	constructor(differenceInSeconds: number) {
-		this.differenceInSeconds = differenceInSeconds;
+class Difference extends DifferenceMonthAware {
+	readonly differenceInSeconds: number;
+	readonly timeOne: Time;
+	readonly timeTwo: Time
+
+	constructor(timeOne: Time, timeTwo: Time) {
+		super();
+		this.differenceInSeconds = Math.abs(timeOne.toTimestamp() - timeTwo.toTimestamp());
+		this.timeOne = timeOne;
+		this.timeTwo = timeTwo;
 	}
 
 	/**

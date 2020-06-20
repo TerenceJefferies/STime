@@ -1,6 +1,5 @@
 import TimeFactory from './TimeFactory';
 import Time from './Time';
-import DifferenceCalculator from './Difference/DifferenceCalculator';
 import Difference from './Difference/Difference';
 
 class STime {
@@ -49,7 +48,7 @@ class STime {
 	* @return Difference between the two times
 	*/
 	difference(timeOne: Time, timeTwo: Time): Difference {
-		return (new DifferenceCalculator).calculate(timeOne, timeTwo);
+		return new Difference(timeOne, timeTwo);
 	}
 }
 

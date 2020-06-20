@@ -28,7 +28,7 @@
 
 \+ **new STime**(`timeFactory`: [TimeFactory](_timefactory_.timefactory.md)): *[STime](_stime_.stime.md)*
 
-*Defined in [STime.ts:7](https://github.com/TerenceJefferies/STime/blob/69d415a/src/STime.ts#L7)*
+*Defined in [STime.ts:6](https://github.com/TerenceJefferies/STime/blob/8f5d348/src/STime.ts#L6)*
 
 Create a new instance of STime
 
@@ -46,7 +46,7 @@ Name | Type |
 
 • **timeFactory**: *[TimeFactory](_timefactory_.timefactory.md)*
 
-*Defined in [STime.ts:7](https://github.com/TerenceJefferies/STime/blob/69d415a/src/STime.ts#L7)*
+*Defined in [STime.ts:6](https://github.com/TerenceJefferies/STime/blob/8f5d348/src/STime.ts#L6)*
 
 ## Methods
 
@@ -54,7 +54,7 @@ Name | Type |
 
 ▸ **difference**(`timeOne`: [Time](_time_.time.md), `timeTwo`: [Time](_time_.time.md)): *[Difference](_difference_difference_.difference.md)*
 
-*Defined in [STime.ts:51](https://github.com/TerenceJefferies/STime/blob/69d415a/src/STime.ts#L51)*
+*Defined in [STime.ts:50](https://github.com/TerenceJefferies/STime/blob/8f5d348/src/STime.ts#L50)*
 
 Get the difference between two times
 
@@ -81,7 +81,7 @@ ___
 
 ▸ **fromDate**(`date`: Date): *[Time](_time_.time.md)*
 
-*Defined in [STime.ts:38](https://github.com/TerenceJefferies/STime/blob/69d415a/src/STime.ts#L38)*
+*Defined in [STime.ts:37](https://github.com/TerenceJefferies/STime/blob/8f5d348/src/STime.ts#L37)*
 
 Create a new Time from a native Date
 
@@ -107,7 +107,7 @@ ___
 
 ▸ **now**(): *[Time](_time_.time.md)*
 
-*Defined in [STime.ts:25](https://github.com/TerenceJefferies/STime/blob/69d415a/src/STime.ts#L25)*
+*Defined in [STime.ts:24](https://github.com/TerenceJefferies/STime/blob/8f5d348/src/STime.ts#L24)*
 
 Get the current time
 
