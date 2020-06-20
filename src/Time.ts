@@ -38,7 +38,7 @@ class Time {
      * @return {number} Month number from 1 to 12
      */
     getMonth(): number {
-      return (this.root.getMonth() + 1);
+        return (this.root.getMonth() + 1);
     }
 
     /**
@@ -46,7 +46,7 @@ class Time {
      * @return {number} 4-digit representation of the year
      */
     getYear(): number {
-      return this.root.getFullYear();
+        return this.root.getFullYear();
     }
 
     /**
@@ -54,7 +54,7 @@ class Time {
      * @return {number} Seconds
      */
     getSeconds(): number {
-      return this.root.getSeconds();
+        return this.root.getSeconds();
     }
 
     /**

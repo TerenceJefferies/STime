@@ -17,7 +17,7 @@
     "prepare": "npm run build",
     "prepublishOnly": "npm run test",
     "make-docs": "typedoc --plugin typedoc-plugin-markdown",
-    "lint": "eslint src/*.ts"
+    "lint": "eslint src/**/*.ts"
   },
   "keywords": [
     "time",
