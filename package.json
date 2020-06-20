@@ -16,7 +16,8 @@
     "test": "jest test",
     "prepare": "npm run build",
     "prepublishOnly": "npm run test",
-    "make-docs": "typedoc --plugin typedoc-plugin-markdown"
+    "make-docs": "typedoc --plugin typedoc-plugin-markdown",
+    "lint": "eslint src/*.ts"
   },
   "keywords": [
     "time",
@@ -27,7 +28,11 @@
   "devDependencies": {
     "@babel/preset-typescript": "^7.10.1",
     "@types/jest": "^26.0.0",
+    "@typescript-eslint/eslint-plugin": "^3.3.0",
+    "@typescript-eslint/parser": "^3.3.0",
     "babel-preset-env": "^1.7.0",
+    "eslint": "^7.3.0",
+    "eslint-config-google": "^0.14.0",
     "jest": "^26.0.1",
     "ts-jest": "^26.1.0",
     "typedoc": "^0.17.7",
