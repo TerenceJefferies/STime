@@ -38,6 +38,14 @@ class Difference {
 	getTotalDays(): number {
 		return Math.floor((this.getTotalHours() / 24));
 	}
+
+	/**
+	* Get total weeks between two times
+	* @return Total number of weeks between two times
+	*/
+	getTotalWeeks(): number {
+		return Math.floor((this.getTotalDays() / 7));
+	}
 }
 
 export default Difference;

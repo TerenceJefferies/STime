@@ -43,4 +43,16 @@ describe('Difference', () => {
 
 		expect(Number.isInteger(diff.getTotalDays())).toBeTruthy();
 	});
+
+	it('Should return the weeks', () => {
+		const diff = new Difference((3600 * 24 * 14));
+
+		expect(diff.getTotalWeeks()).toEqual(2);
+	});
+
+	it('Should return the weeks as an integer', () => {
+		const diff = new Difference((3600 * 24 * 16));
+
+		expect(Number.isInteger(diff.getTotalWeeks())).toBeTruthy();
+	});
 });
