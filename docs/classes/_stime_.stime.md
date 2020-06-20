@@ -18,6 +18,7 @@
 
 ### Methods
 
+* [difference](_stime_.stime.md#difference)
 * [fromDate](_stime_.stime.md#fromdate)
 * [now](_stime_.stime.md#now)
 
@@ -27,7 +28,7 @@
 
 \+ **new STime**(`timeFactory`: [TimeFactory](_timefactory_.timefactory.md)): *[STime](_stime_.stime.md)*
 
-*Defined in [STime.ts:5](https://github.com/TerenceJefferies/STime/blob/75a525a/src/STime.ts#L5)*
+*Defined in [STime.ts:7](https://github.com/TerenceJefferies/STime/blob/00508aa/src/STime.ts#L7)*
 
 Create a new instance of STime
 
@@ -45,15 +46,40 @@ Name | Type |
 
 • **timeFactory**: *[TimeFactory](_timefactory_.timefactory.md)*
 
-*Defined in [STime.ts:5](https://github.com/TerenceJefferies/STime/blob/75a525a/src/STime.ts#L5)*
+*Defined in [STime.ts:7](https://github.com/TerenceJefferies/STime/blob/00508aa/src/STime.ts#L7)*
 
 ## Methods
+
+###  difference
+
+▸ **difference**(`timeOne`: [Time](_time_.time.md), `timeTwo`: [Time](_time_.time.md)): *[Difference](_difference_difference_.difference.md)*
+
+*Defined in [STime.ts:49](https://github.com/TerenceJefferies/STime/blob/00508aa/src/STime.ts#L49)*
+
+Get the difference between two times
+
+**`example`** 
+const difference = stime.difference(timeOne, timeTwo);
+const secondsBetweenTimes = difference.getTotalSeconds();
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`timeOne` | [Time](_time_.time.md) |
+`timeTwo` | [Time](_time_.time.md) |
+
+**Returns:** *[Difference](_difference_difference_.difference.md)*
+
+Difference between the two times
+
+___
 
 ###  fromDate
 
 ▸ **fromDate**(`date`: Date): *[Time](_time_.time.md)*
 
-*Defined in [STime.ts:36](https://github.com/TerenceJefferies/STime/blob/75a525a/src/STime.ts#L36)*
+*Defined in [STime.ts:38](https://github.com/TerenceJefferies/STime/blob/00508aa/src/STime.ts#L38)*
 
 Create a new Time from a native Date
 *Example Usage:*
@@ -78,7 +104,7 @@ ___
 
 ▸ **now**(): *[Time](_time_.time.md)*
 
-*Defined in [STime.ts:23](https://github.com/TerenceJefferies/STime/blob/75a525a/src/STime.ts#L23)*
+*Defined in [STime.ts:25](https://github.com/TerenceJefferies/STime/blob/00508aa/src/STime.ts#L25)*
 
 Get the current time
 *Example Usage:*

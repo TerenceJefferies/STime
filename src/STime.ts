@@ -15,11 +15,9 @@ class STime {
 
 	/**
 	* Get the current time
-	* *Example Usage:* 
-	* ```
+	* @example
 	* const currentTime = stime.now();
 	* console.log(currentTime.getTimestamp());
-	* ```
 	* @return Current time
 	*/
 	now(): Time {
@@ -28,11 +26,9 @@ class STime {
 
 	/**
 	* Create a new Time from a native Date
-	* *Example Usage:*
-	* ```
+	* @example
 	* const date = new Date();
 	* const time = stime.fromDate(date);
-	* ```
 	* @return Time created from the date provided
 	*/
 	fromDate(date: Date): Time {
