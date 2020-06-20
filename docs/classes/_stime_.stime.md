@@ -20,6 +20,7 @@ STime facade used to access the Simple Time
 
 ### Methods
 
+* [create](_stime_.stime.md#create)
 * [difference](_stime_.stime.md#difference)
 * [fromDate](_stime_.stime.md#fromdate)
 * [now](_stime_.stime.md#now)
@@ -32,7 +33,7 @@ STime facade used to access the Simple Time
 
 \+ **new STime**(`timeFactory`: [TimeFactory](_timefactory_.timefactory.md)): *[STime](_stime_.stime.md)*
 
-*Defined in [STime.ts:12](https://github.com/TerenceJefferies/STime/blob/6bae059/src/STime.ts#L12)*
+*Defined in [STime.ts:13](https://github.com/TerenceJefferies/STime/blob/a1d2edf/src/STime.ts#L13)*
 
 Create a new instance of STime
 
@@ -50,17 +51,43 @@ Name | Type | Description |
 
 • **timeFactory**: *[TimeFactory](_timefactory_.timefactory.md)*
 
-*Defined in [STime.ts:12](https://github.com/TerenceJefferies/STime/blob/6bae059/src/STime.ts#L12)*
+*Defined in [STime.ts:13](https://github.com/TerenceJefferies/STime/blob/a1d2edf/src/STime.ts#L13)*
 
 Time factory to create new instances of time
 
 ## Methods
 
+###  create
+
+▸ **create**(`units`: number): *[TimeFromNowBuilder](_timefromnowbuilder_.timefromnowbuilder.md)*
+
+*Defined in [STime.ts:64](https://github.com/TerenceJefferies/STime/blob/a1d2edf/src/STime.ts#L64)*
+
+Create a date before or after the current date
+
+**`example`** 
+```javascript
+// Create a time 7 days from now
+stime.create(7).days().from().now();
+// Create a time 14 days before now
+stime.create(14).days().before().now();
+```
+
+**Parameters:**
+
+Name | Type | Description |
+------ | ------ | ------ |
+`units` | number | Number of units to add or sutract to/from the current date |
+
+**Returns:** *[TimeFromNowBuilder](_timefromnowbuilder_.timefromnowbuilder.md)*
+
+___
+
 ###  difference
 
 ▸ **difference**(`timeOne`: [Time](_time_.time.md), `timeTwo`: [Time](_time_.time.md)): *[Difference](_difference_difference_.difference.md)*
 
-*Defined in [STime.ts:76](https://github.com/TerenceJefferies/STime/blob/6bae059/src/STime.ts#L76)*
+*Defined in [STime.ts:93](https://github.com/TerenceJefferies/STime/blob/a1d2edf/src/STime.ts#L93)*
 
 Get the difference between two times
 
@@ -87,7 +114,7 @@ ___
 
 ▸ **fromDate**(`date`: Date): *[Time](_time_.time.md)*
 
-*Defined in [STime.ts:61](https://github.com/TerenceJefferies/STime/blob/6bae059/src/STime.ts#L61)*
+*Defined in [STime.ts:78](https://github.com/TerenceJefferies/STime/blob/a1d2edf/src/STime.ts#L78)*
 
 Create a new Time from a native Date
 
@@ -113,7 +140,7 @@ ___
 
 ▸ **now**(): *[Time](_time_.time.md)*
 
-*Defined in [STime.ts:31](https://github.com/TerenceJefferies/STime/blob/6bae059/src/STime.ts#L31)*
+*Defined in [STime.ts:32](https://github.com/TerenceJefferies/STime/blob/a1d2edf/src/STime.ts#L32)*
 
 Get the current time
 
@@ -133,7 +160,7 @@ ___
 
 ▸ **tomorrow**(): *[Time](_time_.time.md)*
 
-*Defined in [STime.ts:47](https://github.com/TerenceJefferies/STime/blob/6bae059/src/STime.ts#L47)*
+*Defined in [STime.ts:48](https://github.com/TerenceJefferies/STime/blob/a1d2edf/src/STime.ts#L48)*
 
 Create a time representing tomorrow
 
@@ -147,7 +174,7 @@ ___
 
 ▸ **yesterday**(): *[Time](_time_.time.md)*
 
-*Defined in [STime.ts:39](https://github.com/TerenceJefferies/STime/blob/6bae059/src/STime.ts#L39)*
+*Defined in [STime.ts:40](https://github.com/TerenceJefferies/STime/blob/a1d2edf/src/STime.ts#L40)*
 
 Create a time representing yesterday at the current time
 

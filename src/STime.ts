@@ -1,6 +1,7 @@
 import TimeFactory from './TimeFactory';
 import Time from './Time';
 import Difference from './Difference/Difference';
+import TimeFromNowBuilder from './TimeFromNowBuilder';
 
 /**
  * STime facade used to access the Simple Time
@@ -46,6 +47,22 @@ class STime {
      */
     tomorrow(): Time {
       return this.timeFactory.createForTomorrow();
+    }
+
+    /**
+     * Create a date before or after the current date
+     * @example
+     * ```javascript
+     * // Create a time 7 days from now
+     * stime.create(7).days().from().now();
+     * // Create a time 14 days before now
+     * stime.create(14).days().before().now();
+     * ```
+     * @param {number} units Number of units to add or sutract to/from the current date
+     * @return {TimeFromNowBuilder}
+     */
+    create(units: number): TimeFromNowBuilder {
+      return new TimeFromNowBuilder(units);
     }
 
     /**
