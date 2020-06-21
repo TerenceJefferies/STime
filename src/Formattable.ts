@@ -34,7 +34,7 @@ abstract class Formattable {
    * @param {string} format Format to check for seconds
    * @return {string} Formatted string including seconds
    */
-  formatSeconds(format: string): string {
+  private formatSeconds(format: string): string {
     let formatted = format.replace(/S{2}/g, this.formatNumber(this.getSeconds(), true));
     formatted = formatted.replace(/S{1}/g, this.formatNumber(this.getSeconds(), false));
     return formatted;
@@ -45,7 +45,7 @@ abstract class Formattable {
    * @param {string} format Format to check for minutes
    * @return {string} Formatted string including minutes
    */
-  formatMinutes(format: string): string {
+  private formatMinutes(format: string): string {
     let formatted = format.replace(/I{2}/g, this.formatNumber(this.getMinutes(), true));
     formatted = formatted.replace(/I{1}/g, this.formatNumber(this.getMinutes(), false));
     return formatted;
@@ -56,7 +56,7 @@ abstract class Formattable {
    * @param {string} format Format to check for hours
    * @return {string} Formatted string including hours
    */
-  formatHours(format: string): string {
+  private formatHours(format: string): string {
     let formatted = format.replace(/H{2}/g, this.formatNumber(this.getHours(), true));
     formatted = formatted.replace(/H{1}/g, this.formatNumber(this.getHours(), false));
     return formatted;
@@ -67,7 +67,7 @@ abstract class Formattable {
    * @param {string} format Format to check for days
    * @return {string} Formatted string including days
    */
-  formatDays(format: string): string {
+  private formatDays(format: string): string {
     let formatted = format.replace(/D{2}/g, this.formatNumber(this.getDay(), true));
     formatted = formatted.replace(/D{1}/g, this.formatNumber(this.getDay(), false));
     return formatted;
@@ -78,7 +78,7 @@ abstract class Formattable {
    * @param {string} format Format to check for months
    * @return {string} Formatted string including months
    */
-  formatMonths(format: string): string {
+  private formatMonths(format: string): string {
     let formatted = format.replace(/M{4}/g, this.getMonthName('long'));
     formatted = formatted.replace(/M{3}/g, this.getMonthName('short'));
     formatted = formatted.replace(/M{2}/g, this.formatNumber(this.getMonth(), true));
@@ -91,7 +91,7 @@ abstract class Formattable {
    * @param {string} type long or short
    * @return {string} Formatted string including months
    */
-  getMonthName(type: string): string {
+  private getMonthName(type: string): string {
     return this.root.toLocaleString('default', { month: type });
   }
 
@@ -100,7 +100,7 @@ abstract class Formattable {
    * @param {string} format Format to update
    * @return {string} Formatted string including years
    */
-  formatYears(format: string): string {
+  private formatYears(format: string): string {
     const year = this.getYear().toString();
     let formatted = format.replace(/Y{4}/g, year);
     formatted = formatted.replace(/Y{2}/g, year.substring(2, year.length));
@@ -115,7 +115,7 @@ abstract class Formattable {
    * false otherwise
    * @return {string} Formatted number
    */
-  formatNumber(number: number, leadingZero: boolean): string {
+  private formatNumber(number: number, leadingZero: boolean): string {
     if (leadingZero) {
       if (number < 10) {
         return '0' + number.toString();

@@ -33,7 +33,7 @@ Generates new instances of time
 
 \+ **new Generator**(`timeFactory`: [TimeFactory](_timefactory_.timefactory.md)): *[Generator](_generator_.generator.md)*
 
-*Defined in [Generator.ts:8](https://github.com/TerenceJefferies/STime/blob/bfe15dd/src/Generator.ts#L8)*
+*Defined in [Generator.ts:8](https://github.com/TerenceJefferies/STime/blob/f4ba2f2/src/Generator.ts#L8)*
 
 Create a new instance of time
 
@@ -51,7 +51,7 @@ Name | Type | Description |
 
 • **timeFactory**: *[TimeFactory](_timefactory_.timefactory.md)*
 
-*Defined in [Generator.ts:8](https://github.com/TerenceJefferies/STime/blob/bfe15dd/src/Generator.ts#L8)*
+*Defined in [Generator.ts:8](https://github.com/TerenceJefferies/STime/blob/f4ba2f2/src/Generator.ts#L8)*
 
 ## Methods
 
@@ -59,7 +59,7 @@ Name | Type | Description |
 
 ▸ **fromDate**(`date`: Date): *[Time](_time_.time.md)*
 
-*Defined in [Generator.ts:57](https://github.com/TerenceJefferies/STime/blob/bfe15dd/src/Generator.ts#L57)*
+*Defined in [Generator.ts:57](https://github.com/TerenceJefferies/STime/blob/f4ba2f2/src/Generator.ts#L57)*
 
 Create a new Time from a native Date
 
@@ -85,7 +85,7 @@ ___
 
 ▸ **now**(): *[Time](_time_.time.md)*
 
-*Defined in [Generator.ts:27](https://github.com/TerenceJefferies/STime/blob/bfe15dd/src/Generator.ts#L27)*
+*Defined in [Generator.ts:27](https://github.com/TerenceJefferies/STime/blob/f4ba2f2/src/Generator.ts#L27)*
 
 Get the current time
 
@@ -105,7 +105,7 @@ ___
 
 ▸ **tomorrow**(): *[Time](_time_.time.md)*
 
-*Defined in [Generator.ts:43](https://github.com/TerenceJefferies/STime/blob/bfe15dd/src/Generator.ts#L43)*
+*Defined in [Generator.ts:43](https://github.com/TerenceJefferies/STime/blob/f4ba2f2/src/Generator.ts#L43)*
 
 Create a time representing tomorrow
 
@@ -119,7 +119,7 @@ ___
 
 ▸ **yesterday**(): *[Time](_time_.time.md)*
 
-*Defined in [Generator.ts:35](https://github.com/TerenceJefferies/STime/blob/bfe15dd/src/Generator.ts#L35)*
+*Defined in [Generator.ts:35](https://github.com/TerenceJefferies/STime/blob/f4ba2f2/src/Generator.ts#L35)*
 
 Create a time representing yesterday at the current time
 

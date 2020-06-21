@@ -49,7 +49,7 @@ const time = builder.days().from().now();
 
 \+ **new TimeFromBuilder**(`fromCurrent`: number): *[TimeFromBuilder](_timefrombuilder_.timefrombuilder.md)*
 
-*Defined in [TimeFromBuilder.ts:28](https://github.com/TerenceJefferies/STime/blob/bfe15dd/src/TimeFromBuilder.ts#L28)*
+*Defined in [TimeFromBuilder.ts:28](https://github.com/TerenceJefferies/STime/blob/f4ba2f2/src/TimeFromBuilder.ts#L28)*
 
 Create a new TimeFromBuilder
 
@@ -63,7 +63,7 @@ Name | Type | Description |
 
 \+ **new TimeFromBuilder**(`fromCurrent`: number, `unit`: [Unit](../interfaces/_unit_.unit.md)): *[TimeFromBuilder](_timefrombuilder_.timefrombuilder.md)*
 
-*Defined in [TimeFromBuilder.ts:35](https://github.com/TerenceJefferies/STime/blob/bfe15dd/src/TimeFromBuilder.ts#L35)*
+*Defined in [TimeFromBuilder.ts:35](https://github.com/TerenceJefferies/STime/blob/f4ba2f2/src/TimeFromBuilder.ts#L35)*
 
 Create a new TimeFromBuilder
 
@@ -78,7 +78,7 @@ Name | Type | Description |
 
 \+ **new TimeFromBuilder**(`fromCurrent`: number, `unit`: [Unit](../interfaces/_unit_.unit.md), `direction`: number): *[TimeFromBuilder](_timefrombuilder_.timefrombuilder.md)*
 
-*Defined in [TimeFromBuilder.ts:36](https://github.com/TerenceJefferies/STime/blob/bfe15dd/src/TimeFromBuilder.ts#L36)*
+*Defined in [TimeFromBuilder.ts:36](https://github.com/TerenceJefferies/STime/blob/f4ba2f2/src/TimeFromBuilder.ts#L36)*
 
 Create a new TimeFromBuilder
 
@@ -94,7 +94,7 @@ Name | Type |
 
 \+ **new TimeFromBuilder**(`fromCurrent`: number, `unit`: [Unit](../interfaces/_unit_.unit.md), `direction`: number, `origin`: [Time](_time_.time.md)): *[TimeFromBuilder](_timefrombuilder_.timefrombuilder.md)*
 
-*Defined in [TimeFromBuilder.ts:37](https://github.com/TerenceJefferies/STime/blob/bfe15dd/src/TimeFromBuilder.ts#L37)*
+*Defined in [TimeFromBuilder.ts:37](https://github.com/TerenceJefferies/STime/blob/f4ba2f2/src/TimeFromBuilder.ts#L37)*
 
 Create a new TimeFromBuilder
 
@@ -115,7 +115,7 @@ Name | Type |
 
 • **FUTURE**: *1* = 1
 
-*Defined in [TimeFromBuilder.ts:19](https://github.com/TerenceJefferies/STime/blob/bfe15dd/src/TimeFromBuilder.ts#L19)*
+*Defined in [TimeFromBuilder.ts:19](https://github.com/TerenceJefferies/STime/blob/f4ba2f2/src/TimeFromBuilder.ts#L19)*
 
 ___
 
@@ -123,7 +123,7 @@ ___
 
 • **PAST**: *2* = 2
 
-*Defined in [TimeFromBuilder.ts:20](https://github.com/TerenceJefferies/STime/blob/bfe15dd/src/TimeFromBuilder.ts#L20)*
+*Defined in [TimeFromBuilder.ts:20](https://github.com/TerenceJefferies/STime/blob/f4ba2f2/src/TimeFromBuilder.ts#L20)*
 
 ___
 
@@ -131,7 +131,7 @@ ___
 
 • **direction**: *number | null*
 
-*Defined in [TimeFromBuilder.ts:26](https://github.com/TerenceJefferies/STime/blob/bfe15dd/src/TimeFromBuilder.ts#L26)*
+*Defined in [TimeFromBuilder.ts:26](https://github.com/TerenceJefferies/STime/blob/f4ba2f2/src/TimeFromBuilder.ts#L26)*
 
 ___
 
@@ -139,7 +139,7 @@ ___
 
 • **fromCurrent**: *number*
 
-*Defined in [TimeFromBuilder.ts:22](https://github.com/TerenceJefferies/STime/blob/bfe15dd/src/TimeFromBuilder.ts#L22)*
+*Defined in [TimeFromBuilder.ts:22](https://github.com/TerenceJefferies/STime/blob/f4ba2f2/src/TimeFromBuilder.ts#L22)*
 
 ___
 
@@ -147,7 +147,7 @@ ___
 
 • **origin**: *[Time](_time_.time.md) | null*
 
-*Defined in [TimeFromBuilder.ts:28](https://github.com/TerenceJefferies/STime/blob/bfe15dd/src/TimeFromBuilder.ts#L28)*
+*Defined in [TimeFromBuilder.ts:28](https://github.com/TerenceJefferies/STime/blob/f4ba2f2/src/TimeFromBuilder.ts#L28)*
 
 ___
 
@@ -155,7 +155,7 @@ ___
 
 • **unit**: *[Unit](../interfaces/_unit_.unit.md) | null*
 
-*Defined in [TimeFromBuilder.ts:24](https://github.com/TerenceJefferies/STime/blob/bfe15dd/src/TimeFromBuilder.ts#L24)*
+*Defined in [TimeFromBuilder.ts:24](https://github.com/TerenceJefferies/STime/blob/f4ba2f2/src/TimeFromBuilder.ts#L24)*
 
 ## Methods
 
@@ -163,7 +163,7 @@ ___
 
 ▸ **before**(): *[TimeFromBuilder](_timefrombuilder_.timefrombuilder.md)*
 
-*Defined in [TimeFromBuilder.ts:110](https://github.com/TerenceJefferies/STime/blob/bfe15dd/src/TimeFromBuilder.ts#L110)*
+*Defined in [TimeFromBuilder.ts:110](https://github.com/TerenceJefferies/STime/blob/f4ba2f2/src/TimeFromBuilder.ts#L110)*
 
 Configured TimeFromBuilder in a past context
 
@@ -175,7 +175,7 @@ ___
 
 ▸ **days**(): *[TimeFromBuilder](_timefrombuilder_.timefrombuilder.md)*
 
-*Defined in [TimeFromBuilder.ts:50](https://github.com/TerenceJefferies/STime/blob/bfe15dd/src/TimeFromBuilder.ts#L50)*
+*Defined in [TimeFromBuilder.ts:50](https://github.com/TerenceJefferies/STime/blob/f4ba2f2/src/TimeFromBuilder.ts#L50)*
 
 Configure number of days to offset by
 
@@ -187,7 +187,7 @@ ___
 
 ▸ **from**(): *[TimeFromBuilder](_timefrombuilder_.timefrombuilder.md)*
 
-*Defined in [TimeFromBuilder.ts:98](https://github.com/TerenceJefferies/STime/blob/bfe15dd/src/TimeFromBuilder.ts#L98)*
+*Defined in [TimeFromBuilder.ts:98](https://github.com/TerenceJefferies/STime/blob/f4ba2f2/src/TimeFromBuilder.ts#L98)*
 
 Create a new TimeFromBuilder configured in a future context
 
@@ -199,7 +199,7 @@ ___
 
 ▸ **get**(): *[Time](_time_.time.md)*
 
-*Defined in [TimeFromBuilder.ts:156](https://github.com/TerenceJefferies/STime/blob/bfe15dd/src/TimeFromBuilder.ts#L156)*
+*Defined in [TimeFromBuilder.ts:156](https://github.com/TerenceJefferies/STime/blob/f4ba2f2/src/TimeFromBuilder.ts#L156)*
 
 Get the resultant time
 
@@ -213,7 +213,7 @@ ___
 
 ▸ **hours**(): *[TimeFromBuilder](_timefrombuilder_.timefrombuilder.md)*
 
-*Defined in [TimeFromBuilder.ts:74](https://github.com/TerenceJefferies/STime/blob/bfe15dd/src/TimeFromBuilder.ts#L74)*
+*Defined in [TimeFromBuilder.ts:74](https://github.com/TerenceJefferies/STime/blob/f4ba2f2/src/TimeFromBuilder.ts#L74)*
 
 Configures the hour context
 
@@ -225,7 +225,7 @@ ___
 
 ▸ **minutes**(): *[TimeFromBuilder](_timefrombuilder_.timefrombuilder.md)*
 
-*Defined in [TimeFromBuilder.ts:66](https://github.com/TerenceJefferies/STime/blob/bfe15dd/src/TimeFromBuilder.ts#L66)*
+*Defined in [TimeFromBuilder.ts:66](https://github.com/TerenceJefferies/STime/blob/f4ba2f2/src/TimeFromBuilder.ts#L66)*
 
 Configures the minute context
 
@@ -237,7 +237,7 @@ ___
 
 ▸ **months**(): *[TimeFromBuilder](_timefrombuilder_.timefrombuilder.md)*
 
-*Defined in [TimeFromBuilder.ts:82](https://github.com/TerenceJefferies/STime/blob/bfe15dd/src/TimeFromBuilder.ts#L82)*
+*Defined in [TimeFromBuilder.ts:82](https://github.com/TerenceJefferies/STime/blob/f4ba2f2/src/TimeFromBuilder.ts#L82)*
 
 Configures the month context
 
@@ -249,7 +249,7 @@ ___
 
 ▸ **now**(): *[Time](_time_.time.md)*
 
-*Defined in [TimeFromBuilder.ts:122](https://github.com/TerenceJefferies/STime/blob/bfe15dd/src/TimeFromBuilder.ts#L122)*
+*Defined in [TimeFromBuilder.ts:122](https://github.com/TerenceJefferies/STime/blob/f4ba2f2/src/TimeFromBuilder.ts#L122)*
 
 Return configured time starting from now
 
@@ -261,7 +261,7 @@ ___
 
 ▸ **seconds**(): *[TimeFromBuilder](_timefrombuilder_.timefrombuilder.md)*
 
-*Defined in [TimeFromBuilder.ts:58](https://github.com/TerenceJefferies/STime/blob/bfe15dd/src/TimeFromBuilder.ts#L58)*
+*Defined in [TimeFromBuilder.ts:58](https://github.com/TerenceJefferies/STime/blob/f4ba2f2/src/TimeFromBuilder.ts#L58)*
 
 Configure number of seconds to offset by
 
@@ -273,7 +273,7 @@ ___
 
 ▸ **time**(`time`: [Time](_time_.time.md)): *[Time](_time_.time.md)*
 
-*Defined in [TimeFromBuilder.ts:139](https://github.com/TerenceJefferies/STime/blob/bfe15dd/src/TimeFromBuilder.ts#L139)*
+*Defined in [TimeFromBuilder.ts:139](https://github.com/TerenceJefferies/STime/blob/f4ba2f2/src/TimeFromBuilder.ts#L139)*
 
 Get the configured time from the specified time
 
@@ -291,7 +291,7 @@ ___
 
 ▸ **years**(): *[TimeFromBuilder](_timefrombuilder_.timefrombuilder.md)*
 
-*Defined in [TimeFromBuilder.ts:90](https://github.com/TerenceJefferies/STime/blob/bfe15dd/src/TimeFromBuilder.ts#L90)*
+*Defined in [TimeFromBuilder.ts:90](https://github.com/TerenceJefferies/STime/blob/f4ba2f2/src/TimeFromBuilder.ts#L90)*
 
 Configures the year context
 

@@ -26,7 +26,7 @@ Minute unit of time
 
 *Implementation of [Unit](../interfaces/_unit_.unit.md)*
 
-*Defined in [Unit/Minute.ts:11](https://github.com/TerenceJefferies/STime/blob/bfe15dd/src/Unit/Minute.ts#L11)*
+*Defined in [Unit/Minute.ts:11](https://github.com/TerenceJefferies/STime/blob/f4ba2f2/src/Unit/Minute.ts#L11)*
 
 Create a new time, separated from the current time by the offset
 
