@@ -1,9 +1,9 @@
-import TimeFromNowBuilder from '../src/TimeFromNowBuilder';
+import TimeFromBuilder from '../src/TimeFromBuilder';
 import Time from '../src/Time';
 
-describe('TimeFromNowBuilder', () => {
+describe('TimeFromBuilder', () => {
   it('Should return a time 1 day in the future', () => {
-    const builder = new TimeFromNowBuilder(1);
+    const builder = new TimeFromBuilder(1);
     const time = builder.days().from().now();
 
     const date = new Date();
@@ -13,7 +13,7 @@ describe('TimeFromNowBuilder', () => {
   });
 
   it('Should return a time 7 days in the future', () => {
-    const builder = new TimeFromNowBuilder(7);
+    const builder = new TimeFromBuilder(7);
     const time = builder.days().from().now();
 
     const date = new Date();
@@ -23,7 +23,7 @@ describe('TimeFromNowBuilder', () => {
   });
 
   it('Should return a time 14 days in the past', () => {
-    const builder = new TimeFromNowBuilder(14);
+    const builder = new TimeFromBuilder(14);
     const time = builder.days().before().now();
 
     const date = new Date();
@@ -33,7 +33,7 @@ describe('TimeFromNowBuilder', () => {
   });
 
   it('Should return a time 1 day after the specified time', () => {
-    const builder = new TimeFromNowBuilder(1);
+    const builder = new TimeFromBuilder(1);
     const testDate = new Date();
     testDate.setDate(testDate.getDate() - 1);
     const sample = new Time(testDate);
@@ -43,7 +43,7 @@ describe('TimeFromNowBuilder', () => {
   });
 
   it('Should return a time 10 seconds after the specified time', () => {
-    const builder = new TimeFromNowBuilder(10);
+    const builder = new TimeFromBuilder(10);
     const sample = new Time(new Date('01-01-2020 00:00:30'));
     const time = builder.seconds().from().time(sample);
     
@@ -51,7 +51,7 @@ describe('TimeFromNowBuilder', () => {
   });
 
   it('Should return a time 10 minutes in the past', () => {
-    const builder = new TimeFromNowBuilder(30);
+    const builder = new TimeFromBuilder(30);
     const sample = new Time(new Date('01-01-2020 00:30:30'));
     const time = builder.minutes().before().time(sample);
     
@@ -59,7 +59,7 @@ describe('TimeFromNowBuilder', () => {
   });
 
   it('Should return a time 3 hours in the future', () => {
-    const builder = new TimeFromNowBuilder(3);
+    const builder = new TimeFromBuilder(3);
     const sample = new Time(new Date('01-01-2020 00:30:30'));
     const time = builder.hours().from().time(sample);
     
@@ -67,7 +67,7 @@ describe('TimeFromNowBuilder', () => {
   });
 
   it('Should return a time 3 months in the past', () => {
-    const builder = new TimeFromNowBuilder(3);
+    const builder = new TimeFromBuilder(3);
     const sample = new Time(new Date('01-01-2020 00:30:30'));
     const time = builder.months().before().time(sample);
     
@@ -75,7 +75,7 @@ describe('TimeFromNowBuilder', () => {
   });
 
   it('Should return a time 3 years in the future', () => {
-    const builder = new TimeFromNowBuilder(3);
+    const builder = new TimeFromBuilder(3);
     const sample = new Time(new Date('01-01-2020 00:30:30'));
     const time = builder.years().from().time(sample);
     

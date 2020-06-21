@@ -13,7 +13,7 @@
 * ["STime"](modules/_stime_.md)
 * ["Time"](modules/_time_.md)
 * ["TimeFactory"](modules/_timefactory_.md)
-* ["TimeFromNowBuilder"](modules/_timefromnowbuilder_.md)
+* ["TimeFromBuilder"](modules/_timefrombuilder_.md)
 * ["Unit"](modules/_unit_.md)
 * ["Unit/Day"](modules/_unit_day_.md)
 * ["Unit/Hour"](modules/_unit_hour_.md)

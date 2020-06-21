@@ -1,7 +1,7 @@
 import TimeFactory from './TimeFactory';
 import Time from './Time';
 import Difference from './Difference/Difference';
-import TimeFromNowBuilder from './TimeFromNowBuilder';
+import TimeFromBuilder from './TimeFromBuilder';
 import Generator from './Generator';
 
 /**
@@ -26,10 +26,10 @@ class STime extends Generator {
    * stime.create(14).days().before().now();
    * ```
    * @param {number} units Number of units to add or sutract to/from the current date
-   * @return {TimeFromNowBuilder}
+   * @return {TimeFromBuilder}
    */
-  create(units: number): TimeFromNowBuilder {
-    return new TimeFromNowBuilder(units);
+  create(units: number): TimeFromBuilder {
+    return new TimeFromBuilder(units);
   }
 
   /**

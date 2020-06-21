@@ -26,7 +26,7 @@ Second unit of time
 
 *Implementation of [Unit](../interfaces/_unit_.unit.md)*
 
-*Defined in [Unit/Second.ts:11](https://github.com/TerenceJefferies/STime/blob/7a08dcd/src/Unit/Second.ts#L11)*
+*Defined in [Unit/Second.ts:11](https://github.com/TerenceJefferies/STime/blob/78659c1/src/Unit/Second.ts#L11)*
 
 Create a new time, separated from the current time by the offset
 

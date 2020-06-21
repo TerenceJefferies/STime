@@ -11,11 +11,11 @@ import Year from './Unit/Year';
  * Builds a new time
  * @example
  * ```javascript
- * const builder = new TimeFromNowBuilder(1);
+ * const builder = new TimeFromBuilder(1);
  * const time = builder.days().from().now();
  * ```
  */
-class TimeFromNowBuilder {
+class TimeFromBuilder {
   readonly FUTURE = 1;
   readonly PAST = 2;
 
@@ -28,7 +28,7 @@ class TimeFromNowBuilder {
   origin: Time | null;
 
   /**
-   * Create a new TimeFromNowBuilder
+   * Create a new TimeFromBuilder
    * @param {number} fromCurrent Number of units to 
    * separate from the current date
    */
@@ -45,74 +45,74 @@ class TimeFromNowBuilder {
 
   /**
    * Configure number of days to offset by
-   * @return {TimeFromNowBuilder}
+   * @return {TimeFromBuilder}
    */
-  days(): TimeFromNowBuilder {
-    return new TimeFromNowBuilder(this.fromCurrent, new Day());
+  days(): TimeFromBuilder {
+    return new TimeFromBuilder(this.fromCurrent, new Day());
   }
 
   /**
    * Configure number of seconds to offset by
-   * @return {TimeFromNowBuilder}
+   * @return {TimeFromBuilder}
    */
-  seconds(): TimeFromNowBuilder {
-    return new TimeFromNowBuilder(this.fromCurrent, new Second());
+  seconds(): TimeFromBuilder {
+    return new TimeFromBuilder(this.fromCurrent, new Second());
   }
 
   /**
    * Configures the minute context
-   * @return {TimeFromNowBuilder}
+   * @return {TimeFromBuilder}
    */
-  minutes(): TimeFromNowBuilder {
-    return new TimeFromNowBuilder(this.fromCurrent, new Minute());
+  minutes(): TimeFromBuilder {
+    return new TimeFromBuilder(this.fromCurrent, new Minute());
   }
 
   /**
    * Configures the hour context
-   * @return {TimeFromNowBuilder}
+   * @return {TimeFromBuilder}
    */
-  hours(): TimeFromNowBuilder {
-    return new TimeFromNowBuilder(this.fromCurrent, new Hour());
+  hours(): TimeFromBuilder {
+    return new TimeFromBuilder(this.fromCurrent, new Hour());
   }
 
   /**
    * Configures the month context
-   * @return {TimeFromNowBuilder}
+   * @return {TimeFromBuilder}
    */
-  months(): TimeFromNowBuilder {
-    return new TimeFromNowBuilder(this.fromCurrent, new Month());
+  months(): TimeFromBuilder {
+    return new TimeFromBuilder(this.fromCurrent, new Month());
   }
 
   /**
    * Configures the year context
-   * @return {TimeFromNowBuilder}
+   * @return {TimeFromBuilder}
    */
-  years(): TimeFromNowBuilder {
-    return new TimeFromNowBuilder(this.fromCurrent, new Year());
+  years(): TimeFromBuilder {
+    return new TimeFromBuilder(this.fromCurrent, new Year());
   }
 
   /**
-   * Create a new TimeFromNowBuilder configured in a future context
-   * @return {TimeFromNowBuilder}
+   * Create a new TimeFromBuilder configured in a future context
+   * @return {TimeFromBuilder}
    */
-  from(): TimeFromNowBuilder {
+  from(): TimeFromBuilder {
     if (!this.unit) {
       throw new Error('Must provide type before specifying direction');
     }
 
-    return new TimeFromNowBuilder(this.fromCurrent, this.unit, this.FUTURE);
+    return new TimeFromBuilder(this.fromCurrent, this.unit, this.FUTURE);
   }
 
   /**
-   * Configured TimeFromNowBuilder in a past context
-   * @return {TimeFromNowBuilder}
+   * Configured TimeFromBuilder in a past context
+   * @return {TimeFromBuilder}
    */
-  before(): TimeFromNowBuilder {
+  before(): TimeFromBuilder {
     if (!this.unit) {
       throw new Error('Must provide type before specifying direction');
     }
 
-    return new TimeFromNowBuilder(this.fromCurrent, this.unit, this.PAST);
+    return new TimeFromBuilder(this.fromCurrent, this.unit, this.PAST);
   }
 
   /**
@@ -124,7 +124,7 @@ class TimeFromNowBuilder {
       throw new Error('Called final chain method before fully configuring instance');
     }
 
-    return (new TimeFromNowBuilder(
+    return (new TimeFromBuilder(
       this.fromCurrent, 
       this.unit, 
       this.direction, 
@@ -141,7 +141,7 @@ class TimeFromNowBuilder {
       throw new Error('Called final chain method before fully configuring instance');
     }
 
-    return (new TimeFromNowBuilder(
+    return (new TimeFromBuilder(
       this.fromCurrent, 
       this.unit, 
       this.direction, 
@@ -163,4 +163,4 @@ class TimeFromNowBuilder {
   }
 }
 
-export default TimeFromNowBuilder;
+export default TimeFromBuilder;
