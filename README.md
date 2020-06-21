@@ -1,3 +1,5 @@
+![Test](https://github.com/TerenceJefferies/STime/workflows/Test/badge.svg)
+
 # Simple Time (STime)
 
 STime is a simple javascript library used to generate and manipulate date/time. STime is designed to have a simple, readable API that is as pleasing to the eye as it is useful.
