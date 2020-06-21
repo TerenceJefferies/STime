@@ -3,6 +3,8 @@ name: Test
 on:
   push:
     branches: [ master ]
+  pull_request:
+    branches: [ master ]
     
 jobs:
   test:
@@ -10,6 +12,13 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-      
-    - name: Run tests
-      run: npm install && npm run lint && npm run test
+    - name: Test
+    - run: npm install
+    - run: npm run test
+  lint: 
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Lint
+    - run: npm install
+    - run: npm run lint
