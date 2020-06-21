@@ -1,7 +1,9 @@
+import Formattable from './Formattable';
+
 /**
  * A representation of time
  */
-class Time {
+class Time extends Formattable {
     /**
      * @var {Date} root Native date
      */
@@ -12,6 +14,7 @@ class Time {
      * @param {Date} root Native date to base the time on
      */
     constructor(root: Date) {
+      super();
       this.root = root;
     }
 

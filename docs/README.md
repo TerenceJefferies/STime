@@ -81,6 +81,7 @@ stime.fromDate(new Date('01-01-2020 14:00:00')); // A time at the specified date
 | [getYear](docs/classes/_time_.time.md#getyear) | The current year as an integer |
 | [getMonth](docs/classes/_time_.time.md#getmonth) | The current month as an integer |
 | [toTimestamp](docs/classes/_time_.time.md#toTimestamp) | Convert the time instance to a unix timestamp |
+| [format](docs/classes/_time_.time.md#format) | Format a time into a particular format |
 
 **Example**
 
@@ -88,4 +89,32 @@ stime.fromDate(new Date('01-01-2020 14:00:00')); // A time at the specified date
 const stime = require('stime');
 const time = stime.now();
 time.getDay(); // Todays day of the month
+```
+
+### Formatting a time
+
+**Available Formats**
+
+| Character(s) | Result | Example |
+| ------------ | ------ | ------- |
+| `YYYY` | Four-digit year | `2020` |
+| `YY` | Two-digit year | `20` |
+| `MMMM` | Full month name | `January` |
+| `MMM` | Three character month name | `Jan` |
+| `MM` | Month number with leading zeros | `01` |
+| `M` | Month number without leading zeros | `1` |
+| `DD` | Day number with leading zeros | `03` |
+| `D` | Day number without leading zeros | `3` |
+| `HH` | Hour with leading zeros | `07` |
+| `H` | Hour without leading zeros | `7` |
+| `II` | Minutes with leading zeros | `08` |
+| `I` | Minutes without leading zeros | `8` |
+| `SS` | Seconds with leading zeros | `09` |
+| `S` | Seconds without leading zeros | `9` |
+
+**Example**
+
+```javascript
+const stime = require('stime');
+stime.now().format('DD/MM/YYYY'); // 01/12/2020
 ```
