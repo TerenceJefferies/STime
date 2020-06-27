@@ -1,6 +1,6 @@
 {
   "name": "stime",
-  "version": "0.4.0",
+  "version": "1.0.0",
   "description": "Time package for easy time maniupulation",
   "main": "dist/Main.js",
   "types": "dist/Main.d.ts",
