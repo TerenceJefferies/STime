@@ -26,6 +26,7 @@ STime facade used to access the Simple Time
 * [difference](_stime_.stime.md#difference)
 * [fromDate](_stime_.stime.md#fromdate)
 * [now](_stime_.stime.md#now)
+* [parse](_stime_.stime.md#parse)
 * [tomorrow](_stime_.stime.md#tomorrow)
 * [yesterday](_stime_.stime.md#yesterday)
 
@@ -37,7 +38,7 @@ STime facade used to access the Simple Time
 
 *Overrides [Generator](_generator_.generator.md).[constructor](_generator_.generator.md#constructor)*
 
-*Defined in [STime.ts:10](https://github.com/TerenceJefferies/STime/blob/f4ba2f2/src/STime.ts#L10)*
+*Defined in [STime.ts:11](https://github.com/TerenceJefferies/STime/blob/b69ea6e/src/STime.ts#L11)*
 
 Create a new instance of STime
 
@@ -57,7 +58,7 @@ Name | Type | Description |
 
 *Inherited from [Generator](_generator_.generator.md).[timeFactory](_generator_.generator.md#readonly-timefactory)*
 
-*Defined in [Generator.ts:8](https://github.com/TerenceJefferies/STime/blob/f4ba2f2/src/Generator.ts#L8)*
+*Defined in [Generator.ts:8](https://github.com/TerenceJefferies/STime/blob/b69ea6e/src/Generator.ts#L8)*
 
 ## Methods
 
@@ -65,7 +66,7 @@ Name | Type | Description |
 
 ▸ **create**(`units`: number): *[TimeFromBuilder](_timefrombuilder_.timefrombuilder.md)*
 
-*Defined in [STime.ts:31](https://github.com/TerenceJefferies/STime/blob/f4ba2f2/src/STime.ts#L31)*
+*Defined in [STime.ts:32](https://github.com/TerenceJefferies/STime/blob/b69ea6e/src/STime.ts#L32)*
 
 Create a date before or after the current date
 
@@ -91,12 +92,12 @@ ___
 
 ▸ **difference**(`timeOne`: [Time](_time_.time.md), `timeTwo`: [Time](_time_.time.md)): *[Difference](_difference_difference_.difference.md)*
 
-*Defined in [STime.ts:46](https://github.com/TerenceJefferies/STime/blob/f4ba2f2/src/STime.ts#L46)*
+*Defined in [STime.ts:47](https://github.com/TerenceJefferies/STime/blob/b69ea6e/src/STime.ts#L47)*
 
 Get the difference between two times
 
 **`example`** 
-```
+```javascript
 const difference = stime.difference(timeOne, timeTwo);
 const secondsBetweenTimes = difference.getTotalSeconds();
 ```
@@ -120,7 +121,7 @@ ___
 
 *Inherited from [Generator](_generator_.generator.md).[fromDate](_generator_.generator.md#fromdate)*
 
-*Defined in [Generator.ts:57](https://github.com/TerenceJefferies/STime/blob/f4ba2f2/src/Generator.ts#L57)*
+*Defined in [Generator.ts:57](https://github.com/TerenceJefferies/STime/blob/b69ea6e/src/Generator.ts#L57)*
 
 Create a new Time from a native Date
 
@@ -148,7 +149,7 @@ ___
 
 *Inherited from [Generator](_generator_.generator.md).[now](_generator_.generator.md#now)*
 
-*Defined in [Generator.ts:27](https://github.com/TerenceJefferies/STime/blob/f4ba2f2/src/Generator.ts#L27)*
+*Defined in [Generator.ts:27](https://github.com/TerenceJefferies/STime/blob/b69ea6e/src/Generator.ts#L27)*
 
 Get the current time
 
@@ -164,13 +165,38 @@ Current time
 
 ___
 
+###  parse
+
+▸ **parse**(`date`: string, `format`: string): *[Time](_time_.time.md)*
+
+*Defined in [STime.ts:61](https://github.com/TerenceJefferies/STime/blob/b69ea6e/src/STime.ts#L61)*
+
+Parse a string into a time
+
+**`example`** 
+```javascript
+const time = stime.parse('13/01/2000 13:00:00');
+time.getYear(); // 2000
+```
+
+**Parameters:**
+
+Name | Type | Description |
+------ | ------ | ------ |
+`date` | string | String to convert into a time |
+`format` | string | Format to parse the string in  |
+
+**Returns:** *[Time](_time_.time.md)*
+
+___
+
 ###  tomorrow
 
 ▸ **tomorrow**(): *[Time](_time_.time.md)*
 
 *Inherited from [Generator](_generator_.generator.md).[tomorrow](_generator_.generator.md#tomorrow)*
 
-*Defined in [Generator.ts:43](https://github.com/TerenceJefferies/STime/blob/f4ba2f2/src/Generator.ts#L43)*
+*Defined in [Generator.ts:43](https://github.com/TerenceJefferies/STime/blob/b69ea6e/src/Generator.ts#L43)*
 
 Create a time representing tomorrow
 
@@ -186,7 +212,7 @@ ___
 
 *Inherited from [Generator](_generator_.generator.md).[yesterday](_generator_.generator.md#yesterday)*
 
-*Defined in [Generator.ts:35](https://github.com/TerenceJefferies/STime/blob/f4ba2f2/src/Generator.ts#L35)*
+*Defined in [Generator.ts:35](https://github.com/TerenceJefferies/STime/blob/b69ea6e/src/Generator.ts#L35)*
 
 Create a time representing yesterday at the current time
 

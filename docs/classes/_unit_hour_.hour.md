@@ -26,7 +26,7 @@ Unit of time representing an hour
 
 *Implementation of [Unit](../interfaces/_unit_.unit.md)*
 
-*Defined in [Unit/Hour.ts:11](https://github.com/TerenceJefferies/STime/blob/f4ba2f2/src/Unit/Hour.ts#L11)*
+*Defined in [Unit/Hour.ts:11](https://github.com/TerenceJefferies/STime/blob/b69ea6e/src/Unit/Hour.ts#L11)*
 
 Create a new time, separated from the current time by the offset
 
