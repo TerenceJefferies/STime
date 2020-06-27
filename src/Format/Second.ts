@@ -19,6 +19,13 @@ class Second extends Format {
     );
     return formatted;
   }
+
+  /**
+   * @inheritdoc
+   */
+  parse(parsable: string, format: string): number {
+    return this.parsePaddedAndUnpaddedUnits(parsable, format, 'S');
+  }
 }
 
 export default Second;

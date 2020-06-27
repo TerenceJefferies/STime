@@ -33,6 +33,30 @@ abstract class Format {
 
     return number.toString();
   }
+
+  /**
+   * 
+   * @param parsable 
+   * @param format 
+   * @param token 
+   */
+  protected parsePaddedAndUnpaddedUnits(parsable: string, format: string, token: string) {
+    let longSecondsPosition = format.indexOf(token.repeat(2));
+    if (longSecondsPosition > -1) {
+      return parseInt(parsable.substr(longSecondsPosition, 2));
+    }
+
+    let shortSecondsPosition = format.indexOf(token);
+    if (shortSecondsPosition > -1) {
+      const firstSecondPart = parsable.substr(shortSecondsPosition, 1);
+      if (parseInt(parsable[shortSecondsPosition + 1])) {
+        return parseInt(firstSecondPart + parsable[shortSecondsPosition + 1]);
+      }
+      return parseInt(firstSecondPart);
+    }
+
+    return 0;
+  }
 }
 
 export default Format;

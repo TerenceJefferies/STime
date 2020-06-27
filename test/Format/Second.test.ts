@@ -17,4 +17,31 @@ describe('Second', () => {
   
     expect(formatted).toEqual('7');
   });
+
+  it('Should parse 13 out of a string', () => {
+    const parsable = '15/12/1990 14:00:13';
+    const format = new Second();
+
+    const seconds = format.parse(parsable, 'DD/MM/YYYY HH:II:SS');
+    
+    expect(seconds).toEqual(13);
+  });
+
+  it('Should parse 14 out of a string with a S format', () => {
+    const parsable = '15/12/1990 14:00:14';
+    const format = new Second();
+
+    const seconds = format.parse(parsable, 'DD/MM/YYYY HH:II:S');
+    
+    expect(seconds).toEqual(14);
+  });
+
+  it('Should parse 5 out of a string with an S format', () => {
+    const parsable = '15/12/1990 14:00:5';
+    const format = new Second();
+
+    const seconds = format.parse(parsable, 'DD/MM/YYYY HH:II:S');
+    
+    expect(seconds).toEqual(5);
+  });
 });

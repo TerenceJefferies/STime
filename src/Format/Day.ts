@@ -19,6 +19,13 @@ class Day extends Format {
     );
     return formatted;
   }
+
+  /**
+   * @inheritdoc
+   */
+  parse(parsable: string, format: string) {
+    return this.parsePaddedAndUnpaddedUnits(parsable, format, 'D');
+  }
 }
 
 export default Day;

@@ -15,4 +15,13 @@ describe('Year', () => {
 
     expect(format.format(time, 'YY')).toEqual('19');
   });
+
+  it('Should return the hour number from YYYY fromat', () => {
+    const parsable = '15/12/1990 14:00:00';
+    const format = new Year();
+
+    const years = format.parse(parsable, 'DD/MM/YYYY H:II:SS');
+    
+    expect(years).toEqual(1990);
+  });
 });
