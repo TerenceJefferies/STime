@@ -133,6 +133,8 @@ stime.now().format('DD/MM/YYYY'); // 01/12/2020
 | `SS` | Seconds with leading zeros | `09` |
 | `S` | Seconds without leading zeros | `9` |
 
+**Example**
+
 ```javascript
 const stime = require('stime');
 stime.parse('13/01/2000', 'DD/MM/YYYY').getYear(); // 2000
