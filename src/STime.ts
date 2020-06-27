@@ -3,6 +3,7 @@ import Time from './Time';
 import Difference from './Difference/Difference';
 import TimeFromBuilder from './TimeFromBuilder';
 import Generator from './Generator';
+import Parser from './Parser';
 
 /**
  * STime facade used to access the Simple Time
@@ -35,7 +36,7 @@ class STime extends Generator {
   /**
    * Get the difference between two times
    * @example
-   * ```
+   * ```javascript
    * const difference = stime.difference(timeOne, timeTwo);
    * const secondsBetweenTimes = difference.getTotalSeconds();
    * ```
@@ -45,6 +46,20 @@ class STime extends Generator {
    */
   difference(timeOne: Time, timeTwo: Time): Difference {
     return new Difference(timeOne, timeTwo);
+  }
+
+  /**
+   * Parse a string into a time
+   * @example
+   * ```javascript
+   * const time = stime.parse('13/01/2000 13:00:00');
+   * time.getYear(); // 2000
+   * ```
+   * @param {string} date String to convert into a time
+   * @param {string} format Format to parse the string in
+   */
+  parse(date: string, format: string): Time {
+    return (new Parser(date, format)).parse();
   }
 }
 

@@ -20,7 +20,7 @@ class Year extends Format {
    * @inheritdoc
    */
   parse(parsable: string, format: string): number {
-    let longYearPosition = format.indexOf('Y'.repeat(4));
+    const longYearPosition = format.indexOf('Y'.repeat(4));
     if (longYearPosition > -1) {
       return parseInt(parsable.substr(longYearPosition, 4));
     }

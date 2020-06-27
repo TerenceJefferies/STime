@@ -5,7 +5,6 @@ import Formattable from '../Formattable';
  * Month format
  */
 class Month extends Format {
-
   private readonly monthMap = [
     {
       longName: 'January',
@@ -55,7 +54,7 @@ class Month extends Format {
       longName: 'December',
       shortName: 'Dec',
       number: 12,
-    }
+    },
   ];
 
   /**
@@ -82,20 +81,34 @@ class Month extends Format {
    * @inheritdoc
    */
   parse(parsable: string, format: string): number {
-    let longNameMonthPosition = format.indexOf('M'.repeat(4));
+    const longNameMonthPosition = format.indexOf('M'.repeat(4));
     if (longNameMonthPosition > -1) {
-      return this.parseLongMonthNumberFromParsable(longNameMonthPosition, parsable);
+      return this.parseLongMonthNumberFromParsable(
+          longNameMonthPosition,
+          parsable,
+      );
     }
 
-    let shortNameMonthPosition = format.indexOf('M'.repeat(3));
+    const shortNameMonthPosition = format.indexOf('M'.repeat(3));
     if (shortNameMonthPosition > -1) {
-      return this.parseShortMonthNumberFromParsable(longNameMonthPosition, parsable);
+      return this.parseShortMonthNumberFromParsable(
+          longNameMonthPosition,
+          parsable,
+      );
     }
-    
     return this.parsePaddedAndUnpaddedUnits(parsable, format, 'M');
   }
 
-  private parseShortMonthNumberFromParsable(position: number, parsable: string): number {
+  /**
+   * Parse a short month number from a parsable string
+   * @param {number} position
+   * @param {string} parsable
+   * @return {number} Short month number
+   */
+  private parseShortMonthNumberFromParsable(
+      position: number,
+      parsable: string,
+  ): number {
     const shortMonthName = this.parseMonthNameFromPosition(position, parsable);
     const mapEntry = this.monthMap.filter((entry) => {
       return entry.shortName.toUpperCase() == shortMonthName.toUpperCase();
@@ -108,8 +121,20 @@ class Month extends Format {
     return mapEntry[0].number;
   }
 
-  private parseLongMonthNumberFromParsable(position: number, parsable: string): number {
-    const longMonthName = this.parseMonthNameFromPosition(position, parsable);
+  /**
+   * Parse a long month number from a parsable string
+   * @param {number} position
+   * @param {string} parsable
+   * @return {number} Long month number
+   */
+  private parseLongMonthNumberFromParsable(
+      position: number,
+      parsable: string,
+  ): number {
+    const longMonthName = this.parseMonthNameFromPosition(
+        position,
+        parsable,
+    );
     const mapEntry = this.monthMap.filter((entry) => {
       return entry.longName.toUpperCase() == longMonthName.toUpperCase();
     });
@@ -128,7 +153,10 @@ class Month extends Format {
    * @param {string} parsable
    * @return {string} Long month name
    */
-  private parseMonthNameFromPosition(position: number, parsable: string): string {
+  private parseMonthNameFromPosition(
+      position: number,
+      parsable: string,
+  ): string {
     const focusString = parsable.substring(position);
     const matches = focusString.match(/([a-zA-Z]+)(\s|$)/i);
     if (!matches) {
