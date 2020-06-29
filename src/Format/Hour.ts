@@ -20,10 +20,13 @@ class Hour extends Format {
    * @param {string} format Format to use
    * @return {string} Formatted entity
    */
-  private applyTwentyFourHourFormatting(time: Formattable, format: string): string {
+  private applyTwentyFourHourFormatting(
+      time: Formattable,
+      format: string,
+  ): string {
     let formatted = format.replace(
-      /H{2}/g,
-      this.formatNumber(time.getHours(), true),
+        /H{2}/g,
+        this.formatNumber(time.getHours(), true),
     );
     formatted = formatted.replace(
         /H{1}/g,
@@ -45,12 +48,12 @@ class Hour extends Format {
     }
 
     let formatted = format.replace(
-      /h{2}/g,
-      this.formatNumber(hour, true)
+        /h{2}/g,
+        this.formatNumber(hour, true),
     );
     formatted = formatted.replace(
-      /h{1}/g,
-      this.formatNumber(hour, false)
+        /h{1}/g,
+        this.formatNumber(hour, false),
     );
 
     return formatted;
