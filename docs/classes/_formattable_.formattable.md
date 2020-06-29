@@ -32,7 +32,7 @@ Makes a class formattable
 
 • **root**: *Date*
 
-*Defined in [Formattable.ts:13](https://github.com/TerenceJefferies/STime/blob/c8213f3/src/Formattable.ts#L13)*
+*Defined in [Formattable.ts:13](https://github.com/TerenceJefferies/STime/blob/4756054/src/Formattable.ts#L13)*
 
 ## Methods
 
@@ -40,7 +40,7 @@ Makes a class formattable
 
 ▸ **format**(`format`: string): *string*
 
-*Defined in [Formattable.ts:30](https://github.com/TerenceJefferies/STime/blob/c8213f3/src/Formattable.ts#L30)*
+*Defined in [Formattable.ts:30](https://github.com/TerenceJefferies/STime/blob/4756054/src/Formattable.ts#L30)*
 
 Format the date into a string
 
@@ -65,7 +65,7 @@ ___
 
 ▸ **getDay**(): *number*
 
-*Defined in [Formattable.ts:17](https://github.com/TerenceJefferies/STime/blob/c8213f3/src/Formattable.ts#L17)*
+*Defined in [Formattable.ts:17](https://github.com/TerenceJefferies/STime/blob/4756054/src/Formattable.ts#L17)*
 
 **Returns:** *number*
 
@@ -75,7 +75,7 @@ ___
 
 ▸ **getHours**(): *number*
 
-*Defined in [Formattable.ts:15](https://github.com/TerenceJefferies/STime/blob/c8213f3/src/Formattable.ts#L15)*
+*Defined in [Formattable.ts:15](https://github.com/TerenceJefferies/STime/blob/4756054/src/Formattable.ts#L15)*
 
 **Returns:** *number*
 
@@ -85,7 +85,7 @@ ___
 
 ▸ **getMinutes**(): *number*
 
-*Defined in [Formattable.ts:14](https://github.com/TerenceJefferies/STime/blob/c8213f3/src/Formattable.ts#L14)*
+*Defined in [Formattable.ts:14](https://github.com/TerenceJefferies/STime/blob/4756054/src/Formattable.ts#L14)*
 
 **Returns:** *number*
 
@@ -95,7 +95,7 @@ ___
 
 ▸ **getMonth**(): *number*
 
-*Defined in [Formattable.ts:18](https://github.com/TerenceJefferies/STime/blob/c8213f3/src/Formattable.ts#L18)*
+*Defined in [Formattable.ts:18](https://github.com/TerenceJefferies/STime/blob/4756054/src/Formattable.ts#L18)*
 
 **Returns:** *number*
 
@@ -105,7 +105,7 @@ ___
 
 ▸ **getSeconds**(): *number*
 
-*Defined in [Formattable.ts:16](https://github.com/TerenceJefferies/STime/blob/c8213f3/src/Formattable.ts#L16)*
+*Defined in [Formattable.ts:16](https://github.com/TerenceJefferies/STime/blob/4756054/src/Formattable.ts#L16)*
 
 **Returns:** *number*
 
@@ -115,6 +115,6 @@ ___
 
 ▸ **getYear**(): *number*
 
-*Defined in [Formattable.ts:19](https://github.com/TerenceJefferies/STime/blob/c8213f3/src/Formattable.ts#L19)*
+*Defined in [Formattable.ts:19](https://github.com/TerenceJefferies/STime/blob/4756054/src/Formattable.ts#L19)*
 
 **Returns:** *number*

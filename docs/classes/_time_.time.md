@@ -37,7 +37,7 @@ A representation of time
 
 \+ **new Time**(`root`: Date): *[Time](_time_.time.md)*
 
-*Defined in [Time.ts:10](https://github.com/TerenceJefferies/STime/blob/c8213f3/src/Time.ts#L10)*
+*Defined in [Time.ts:10](https://github.com/TerenceJefferies/STime/blob/4756054/src/Time.ts#L10)*
 
 Create a new Time instance
 
@@ -57,7 +57,7 @@ Name | Type | Description |
 
 *Overrides [Formattable](_formattable_.formattable.md).[root](_formattable_.formattable.md#abstract-root)*
 
-*Defined in [Time.ts:10](https://github.com/TerenceJefferies/STime/blob/c8213f3/src/Time.ts#L10)*
+*Defined in [Time.ts:10](https://github.com/TerenceJefferies/STime/blob/4756054/src/Time.ts#L10)*
 
 **`var`** {Date} root Native date
 
@@ -69,7 +69,7 @@ Name | Type | Description |
 
 *Inherited from [Formattable](_formattable_.formattable.md).[format](_formattable_.formattable.md#format)*
 
-*Defined in [Formattable.ts:30](https://github.com/TerenceJefferies/STime/blob/c8213f3/src/Formattable.ts#L30)*
+*Defined in [Formattable.ts:30](https://github.com/TerenceJefferies/STime/blob/4756054/src/Formattable.ts#L30)*
 
 Format the date into a string
 
@@ -96,7 +96,7 @@ ___
 
 *Overrides [Formattable](_formattable_.formattable.md).[getDay](_formattable_.formattable.md#abstract-getday)*
 
-*Defined in [Time.ts:35](https://github.com/TerenceJefferies/STime/blob/c8213f3/src/Time.ts#L35)*
+*Defined in [Time.ts:35](https://github.com/TerenceJefferies/STime/blob/4756054/src/Time.ts#L35)*
 
 Get the day of the month
 
@@ -112,7 +112,7 @@ ___
 
 *Overrides [Formattable](_formattable_.formattable.md).[getHours](_formattable_.formattable.md#abstract-gethours)*
 
-*Defined in [Time.ts:75](https://github.com/TerenceJefferies/STime/blob/c8213f3/src/Time.ts#L75)*
+*Defined in [Time.ts:75](https://github.com/TerenceJefferies/STime/blob/4756054/src/Time.ts#L75)*
 
 Get hours
 
@@ -128,7 +128,7 @@ ___
 
 *Overrides [Formattable](_formattable_.formattable.md).[getMinutes](_formattable_.formattable.md#abstract-getminutes)*
 
-*Defined in [Time.ts:67](https://github.com/TerenceJefferies/STime/blob/c8213f3/src/Time.ts#L67)*
+*Defined in [Time.ts:67](https://github.com/TerenceJefferies/STime/blob/4756054/src/Time.ts#L67)*
 
 Get minutes
 
@@ -144,7 +144,7 @@ ___
 
 *Overrides [Formattable](_formattable_.formattable.md).[getMonth](_formattable_.formattable.md#abstract-getmonth)*
 
-*Defined in [Time.ts:43](https://github.com/TerenceJefferies/STime/blob/c8213f3/src/Time.ts#L43)*
+*Defined in [Time.ts:43](https://github.com/TerenceJefferies/STime/blob/4756054/src/Time.ts#L43)*
 
 Get the month number
 
@@ -160,7 +160,7 @@ ___
 
 *Overrides [Formattable](_formattable_.formattable.md).[getSeconds](_formattable_.formattable.md#abstract-getseconds)*
 
-*Defined in [Time.ts:59](https://github.com/TerenceJefferies/STime/blob/c8213f3/src/Time.ts#L59)*
+*Defined in [Time.ts:59](https://github.com/TerenceJefferies/STime/blob/4756054/src/Time.ts#L59)*
 
 Get the seconds
 
@@ -176,7 +176,7 @@ ___
 
 *Overrides [Formattable](_formattable_.formattable.md).[getYear](_formattable_.formattable.md#abstract-getyear)*
 
-*Defined in [Time.ts:51](https://github.com/TerenceJefferies/STime/blob/c8213f3/src/Time.ts#L51)*
+*Defined in [Time.ts:51](https://github.com/TerenceJefferies/STime/blob/4756054/src/Time.ts#L51)*
 
 Get the year
 
@@ -190,7 +190,7 @@ ___
 
 ▸ **toTimestamp**(): *number*
 
-*Defined in [Time.ts:27](https://github.com/TerenceJefferies/STime/blob/c8213f3/src/Time.ts#L27)*
+*Defined in [Time.ts:27](https://github.com/TerenceJefferies/STime/blob/4756054/src/Time.ts#L27)*
 
 Get unix timestamp representation
 

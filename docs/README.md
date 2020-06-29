@@ -107,6 +107,8 @@ time.getDay(); // Todays day of the month
 | `D` | Day number without leading zeros | `3` |
 | `HH` | Hour with leading zeros | `07` |
 | `H` | Hour without leading zeros | `7` |
+| `hh` | Twelve-hour hour with leading zeros | `01` |
+| `h` | Twelve-hour hour without leading zeros | `1` |
 | `II` | Minutes with leading zeros | `08` |
 | `I` | Minutes without leading zeros | `8` |
 | `SS` | Seconds with leading zeros | `09` |

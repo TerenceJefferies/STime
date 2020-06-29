@@ -14,6 +14,8 @@ Hour format
 
 ### Methods
 
+* [applyTwelveHourFormatting](_format_hour_.hour.md#private-applytwelvehourformatting)
+* [applyTwentyFourHourFormatting](_format_hour_.hour.md#private-applytwentyfourhourformatting)
 * [format](_format_hour_.hour.md#format)
 * [formatNumber](_format_hour_.hour.md#protected-formatnumber)
 * [parse](_format_hour_.hour.md#parse)
@@ -21,13 +23,55 @@ Hour format
 
 ## Methods
 
+### `Private` applyTwelveHourFormatting
+
+▸ **applyTwelveHourFormatting**(`time`: [Formattable](_formattable_.formattable.md), `format`: string): *string*
+
+*Defined in [Format/Hour.ts:41](https://github.com/TerenceJefferies/STime/blob/4756054/src/Format/Hour.ts#L41)*
+
+Apply twelve hour formatting to a format
+
+**Parameters:**
+
+Name | Type | Description |
+------ | ------ | ------ |
+`time` | [Formattable](_formattable_.formattable.md) | Format an hour in twelve hour format |
+`format` | string | Format to use |
+
+**Returns:** *string*
+
+Formatted format
+
+___
+
+### `Private` applyTwentyFourHourFormatting
+
+▸ **applyTwentyFourHourFormatting**(`time`: [Formattable](_formattable_.formattable.md), `format`: string): *string*
+
+*Defined in [Format/Hour.ts:23](https://github.com/TerenceJefferies/STime/blob/4756054/src/Format/Hour.ts#L23)*
+
+Apply twenty four hour formatting to a format
+
+**Parameters:**
+
+Name | Type | Description |
+------ | ------ | ------ |
+`time` | [Formattable](_formattable_.formattable.md) | Formattable entity to format |
+`format` | string | Format to use |
+
+**Returns:** *string*
+
+Formatted entity
+
+___
+
 ###  format
 
 ▸ **format**(`time`: [Formattable](_formattable_.formattable.md), `format`: string): *string*
 
 *Overrides [Format](_format_.format.md).[format](_format_.format.md#abstract-format)*
 
-*Defined in [Format/Hour.ts:11](https://github.com/TerenceJefferies/STime/blob/c8213f3/src/Format/Hour.ts#L11)*
+*Defined in [Format/Hour.ts:11](https://github.com/TerenceJefferies/STime/blob/4756054/src/Format/Hour.ts#L11)*
 
 **`inheritdoc`** 
 
@@ -48,7 +92,7 @@ ___
 
 *Inherited from [Year](_format_year_.year.md).[formatNumber](_format_year_.year.md#protected-formatnumber)*
 
-*Defined in [Format.ts:27](https://github.com/TerenceJefferies/STime/blob/c8213f3/src/Format.ts#L27)*
+*Defined in [Format.ts:27](https://github.com/TerenceJefferies/STime/blob/4756054/src/Format.ts#L27)*
 
 Format a number to a string and have it include or exclude
 leading zeros
@@ -72,7 +116,7 @@ ___
 
 *Overrides [Format](_format_.format.md).[parse](_format_.format.md#abstract-parse)*
 
-*Defined in [Format/Hour.ts:26](https://github.com/TerenceJefferies/STime/blob/c8213f3/src/Format/Hour.ts#L26)*
+*Defined in [Format/Hour.ts:62](https://github.com/TerenceJefferies/STime/blob/4756054/src/Format/Hour.ts#L62)*
 
 **`inheritdoc`** 
 
@@ -93,7 +137,7 @@ ___
 
 *Inherited from [Year](_format_year_.year.md).[parsePaddedAndUnpaddedUnits](_format_year_.year.md#protected-parsepaddedandunpaddedunits)*
 
-*Defined in [Format.ts:43](https://github.com/TerenceJefferies/STime/blob/c8213f3/src/Format.ts#L43)*
+*Defined in [Format.ts:43](https://github.com/TerenceJefferies/STime/blob/4756054/src/Format.ts#L43)*
 
 **Parameters:**
 

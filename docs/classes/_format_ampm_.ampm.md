@@ -2,6 +2,8 @@
 
 # Class: AmPm
 
+AmPm formatting
+
 ## Hierarchy
 
 * [Format](_format_.format.md)
@@ -26,7 +28,7 @@
 
 *Overrides [Format](_format_.format.md).[format](_format_.format.md#abstract-format)*
 
-*Defined in [Format/AmPm.ts:16](https://github.com/TerenceJefferies/STime/blob/c8213f3/src/Format/AmPm.ts#L16)*
+*Defined in [Format/AmPm.ts:18](https://github.com/TerenceJefferies/STime/blob/4756054/src/Format/AmPm.ts#L18)*
 
 **`inheritdoc`** 
 
@@ -47,7 +49,7 @@ ___
 
 *Inherited from [Year](_format_year_.year.md).[formatNumber](_format_year_.year.md#protected-formatnumber)*
 
-*Defined in [Format.ts:27](https://github.com/TerenceJefferies/STime/blob/c8213f3/src/Format.ts#L27)*
+*Defined in [Format.ts:27](https://github.com/TerenceJefferies/STime/blob/4756054/src/Format.ts#L27)*
 
 Format a number to a string and have it include or exclude
 leading zeros
@@ -69,7 +71,7 @@ ___
 
 ▸ **getAmOrPm**(`time`: [Formattable](_formattable_.formattable.md)): *string*
 
-*Defined in [Format/AmPm.ts:34](https://github.com/TerenceJefferies/STime/blob/c8213f3/src/Format/AmPm.ts#L34)*
+*Defined in [Format/AmPm.ts:36](https://github.com/TerenceJefferies/STime/blob/4756054/src/Format/AmPm.ts#L36)*
 
 Determine if the AM/PM symbol is AM or PM
 
@@ -91,7 +93,7 @@ ___
 
 *Overrides [Format](_format_.format.md).[parse](_format_.format.md#abstract-parse)*
 
-*Defined in [Format/AmPm.ts:9](https://github.com/TerenceJefferies/STime/blob/c8213f3/src/Format/AmPm.ts#L9)*
+*Defined in [Format/AmPm.ts:11](https://github.com/TerenceJefferies/STime/blob/4756054/src/Format/AmPm.ts#L11)*
 
 **`inheritdoc`** 
 
@@ -112,7 +114,7 @@ ___
 
 *Inherited from [Year](_format_year_.year.md).[parsePaddedAndUnpaddedUnits](_format_year_.year.md#protected-parsepaddedandunpaddedunits)*
 
-*Defined in [Format.ts:43](https://github.com/TerenceJefferies/STime/blob/c8213f3/src/Format.ts#L43)*
+*Defined in [Format.ts:43](https://github.com/TerenceJefferies/STime/blob/4756054/src/Format.ts#L43)*
 
 **Parameters:**
 
