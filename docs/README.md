@@ -111,10 +111,37 @@ time.getDay(); // Todays day of the month
 | `I` | Minutes without leading zeros | `8` |
 | `SS` | Seconds with leading zeros | `09` |
 | `S` | Seconds without leading zeros | `9` |
+| `P` | AM/PM Suffix, capitalized | `AM` |
+| `p` | AM/PM Suffix, lower-case | `pm` |
 
 **Example**
 
 ```javascript
 const stime = require('stime');
 stime.now().format('DD/MM/YYYY'); // 01/12/2020
+```
+
+### Parsing time from a string
+
+| Character(s) | Result | Example |
+| ------------ | ------ | ------- |
+| `YYYY` | Four-digit year | `2020` |
+| `MMMM` | Full month name | `January` |
+| `MMM` | Three character month name | `Jan` |
+| `MM` | Month number with leading zeros | `01` |
+| `M` | Month number without leading zeros | `1` |
+| `DD` | Day number with leading zeros | `03` |
+| `D` | Day number without leading zeros | `3` |
+| `HH` | Hour with leading zeros | `07` |
+| `H` | Hour without leading zeros | `7` |
+| `II` | Minutes with leading zeros | `08` |
+| `I` | Minutes without leading zeros | `8` |
+| `SS` | Seconds with leading zeros | `09` |
+| `S` | Seconds without leading zeros | `9` |
+
+**Example**
+
+```javascript
+const stime = require('stime');
+stime.parse('13/01/2000', 'DD/MM/YYYY').getYear(); // 2000
 ```

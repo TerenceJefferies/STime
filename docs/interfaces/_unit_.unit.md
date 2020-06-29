@@ -27,7 +27,7 @@
 
 ▸ **createIn**(`time`: [Time](../classes/_time_.time.md), `units`: number): *[Time](../classes/_time_.time.md)*
 
-*Defined in [Unit.ts:10](https://github.com/TerenceJefferies/STime/blob/b69ea6e/src/Unit.ts#L10)*
+*Defined in [Unit.ts:10](https://github.com/TerenceJefferies/STime/blob/c8213f3/src/Unit.ts#L10)*
 
 Create a new time, separated from the current time by the offset
 

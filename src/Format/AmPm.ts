@@ -1,13 +1,15 @@
 import Format from '../Format';
 import Formattable from '../Formattable';
 
+/**
+ * AmPm formatting
+ */
 class AmPm extends Format {
-
   /**
    * @inheritdoc
    */
   parse(parsable: string, format: string): number {
-    throw new Error("Method not implemented.");
+    throw new Error('Method not implemented.');
   }
 
   /**
@@ -21,7 +23,7 @@ class AmPm extends Format {
     );
     formatted = formatted.replace(
         /p/g,
-        amOrPm.toLowerCase()
+        amOrPm.toLowerCase(),
     );
     return formatted;
   }
@@ -35,7 +37,7 @@ class AmPm extends Format {
     if (time.getHours() < 12) {
       return 'AM';
     }
-    
+
     return 'PM';
   }
 }
