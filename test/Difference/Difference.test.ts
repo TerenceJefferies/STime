@@ -115,4 +115,13 @@ describe('Difference', () => {
 
         expect(Number.isInteger(diff.getTotalYears())).toBeTruthy();
     });
+
+    it('Should return 1 hour difference for timezones', () => {
+      const timeOne = new Time(new Date('01-01-2020 14:00:00 GMT+1:00'));
+      const timeTwo = new Time(new Date('01-01-2020 14:00:00 GMT+2:00'));
+
+      const diff = new Difference(timeOne, timeTwo);
+
+      expect(diff.getTotalHours()).toEqual(1);
+    });
 });
