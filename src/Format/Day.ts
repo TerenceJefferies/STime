@@ -23,7 +23,7 @@ class Day extends Format {
   /**
    * @inheritdoc
    */
-  parse(parsable: string, format: string) {
+  parse(parsable: string, format: string): number {
     return this.parsePaddedAndUnpaddedUnits(parsable, format, 'D');
   }
 }
