@@ -4,9 +4,9 @@ abstract class Format {
   /**
    * Parse a string into a time for the current format
    * @param {string} string String to parse
-   * @return {Time} Resultant time
+   * @return {number} Units found in string
    */
-  // parse(string: string): Time;
+  abstract parse(parsable: string, format: string): number;
 
   /**
    * Format a time into a format
