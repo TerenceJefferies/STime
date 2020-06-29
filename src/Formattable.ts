@@ -4,6 +4,7 @@ import Day from './Format/Day';
 import Hour from './Format/Hour';
 import Second from './Format/Second';
 import Minute from './Format/Minute';
+import AmPm from './Format/AmPm';
 
 /**
  * Makes a class formattable
@@ -33,6 +34,7 @@ abstract class Formattable {
     formatted = (new Hour()).format(this, formatted);
     formatted = (new Minute()).format(this, formatted);
     formatted = (new Second()).format(this, formatted);
+    formatted = (new AmPm()).format(this, formatted);
     return formatted;
   }
 }
