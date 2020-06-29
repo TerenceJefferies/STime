@@ -107,6 +107,8 @@ time.getDay(); // Todays day of the month
 | `I` | Minutes without leading zeros | `8` |
 | `SS` | Seconds with leading zeros | `09` |
 | `S` | Seconds without leading zeros | `9` |
+| `P` | AM/PM Suffix, capitalized | `AM` |
+| `p` | AM/PM Suffix, lower-case | `pm` |
 
 **Example**
 
