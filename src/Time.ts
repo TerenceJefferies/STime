@@ -75,6 +75,15 @@ class Time extends Formattable {
     getHours(): number {
       return this.root.getHours();
     }
+
+    /**
+     * Get the time as a locale string
+     * @param {string} locales Locales to get the string for
+     * @param {any} options
+     */
+    toLocaleString(locales: string, options: any): string {
+      return this.root.toLocaleString(locales, options);
+    }
 }
 
 export default Time;

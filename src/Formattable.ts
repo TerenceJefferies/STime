@@ -10,13 +10,13 @@ import AmPm from './Format/AmPm';
  * Makes a class formattable
  */
 abstract class Formattable {
-  abstract root: Date;
   abstract getMinutes(): number;
   abstract getHours(): number;
   abstract getSeconds(): number;
   abstract getDay(): number;
   abstract getMonth(): number;
   abstract getYear(): number;
+  abstract toLocaleString(locales: string, options: any): string;
 
   /**
    * Format the date into a string

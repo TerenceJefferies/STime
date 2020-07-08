@@ -172,7 +172,7 @@ class Month extends Format {
    * @return {string} Formatted string including months
    */
   private getMonthName(type: string, time: Formattable): string {
-    return time.root.toLocaleString('default', {month: type});
+    return time.toLocaleString('default', {month: type});
   }
 }
 
