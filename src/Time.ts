@@ -77,6 +77,14 @@ class Time extends Formattable {
     }
 
     /**
+     * Get day of week
+     * @return {number} 0-6 / Sunday-Saturday
+     */
+    getDayOfWeek(): number {
+      return this.root.getDay();
+    }
+
+    /**
      * Get the time as a locale string
      * @param {string} locales Locales to get the string for
      * @param {any} options

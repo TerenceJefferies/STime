@@ -51,6 +51,13 @@ describe('Time', () => {
 
         expect(time.getHours()).toEqual(fixture);
     });
+
+    it('Should return 4 for a date on wednesday', () => {
+      const date = new Date('2019-02-07 00:00:00');
+      const time = new Time(date);
+
+      expect(time.getDayOfWeek()).toEqual(4);
+    });
 });
 
 describe('Time Formatting', () => {
