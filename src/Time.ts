@@ -7,7 +7,7 @@ class Time extends Formattable {
     /**
      * @var {Date} root Native date
      */
-    readonly root: Date;
+    private readonly root: Date;
 
     /**
      * Create a new Time instance
