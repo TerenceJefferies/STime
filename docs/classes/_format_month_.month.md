@@ -83,7 +83,7 @@ Month format
     },
   ]
 
-*Defined in [Format/Month.ts:8](https://github.com/TerenceJefferies/STime/blob/4756054/src/Format/Month.ts#L8)*
+*Defined in [Format/Month.ts:8](https://github.com/TerenceJefferies/STime/blob/2958401/src/Format/Month.ts#L8)*
 
 ## Methods
 
@@ -93,7 +93,7 @@ Month format
 
 *Overrides [Format](_format_.format.md).[format](_format_.format.md#abstract-format)*
 
-*Defined in [Format/Month.ts:63](https://github.com/TerenceJefferies/STime/blob/4756054/src/Format/Month.ts#L63)*
+*Defined in [Format/Month.ts:63](https://github.com/TerenceJefferies/STime/blob/2958401/src/Format/Month.ts#L63)*
 
 **`inheritdoc`** 
 
@@ -114,7 +114,7 @@ ___
 
 *Inherited from [Year](_format_year_.year.md).[formatNumber](_format_year_.year.md#protected-formatnumber)*
 
-*Defined in [Format.ts:27](https://github.com/TerenceJefferies/STime/blob/4756054/src/Format.ts#L27)*
+*Defined in [Format.ts:27](https://github.com/TerenceJefferies/STime/blob/2958401/src/Format.ts#L27)*
 
 Format a number to a string and have it include or exclude
 leading zeros
@@ -136,7 +136,7 @@ ___
 
 ▸ **getMonthName**(`type`: string, `time`: [Formattable](_formattable_.formattable.md)): *string*
 
-*Defined in [Format/Month.ts:174](https://github.com/TerenceJefferies/STime/blob/4756054/src/Format/Month.ts#L174)*
+*Defined in [Format/Month.ts:177](https://github.com/TerenceJefferies/STime/blob/2958401/src/Format/Month.ts#L177)*
 
 Get a month name in a particular format
 
@@ -159,7 +159,7 @@ ___
 
 *Overrides [Format](_format_.format.md).[parse](_format_.format.md#abstract-parse)*
 
-*Defined in [Format/Month.ts:83](https://github.com/TerenceJefferies/STime/blob/4756054/src/Format/Month.ts#L83)*
+*Defined in [Format/Month.ts:86](https://github.com/TerenceJefferies/STime/blob/2958401/src/Format/Month.ts#L86)*
 
 **`inheritdoc`** 
 
@@ -178,7 +178,7 @@ ___
 
 ▸ **parseLongMonthNumberFromParsable**(`position`: number, `parsable`: string): *number*
 
-*Defined in [Format/Month.ts:130](https://github.com/TerenceJefferies/STime/blob/4756054/src/Format/Month.ts#L130)*
+*Defined in [Format/Month.ts:133](https://github.com/TerenceJefferies/STime/blob/2958401/src/Format/Month.ts#L133)*
 
 Parse a long month number from a parsable string
 
@@ -199,7 +199,7 @@ ___
 
 ▸ **parseMonthNameFromPosition**(`position`: number, `parsable`: string): *string*
 
-*Defined in [Format/Month.ts:156](https://github.com/TerenceJefferies/STime/blob/4756054/src/Format/Month.ts#L156)*
+*Defined in [Format/Month.ts:159](https://github.com/TerenceJefferies/STime/blob/2958401/src/Format/Month.ts#L159)*
 
 Parse a month name starting at a position in the
 parsable string.
@@ -223,7 +223,7 @@ ___
 
 *Inherited from [Year](_format_year_.year.md).[parsePaddedAndUnpaddedUnits](_format_year_.year.md#protected-parsepaddedandunpaddedunits)*
 
-*Defined in [Format.ts:43](https://github.com/TerenceJefferies/STime/blob/4756054/src/Format.ts#L43)*
+*Defined in [Format.ts:43](https://github.com/TerenceJefferies/STime/blob/2958401/src/Format.ts#L43)*
 
 **Parameters:**
 
@@ -241,7 +241,7 @@ ___
 
 ▸ **parseShortMonthNumberFromParsable**(`position`: number, `parsable`: string): *number*
 
-*Defined in [Format/Month.ts:108](https://github.com/TerenceJefferies/STime/blob/4756054/src/Format/Month.ts#L108)*
+*Defined in [Format/Month.ts:111](https://github.com/TerenceJefferies/STime/blob/2958401/src/Format/Month.ts#L111)*
 
 Parse a short month number from a parsable string
 

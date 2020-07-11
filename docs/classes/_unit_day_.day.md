@@ -26,7 +26,7 @@ Day unit of time
 
 *Implementation of [Unit](../interfaces/_unit_.unit.md)*
 
-*Defined in [Unit/Day.ts:11](https://github.com/TerenceJefferies/STime/blob/4756054/src/Unit/Day.ts#L11)*
+*Defined in [Unit/Day.ts:11](https://github.com/TerenceJefferies/STime/blob/2958401/src/Unit/Day.ts#L11)*
 
 Create a new time, separated from the current time by the offset
 

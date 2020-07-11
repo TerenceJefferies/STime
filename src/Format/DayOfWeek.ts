@@ -55,11 +55,11 @@ class DayOfWeek extends Format {
    */
   format(time: Formattable, format: string): string {
     let formatted = format.replace(
-        /L{1}/g,
+        /:weekday:/g,
         this.getFullDayName(time.getDayOfWeek()),
     );
     formatted = formatted.replace(
-        /l{1}/g,
+        /:shortWeekday:/g,
         this.getShortDayName(time.getDayOfWeek()),
     );
     return formatted;

@@ -5,7 +5,7 @@ describe('Second', () => {
   it('Should return the second number with leading zeros', () => {
     const time = new Time(new Date('06-09-20 03:00:05'));
     const format = new Second();
-    const formatted = time.format(':leadingSeconds:');
+    const formatted = time.format(':leadingSecond:');
   
     expect(formatted).toEqual('05');
   });
@@ -13,7 +13,7 @@ describe('Second', () => {
   it('Should return the second number without leading zeros', () => {
     const time = new Time(new Date('06-09-20 09:00:07'));
     const format = new Second();
-    const formatted = time.format(':seconds:');
+    const formatted = time.format(':second:');
   
     expect(formatted).toEqual('7');
   });

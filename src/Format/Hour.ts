@@ -25,11 +25,11 @@ class Hour extends Format {
       format: string,
   ): string {
     let formatted = format.replace(
-        /H{2}/g,
+        /:leadingHour:/g,
         this.formatNumber(time.getHours(), true),
     );
     formatted = formatted.replace(
-        /H{1}/g,
+        /:hour:/g,
         this.formatNumber(time.getHours(), false),
     );
     return formatted;
@@ -48,11 +48,11 @@ class Hour extends Format {
     }
 
     let formatted = format.replace(
-        /h{2}/g,
+        /:leadingHourTwelve:/g,
         this.formatNumber(hour, true),
     );
     formatted = formatted.replace(
-        /h{1}/g,
+        /:hourTwelve:/g,
         this.formatNumber(hour, false),
     );
 

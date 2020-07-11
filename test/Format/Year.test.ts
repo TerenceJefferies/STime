@@ -6,17 +6,17 @@ describe('Year', () => {
     const time = new Time(new Date('01-01-2020 00:00:00'));
     const format = new Year();
 
-    expect(format.format(time, 'YYYY')).toEqual('2020');
+    expect(format.format(time, ':fullYear:')).toEqual('2020');
   });
 
   it('Should return a two digit year', () => {
     const time = new Time(new Date('01-01-2019 00:00:00'));
     const format = new Year();
 
-    expect(format.format(time, 'YY')).toEqual('19');
+    expect(format.format(time, ':shortYear:')).toEqual('19');
   });
 
-  it('Should return the hour number from YYYY fromat', () => {
+  it('Should return the year number from YYYY fromat', () => {
     const parsable = '15/12/1990 14:00:00';
     const format = new Year();
 

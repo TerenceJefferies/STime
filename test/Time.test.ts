@@ -63,29 +63,36 @@ describe('Time', () => {
 describe('Time Formatting', () => {
   it('Should return 01-01-2020', () => {
     const time = new Time(new Date('01-01-2020 00:00:00'));
-    const formatted = time.format('DD/MM/YYYY');
+    const formatted = time.format(':leadingDay:/:leadingMonth:/:fullYear:');
 
     expect(formatted).toEqual('01/01/2020');
   });
 
   it('Should return 04/06/1955 19:55:27', () => {
     const time = new Time(new Date('06-04-1955 19:55:27'));
-    const formatted = time.format('DD/MM/YYYY HH:II:SS');
+    const formatted = time.format(':leadingDay:/:leadingMonth:/:fullYear: :leadingHour:::leadingMinute:::leadingSecond:');
 
     expect(formatted).toEqual('04/06/1955 19:55:27');
   });
 
   it('Should return 04/06/1955 19:55:27 PM', () => {
     const time = new Time(new Date('06-04-1955 19:55:27'));
-    const formatted = time.format('DD/MM/YYYY HH:II:SS P');
+    const formatted = time.format(':leadingDay:/:leadingMonth:/:fullYear: :leadingHour:::leadingMinute:::leadingSecond: :amPmUpper:');
 
     expect(formatted).toEqual('04/06/1955 19:55:27 PM');
   });
 
   it('Should return 04/06/1955 08:55:27 AM', () => {
     const time = new Time(new Date('06-04-1955 08:55:27'));
-    const formatted = time.format('DD/MM/YYYY HH:II:SS P');
+    const formatted = time.format(':leadingDay:/:leadingMonth:/:fullYear: :leadingHour:::leadingMinute:::leadingSecond: :amPmUpper:');
 
     expect(formatted).toEqual('04/06/1955 08:55:27 AM');
+  });
+
+  it('Should return Thursday 30 July', () => {
+    const time = new Time(new Date('2020-07-30 08:55:27'));
+    const formatted = time.format(':weekday: :leadingDay: :monthName:');
+
+    expect(formatted).toEqual('Thursday 30 July');
   });
 });

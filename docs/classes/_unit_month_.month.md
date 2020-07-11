@@ -26,7 +26,7 @@ Month unit of time
 
 *Implementation of [Unit](../interfaces/_unit_.unit.md)*
 
-*Defined in [Unit/Month.ts:11](https://github.com/TerenceJefferies/STime/blob/4756054/src/Unit/Month.ts#L11)*
+*Defined in [Unit/Month.ts:11](https://github.com/TerenceJefferies/STime/blob/2958401/src/Unit/Month.ts#L11)*
 
 Create a new time, separated from the current time by the offset
 

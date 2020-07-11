@@ -20,6 +20,8 @@
 
   ↳ [AmPm](_format_ampm_.ampm.md)
 
+  ↳ [DayOfWeek](_format_dayofweek_.dayofweek.md)
+
 ## Index
 
 ### Methods
@@ -35,7 +37,7 @@
 
 ▸ **format**(`time`: [Time](_time_.time.md), `format`: string): *string*
 
-*Defined in [Format.ts:17](https://github.com/TerenceJefferies/STime/blob/4756054/src/Format.ts#L17)*
+*Defined in [Format.ts:17](https://github.com/TerenceJefferies/STime/blob/2958401/src/Format.ts#L17)*
 
 Format a time into a format
 
@@ -56,7 +58,7 @@ ___
 
 ▸ **formatNumber**(`number`: number, `leadingZero`: boolean): *string*
 
-*Defined in [Format.ts:27](https://github.com/TerenceJefferies/STime/blob/4756054/src/Format.ts#L27)*
+*Defined in [Format.ts:27](https://github.com/TerenceJefferies/STime/blob/2958401/src/Format.ts#L27)*
 
 Format a number to a string and have it include or exclude
 leading zeros
@@ -78,7 +80,7 @@ ___
 
 ▸ **parse**(`parsable`: string, `format`: string): *number*
 
-*Defined in [Format.ts:9](https://github.com/TerenceJefferies/STime/blob/4756054/src/Format.ts#L9)*
+*Defined in [Format.ts:9](https://github.com/TerenceJefferies/STime/blob/2958401/src/Format.ts#L9)*
 
 Parse a string into a time for the current format
 
@@ -99,7 +101,7 @@ ___
 
 ▸ **parsePaddedAndUnpaddedUnits**(`parsable`: string, `format`: string, `token`: string): *number*
 
-*Defined in [Format.ts:43](https://github.com/TerenceJefferies/STime/blob/4756054/src/Format.ts#L43)*
+*Defined in [Format.ts:43](https://github.com/TerenceJefferies/STime/blob/2958401/src/Format.ts#L43)*
 
 **Parameters:**
 

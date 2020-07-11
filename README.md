@@ -93,18 +93,18 @@ time.getDay(); // Todays day of the month
 
 | Character(s) | Result | Example |
 | ------------ | ------ | ------- |
-| `YYYY` | Four-digit year | `2020` |
-| `YY` | Two-digit year | `20` |
+| `:fullYear:` | Four-digit year | `2020` |
+| `:shortYear:` | Two-digit year | `20` |
 | `:monthName:` | Full month name | `January` |
 | `:shortMonthName:` | Three character month name | `Jan` |
 | `:leadingMonth:` | Month number with leading zeros | `01` |
 | `:month:` | Month number without leading zeros | `1` |
 | `:leadingDay:` | Day number with leading zeros | `03` |
 | `:day:` | Day number without leading zeros | `3` |
-| `HH` | Hour with leading zeros | `07` |
-| `H` | Hour without leading zeros | `7` |
-| `hh` | Twelve-hour hour with leading zeros | `01` |
-| `h` | Twelve-hour hour without leading zeros | `1` |
+| `:longHourTwentyFour:` | Hour with leading zeros | `07` |
+| `:hour:` | Hour without leading zeros | `7` |
+| `:longHourTwelve:` | Twelve-hour hour with leading zeros | `01` |
+| `:shortHour:` | Twelve-hour hour without leading zeros | `1` |
 | `:leadingMinutes:` | Minutes with leading zeros | `08` |
 | `:minutes:` | Minutes without leading zeros | `8` |
 | `:leadingSeconds:` | Seconds with leading zeros | `09` |
@@ -116,7 +116,7 @@ time.getDay(); // Todays day of the month
 
 ```javascript
 const stime = require('stime');
-stime.now().format('DD/MM/YYYY'); // 01/12/2020
+stime.now().format(':leadingDay:/:leadingMonth:/:fullYear:'); // 01/12/2020
 ```
 
 ### Parsing time from a string

@@ -11,8 +11,11 @@ class Year extends Format {
    */
   format(time: Formattable, format: string): string {
     const year = time.getYear().toString();
-    let formatted = format.replace(/Y{4}/g, year);
-    formatted = formatted.replace(/Y{2}/g, year.substring(2, year.length));
+    let formatted = format.replace(/:fullYear:/g, year);
+    formatted = formatted.replace(
+        /:shortYear:/g,
+        year.substring(2, year.length),
+    );
     return formatted;
   }
 

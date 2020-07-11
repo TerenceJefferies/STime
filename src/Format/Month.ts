@@ -61,7 +61,10 @@ class Month extends Format {
    * @inheritdoc
    */
   format(time: Formattable, format: string): string {
-    let formatted = format.replace(/:monthName:/g, this.getMonthName('long', time));
+    let formatted = format.replace(
+        /:monthName:/g,
+        this.getMonthName('long', time),
+    );
     formatted = formatted.replace(
         /:shortMonthName:/g,
         this.getMonthName('short', time),

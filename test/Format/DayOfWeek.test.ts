@@ -7,7 +7,7 @@ describe('Day Of Week', () => {
     const time = new Time(date);
     const format = new DayOfWeek();
 
-    const result = format.format(time, 'L');
+    const result = format.format(time, ':weekday:');
 
     expect(result).toEqual('Tuesday');
   });
@@ -17,7 +17,7 @@ describe('Day Of Week', () => {
     const time = new Time(date);
     const format = new DayOfWeek();
 
-    const result = format.format(time, 'l');
+    const result = format.format(time, ':shortWeekday:');
 
     expect(result).toEqual('Fri');
   });

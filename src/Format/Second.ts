@@ -10,11 +10,11 @@ class Second extends Format {
    */
   format(time: Formattable, format: string): string {
     let formatted = format.replace(
-        /:leadingSeconds:/g,
+        /:leadingSecond:/g,
         this.formatNumber(time.getSeconds(), true),
     );
     formatted = formatted.replace(
-        /:seconds:/g,
+        /:second:/g,
         this.formatNumber(time.getSeconds(), false),
     );
     return formatted;

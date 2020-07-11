@@ -12,6 +12,7 @@
 * ["Format"](modules/_format_.md)
 * ["Format/AmPm"](modules/_format_ampm_.md)
 * ["Format/Day"](modules/_format_day_.md)
+* ["Format/DayOfWeek"](modules/_format_dayofweek_.md)
 * ["Format/Hour"](modules/_format_hour_.md)
 * ["Format/Minute"](modules/_format_minute_.md)
 * ["Format/Month"](modules/_format_month_.md)

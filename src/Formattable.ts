@@ -5,6 +5,7 @@ import Hour from './Format/Hour';
 import Second from './Format/Second';
 import Minute from './Format/Minute';
 import AmPm from './Format/AmPm';
+import DayOfWeek from './Format/DayOfWeek';
 
 /**
  * Makes a class formattable
@@ -17,12 +18,13 @@ abstract class Formattable {
   abstract getMonth(): number;
   abstract getYear(): number;
   abstract toLocaleString(locales: string, options: any): string;
+  abstract getDayOfWeek(): number;
 
   /**
    * Format the date into a string
    * @example
    * ```javascript
-   * time.format('DD/MM/YYYY'); // 01-01-2020
+   * time.format(':leadingDay:/:leadingMonth:/:fullYear:'); // 01/01/2020
    * ```
    * @param {string} format Format to turn the date into.
    * @return {string} Formatted date
@@ -35,6 +37,7 @@ abstract class Formattable {
     formatted = (new Minute()).format(this, formatted);
     formatted = (new Second()).format(this, formatted);
     formatted = (new AmPm()).format(this, formatted);
+    formatted = (new DayOfWeek()).format(this, formatted);
     return formatted;
   }
 }
