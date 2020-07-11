@@ -10,11 +10,11 @@ class Day extends Format {
    */
   format(time: Formattable, format: string): string {
     let formatted = format.replace(
-        /D{2}/g,
+        /:leadingDay:/g,
         this.formatNumber(time.getDay(), true),
     );
     formatted = formatted.replace(
-        /D{1}/g,
+        /:day:/g,
         this.formatNumber(time.getDay(), false),
     );
     return formatted;
