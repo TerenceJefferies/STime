@@ -61,17 +61,17 @@ class Month extends Format {
    * @inheritdoc
    */
   format(time: Formattable, format: string): string {
-    let formatted = format.replace(/M{4}/g, this.getMonthName('long', time));
+    let formatted = format.replace(/:monthName:/g, this.getMonthName('long', time));
     formatted = formatted.replace(
-        /M{3}/g,
+        /:shortMonthName:/g,
         this.getMonthName('short', time),
     );
     formatted = formatted.replace(
-        /M{2}/g,
+        /:leadingMonth:/g,
         this.formatNumber(time.getMonth(), true),
     );
     formatted = formatted.replace(
-        /M{1}/g,
+        /:month:/g,
         this.formatNumber(time.getMonth(), false),
     );
     return formatted;
