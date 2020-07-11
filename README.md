@@ -99,8 +99,8 @@ time.getDay(); // Todays day of the month
 | `MMM` | Three character month name | `Jan` |
 | `MM` | Month number with leading zeros | `01` |
 | `M` | Month number without leading zeros | `1` |
-| `DD` | Day number with leading zeros | `03` |
-| `D` | Day number without leading zeros | `3` |
+| `:leadingDay:` | Day number with leading zeros | `03` |
+| `:day:` | Day number without leading zeros | `3` |
 | `HH` | Hour with leading zeros | `07` |
 | `H` | Hour without leading zeros | `7` |
 | `hh` | Twelve-hour hour with leading zeros | `01` |
@@ -109,8 +109,8 @@ time.getDay(); // Todays day of the month
 | `I` | Minutes without leading zeros | `8` |
 | `SS` | Seconds with leading zeros | `09` |
 | `S` | Seconds without leading zeros | `9` |
-| `P` | AM/PM Suffix, capitalized | `AM` |
-| `p` | AM/PM Suffix, lower-case | `pm` |
+| `:amPmUpper:` | AM/PM Suffix, capitalized | `AM` |
+| `:amPmLower:` | AM/PM Suffix, lower-case | `pm` |
 
 **Example**
 

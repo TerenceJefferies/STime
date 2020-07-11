@@ -6,7 +6,7 @@ describe('AmPm', () => {
     const format = new AmPm();
     const time = new Time(new Date('01-01-2000 09:00:00'));
 
-    const result = format.format(time, 'P');
+    const result = format.format(time, ':amPmUpper:');
 
     expect(result).toEqual('AM');
   });
@@ -15,7 +15,7 @@ describe('AmPm', () => {
     const format = new AmPm();
     const time = new Time(new Date('01-01-2000 13:00:00'));
 
-    const result = format.format(time, 'P');
+    const result = format.format(time, ':amPmUpper:');
 
     expect(result).toEqual('PM');
   });
@@ -24,7 +24,7 @@ describe('AmPm', () => {
     const format = new AmPm();
     const time = new Time(new Date('01-01-2000 02:00:00'));
 
-    const result = format.format(time, 'p');
+    const result = format.format(time, ':amPmLower:');
 
     expect(result).toEqual('am');
   });
@@ -33,7 +33,7 @@ describe('AmPm', () => {
     const format = new AmPm();
     const time = new Time(new Date('01-01-2000 20:00:00'));
 
-    const result = format.format(time, 'p');
+    const result = format.format(time, ':amPmLower:');
 
     expect(result).toEqual('pm');
   });

@@ -18,11 +18,11 @@ class AmPm extends Format {
   format(time: Formattable, format: string): string {
     const amOrPm = this.getAmOrPm(time);
     let formatted = format.replace(
-        /P/g,
+        /:amPmUpper:/g,
         amOrPm.toUpperCase(),
     );
     formatted = formatted.replace(
-        /p/g,
+        /:amPmLower:/g,
         amOrPm.toLowerCase(),
     );
     return formatted;
