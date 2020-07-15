@@ -12,7 +12,10 @@ class Year extends Format {
    */
   format(time: Formattable, format: string): string {
     const year = time.getYear().toString();
-    let formatted = format.replace(new RegExp(Formats.FOUR_DIGIT_YEAR, 'g'), year);
+    let formatted = format.replace(
+        new RegExp(Formats.FOUR_DIGIT_YEAR, 'g'),
+        year,
+    );
     formatted = formatted.replace(
         new RegExp(Formats.TWO_DIGIT_YEAR, 'g'),
         year.substring(2, year.length),
