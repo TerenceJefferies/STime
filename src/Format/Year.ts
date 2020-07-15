@@ -1,6 +1,7 @@
 import Format from '../Format';
 import Formattable from '../Formattable';
 import TimeFromBuilder from '../TimeFromBuilder';
+import Formats from './Formats';
 
 /**
  * Year format
@@ -11,9 +12,9 @@ class Year extends Format {
    */
   format(time: Formattable, format: string): string {
     const year = time.getYear().toString();
-    let formatted = format.replace(/:fullYear:/g, year);
+    let formatted = format.replace(new RegExp(Formats.FOUR_DIGIT_YEAR, 'g'), year);
     formatted = formatted.replace(
-        /:shortYear:/g,
+        new RegExp(Formats.TWO_DIGIT_YEAR, 'g'),
         year.substring(2, year.length),
     );
     return formatted;
