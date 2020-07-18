@@ -1,11 +1,12 @@
 import Time from '../../src/Time';
 import Month from '../../src/Format/Month';
+import Formats from '../../src/Format/Formats';
 
 describe('Month', () => {
   it('Should return the full month name', () => {
     const time = new Time(new Date('01-01-20 00:00:00'));
     const format = new Month();
-    const formatted = format.format(time, ':monthName:');
+    const formatted = format.format(time, Formats.FULL_MONTH_NAME);
 
     expect(formatted).toEqual('January');
   });
@@ -13,7 +14,7 @@ describe('Month', () => {
   it('Should return the 3 character month name', () => {
     const time = new Time(new Date('12-01-20 00:00:00'));
     const format = new Month();
-    const formatted = format.format(time, ':shortMonthName:');
+    const formatted = format.format(time, Formats.THREE_CHARACTER_MONTH_NAME);
 
     expect(formatted).toEqual('Dec');
   });
@@ -21,7 +22,7 @@ describe('Month', () => {
   it('Should return the month number with leading zeros', () => {
     const time = new Time(new Date('09-01-20 00:00:00'));
     const format = new Month();
-    const formatted = format.format(time, ':leadingMonth:');
+    const formatted = format.format(time, Formats.MONTH_NUMBER_LEADING_ZERO);
 
     expect(formatted).toEqual('09');
   });
@@ -29,7 +30,7 @@ describe('Month', () => {
   it('Should return the month number without leading zeros', () => {
     const time = new Time(new Date('06-01-20 00:00:00'));
     const format = new Month();
-    const formatted = format.format(time, ':month:');
+    const formatted = format.format(time, Formats.MONTH_NUMBER);
 
     expect(formatted).toEqual('6');
   });

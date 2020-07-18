@@ -1,5 +1,6 @@
 import Format from '../Format';
 import Formattable from '../Formattable';
+import Formats from './Formats';
 
 /**
  * Month format
@@ -62,19 +63,19 @@ class Month extends Format {
    */
   format(time: Formattable, format: string): string {
     let formatted = format.replace(
-        /:monthName:/g,
+        new RegExp(Formats.FULL_MONTH_NAME, 'g'),
         this.getMonthName('long', time),
     );
     formatted = formatted.replace(
-        /:shortMonthName:/g,
+        new RegExp(Formats.THREE_CHARACTER_MONTH_NAME, 'g'),
         this.getMonthName('short', time),
     );
     formatted = formatted.replace(
-        /:leadingMonth:/g,
+        new RegExp(Formats.MONTH_NUMBER_LEADING_ZERO, 'g'),
         this.formatNumber(time.getMonth(), true),
     );
     formatted = formatted.replace(
-        /:month:/g,
+        new RegExp(Formats.MONTH_NUMBER, 'g'),
         this.formatNumber(time.getMonth(), false),
     );
     return formatted;

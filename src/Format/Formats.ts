@@ -1,8 +1,8 @@
 enum Formats {
   FOUR_DIGIT_YEAR = ':fullYear:',
   TWO_DIGIT_YEAR = ':shortYear:',
-  FULL_MONTH_NAME = ':monthName',
-  THREE_CHARAGER_MONTH_NAME = ':shortMonthName:',
+  FULL_MONTH_NAME = ':monthName:',
+  THREE_CHARACTER_MONTH_NAME = ':shortMonthName:',
   MONTH_NUMBER = ':month:',
   MONTH_NUMBER_LEADING_ZERO = ':leadingMonth:',
   DAY_NUMBER = ':day:',
