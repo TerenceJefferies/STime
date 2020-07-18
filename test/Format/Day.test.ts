@@ -1,11 +1,12 @@
 import Time from '../../src/Time';
 import Day from '../../src/Format/Day';
+import Formats from '../../src/Format/Formats';
 
 describe('Day', () => {
   it('Should return the day number with leading zeros', () => {
     const time = new Time(new Date('2020-06-09 00:00:00'));
     const format = new Day();
-    const formatted = time.format(':leadingDay:');
+    const formatted = time.format(Formats.DAY_NUMBER_LEADING_ZERO);
   
     expect(formatted).toEqual('09');
   });
@@ -13,7 +14,7 @@ describe('Day', () => {
   it('Should return the day number without leading zeros', () => {
     const time = new Time(new Date('2020-06-09 00:00:00'));
     const format = new Day();
-    const formatted = time.format(':day:');
+    const formatted = time.format(Formats.DAY_NUMBER);
   
     expect(formatted).toEqual('9');
   });
