@@ -68,7 +68,7 @@ Day of the week formatter
     },
   ]
 
-*Defined in [Format/DayOfWeek.ts:8](https://github.com/TerenceJefferies/STime/blob/2958401/src/Format/DayOfWeek.ts#L8)*
+*Defined in [Format/DayOfWeek.ts:9](https://github.com/TerenceJefferies/STime/blob/e560a22/src/Format/DayOfWeek.ts#L9)*
 
 ## Methods
 
@@ -78,7 +78,7 @@ Day of the week formatter
 
 *Overrides [Format](_format_.format.md).[format](_format_.format.md#abstract-format)*
 
-*Defined in [Format/DayOfWeek.ts:56](https://github.com/TerenceJefferies/STime/blob/2958401/src/Format/DayOfWeek.ts#L56)*
+*Defined in [Format/DayOfWeek.ts:57](https://github.com/TerenceJefferies/STime/blob/e560a22/src/Format/DayOfWeek.ts#L57)*
 
 **`inheritdoc`** 
 
@@ -99,7 +99,7 @@ ___
 
 *Inherited from [Year](_format_year_.year.md).[formatNumber](_format_year_.year.md#protected-formatnumber)*
 
-*Defined in [Format.ts:27](https://github.com/TerenceJefferies/STime/blob/2958401/src/Format.ts#L27)*
+*Defined in [Format.ts:27](https://github.com/TerenceJefferies/STime/blob/e560a22/src/Format.ts#L27)*
 
 Format a number to a string and have it include or exclude
 leading zeros
@@ -121,7 +121,7 @@ ___
 
 ▸ **getDayDataFromDayNumber**(`dayNumber`: number): *any*
 
-*Defined in [Format/DayOfWeek.ts:93](https://github.com/TerenceJefferies/STime/blob/2958401/src/Format/DayOfWeek.ts#L93)*
+*Defined in [Format/DayOfWeek.ts:94](https://github.com/TerenceJefferies/STime/blob/e560a22/src/Format/DayOfWeek.ts#L94)*
 
 Get an entry from the week map for a particular day
 
@@ -139,7 +139,7 @@ ___
 
 ▸ **getFullDayName**(`dayNumber`: number): *string*
 
-*Defined in [Format/DayOfWeek.ts:83](https://github.com/TerenceJefferies/STime/blob/2958401/src/Format/DayOfWeek.ts#L83)*
+*Defined in [Format/DayOfWeek.ts:84](https://github.com/TerenceJefferies/STime/blob/e560a22/src/Format/DayOfWeek.ts#L84)*
 
 Get the full day name for a particlar day of the week
 
@@ -157,7 +157,7 @@ ___
 
 ▸ **getShortDayName**(`dayNumber`: number): *string*
 
-*Defined in [Format/DayOfWeek.ts:73](https://github.com/TerenceJefferies/STime/blob/2958401/src/Format/DayOfWeek.ts#L73)*
+*Defined in [Format/DayOfWeek.ts:74](https://github.com/TerenceJefferies/STime/blob/e560a22/src/Format/DayOfWeek.ts#L74)*
 
 Get the short representation of a day of the week
 
@@ -177,7 +177,7 @@ ___
 
 *Overrides [Format](_format_.format.md).[parse](_format_.format.md#abstract-parse)*
 
-*Defined in [Format/DayOfWeek.ts:49](https://github.com/TerenceJefferies/STime/blob/2958401/src/Format/DayOfWeek.ts#L49)*
+*Defined in [Format/DayOfWeek.ts:50](https://github.com/TerenceJefferies/STime/blob/e560a22/src/Format/DayOfWeek.ts#L50)*
 
 **`inheritdoc`** 
 
@@ -198,7 +198,7 @@ ___
 
 *Inherited from [Year](_format_year_.year.md).[parsePaddedAndUnpaddedUnits](_format_year_.year.md#protected-parsepaddedandunpaddedunits)*
 
-*Defined in [Format.ts:43](https://github.com/TerenceJefferies/STime/blob/2958401/src/Format.ts#L43)*
+*Defined in [Format.ts:43](https://github.com/TerenceJefferies/STime/blob/e560a22/src/Format.ts#L43)*
 
 **Parameters:**
 

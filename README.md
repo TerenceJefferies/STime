@@ -101,9 +101,9 @@ time.getDay(); // Todays day of the month
 | `:month:` | Month number without leading zeros | `1` |
 | `:leadingDay:` | Day number with leading zeros | `03` |
 | `:day:` | Day number without leading zeros | `3` |
-| `:longHourTwentyFour:` | Hour with leading zeros | `07` |
+| `:leadingHourTwentyFour:` | Hour with leading zeros | `07` |
 | `:hour:` | Hour without leading zeros | `7` |
-| `:longHourTwelve:` | Twelve-hour hour with leading zeros | `01` |
+| `:leadingHourTwelve:` | Twelve-hour hour with leading zeros | `01` |
 | `:shortHour:` | Twelve-hour hour without leading zeros | `1` |
 | `:leadingMinutes:` | Minutes with leading zeros | `08` |
 | `:minutes:` | Minutes without leading zeros | `8` |
@@ -111,6 +111,8 @@ time.getDay(); // Todays day of the month
 | `:seconds:` | Seconds without leading zeros | `9` |
 | `:amPmUpper:` | AM/PM Suffix, capitalized | `AM` |
 | `:amPmLower:` | AM/PM Suffix, lower-case | `pm` |
+| `:weekday:` | Full name of the week | `Friday` |
+| `:shortWeekday:` | Short weekday name | `Fri` |
 
 **Example**
 

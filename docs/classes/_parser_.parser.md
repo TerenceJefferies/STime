@@ -29,7 +29,7 @@ Parser to convert a string into a time
 
 \+ **new Parser**(`parsable`: string, `format`: string): *[Parser](_parser_.parser.md)*
 
-*Defined in [Parser.ts:15](https://github.com/TerenceJefferies/STime/blob/2958401/src/Parser.ts#L15)*
+*Defined in [Parser.ts:15](https://github.com/TerenceJefferies/STime/blob/e560a22/src/Parser.ts#L15)*
 
 Create a new parser
 
@@ -48,7 +48,7 @@ Name | Type | Description |
 
 • **format**: *string*
 
-*Defined in [Parser.ts:15](https://github.com/TerenceJefferies/STime/blob/2958401/src/Parser.ts#L15)*
+*Defined in [Parser.ts:15](https://github.com/TerenceJefferies/STime/blob/e560a22/src/Parser.ts#L15)*
 
 ___
 
@@ -56,7 +56,7 @@ ___
 
 • **parsable**: *string*
 
-*Defined in [Parser.ts:13](https://github.com/TerenceJefferies/STime/blob/2958401/src/Parser.ts#L13)*
+*Defined in [Parser.ts:13](https://github.com/TerenceJefferies/STime/blob/e560a22/src/Parser.ts#L13)*
 
 ## Methods
 
@@ -64,7 +64,7 @@ ___
 
 ▸ **parse**(): *[Time](_time_.time.md)*
 
-*Defined in [Parser.ts:31](https://github.com/TerenceJefferies/STime/blob/2958401/src/Parser.ts#L31)*
+*Defined in [Parser.ts:31](https://github.com/TerenceJefferies/STime/blob/e560a22/src/Parser.ts#L31)*
 
 Parse into a time
 

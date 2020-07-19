@@ -27,7 +27,7 @@ Minute format
 
 *Overrides [Format](_format_.format.md).[format](_format_.format.md#abstract-format)*
 
-*Defined in [Format/Minute.ts:11](https://github.com/TerenceJefferies/STime/blob/2958401/src/Format/Minute.ts#L11)*
+*Defined in [Format/Minute.ts:12](https://github.com/TerenceJefferies/STime/blob/e560a22/src/Format/Minute.ts#L12)*
 
 **`inheritdoc`** 
 
@@ -48,7 +48,7 @@ ___
 
 *Inherited from [Year](_format_year_.year.md).[formatNumber](_format_year_.year.md#protected-formatnumber)*
 
-*Defined in [Format.ts:27](https://github.com/TerenceJefferies/STime/blob/2958401/src/Format.ts#L27)*
+*Defined in [Format.ts:27](https://github.com/TerenceJefferies/STime/blob/e560a22/src/Format.ts#L27)*
 
 Format a number to a string and have it include or exclude
 leading zeros
@@ -72,7 +72,7 @@ ___
 
 *Overrides [Format](_format_.format.md).[parse](_format_.format.md#abstract-parse)*
 
-*Defined in [Format/Minute.ts:26](https://github.com/TerenceJefferies/STime/blob/2958401/src/Format/Minute.ts#L26)*
+*Defined in [Format/Minute.ts:27](https://github.com/TerenceJefferies/STime/blob/e560a22/src/Format/Minute.ts#L27)*
 
 **`inheritdoc`** 
 
@@ -93,7 +93,7 @@ ___
 
 *Inherited from [Year](_format_year_.year.md).[parsePaddedAndUnpaddedUnits](_format_year_.year.md#protected-parsepaddedandunpaddedunits)*
 
-*Defined in [Format.ts:43](https://github.com/TerenceJefferies/STime/blob/2958401/src/Format.ts#L43)*
+*Defined in [Format.ts:43](https://github.com/TerenceJefferies/STime/blob/e560a22/src/Format.ts#L43)*
 
 **Parameters:**
 

@@ -27,7 +27,7 @@ Hour format
 
 ▸ **applyTwelveHourFormatting**(`time`: [Formattable](_formattable_.formattable.md), `format`: string): *string*
 
-*Defined in [Format/Hour.ts:44](https://github.com/TerenceJefferies/STime/blob/2958401/src/Format/Hour.ts#L44)*
+*Defined in [Format/Hour.ts:45](https://github.com/TerenceJefferies/STime/blob/e560a22/src/Format/Hour.ts#L45)*
 
 Apply twelve hour formatting to a format
 
@@ -48,7 +48,7 @@ ___
 
 ▸ **applyTwentyFourHourFormatting**(`time`: [Formattable](_formattable_.formattable.md), `format`: string): *string*
 
-*Defined in [Format/Hour.ts:23](https://github.com/TerenceJefferies/STime/blob/2958401/src/Format/Hour.ts#L23)*
+*Defined in [Format/Hour.ts:24](https://github.com/TerenceJefferies/STime/blob/e560a22/src/Format/Hour.ts#L24)*
 
 Apply twenty four hour formatting to a format
 
@@ -71,7 +71,7 @@ ___
 
 *Overrides [Format](_format_.format.md).[format](_format_.format.md#abstract-format)*
 
-*Defined in [Format/Hour.ts:11](https://github.com/TerenceJefferies/STime/blob/2958401/src/Format/Hour.ts#L11)*
+*Defined in [Format/Hour.ts:12](https://github.com/TerenceJefferies/STime/blob/e560a22/src/Format/Hour.ts#L12)*
 
 **`inheritdoc`** 
 
@@ -92,7 +92,7 @@ ___
 
 *Inherited from [Year](_format_year_.year.md).[formatNumber](_format_year_.year.md#protected-formatnumber)*
 
-*Defined in [Format.ts:27](https://github.com/TerenceJefferies/STime/blob/2958401/src/Format.ts#L27)*
+*Defined in [Format.ts:27](https://github.com/TerenceJefferies/STime/blob/e560a22/src/Format.ts#L27)*
 
 Format a number to a string and have it include or exclude
 leading zeros
@@ -116,7 +116,7 @@ ___
 
 *Overrides [Format](_format_.format.md).[parse](_format_.format.md#abstract-parse)*
 
-*Defined in [Format/Hour.ts:65](https://github.com/TerenceJefferies/STime/blob/2958401/src/Format/Hour.ts#L65)*
+*Defined in [Format/Hour.ts:66](https://github.com/TerenceJefferies/STime/blob/e560a22/src/Format/Hour.ts#L66)*
 
 **`inheritdoc`** 
 
@@ -137,7 +137,7 @@ ___
 
 *Inherited from [Year](_format_year_.year.md).[parsePaddedAndUnpaddedUnits](_format_year_.year.md#protected-parsepaddedandunpaddedunits)*
 
-*Defined in [Format.ts:43](https://github.com/TerenceJefferies/STime/blob/2958401/src/Format.ts#L43)*
+*Defined in [Format.ts:43](https://github.com/TerenceJefferies/STime/blob/e560a22/src/Format.ts#L43)*
 
 **Parameters:**
 

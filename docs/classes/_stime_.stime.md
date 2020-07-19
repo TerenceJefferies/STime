@@ -38,7 +38,7 @@ STime facade used to access the Simple Time
 
 *Overrides [Generator](_generator_.generator.md).[constructor](_generator_.generator.md#constructor)*
 
-*Defined in [STime.ts:11](https://github.com/TerenceJefferies/STime/blob/2958401/src/STime.ts#L11)*
+*Defined in [STime.ts:11](https://github.com/TerenceJefferies/STime/blob/e560a22/src/STime.ts#L11)*
 
 Create a new instance of STime
 
@@ -58,7 +58,7 @@ Name | Type | Description |
 
 *Inherited from [Generator](_generator_.generator.md).[timeFactory](_generator_.generator.md#readonly-timefactory)*
 
-*Defined in [Generator.ts:8](https://github.com/TerenceJefferies/STime/blob/2958401/src/Generator.ts#L8)*
+*Defined in [Generator.ts:8](https://github.com/TerenceJefferies/STime/blob/e560a22/src/Generator.ts#L8)*
 
 ## Methods
 
@@ -66,7 +66,7 @@ Name | Type | Description |
 
 ▸ **create**(`units`: number): *[TimeFromBuilder](_timefrombuilder_.timefrombuilder.md)*
 
-*Defined in [STime.ts:32](https://github.com/TerenceJefferies/STime/blob/2958401/src/STime.ts#L32)*
+*Defined in [STime.ts:32](https://github.com/TerenceJefferies/STime/blob/e560a22/src/STime.ts#L32)*
 
 Create a date before or after the current date
 
@@ -92,7 +92,7 @@ ___
 
 ▸ **difference**(`timeOne`: [Time](_time_.time.md), `timeTwo`: [Time](_time_.time.md)): *[Difference](_difference_difference_.difference.md)*
 
-*Defined in [STime.ts:47](https://github.com/TerenceJefferies/STime/blob/2958401/src/STime.ts#L47)*
+*Defined in [STime.ts:47](https://github.com/TerenceJefferies/STime/blob/e560a22/src/STime.ts#L47)*
 
 Get the difference between two times
 
@@ -121,7 +121,7 @@ ___
 
 *Inherited from [Generator](_generator_.generator.md).[fromDate](_generator_.generator.md#fromdate)*
 
-*Defined in [Generator.ts:57](https://github.com/TerenceJefferies/STime/blob/2958401/src/Generator.ts#L57)*
+*Defined in [Generator.ts:57](https://github.com/TerenceJefferies/STime/blob/e560a22/src/Generator.ts#L57)*
 
 Create a new Time from a native Date
 
@@ -149,7 +149,7 @@ ___
 
 *Inherited from [Generator](_generator_.generator.md).[now](_generator_.generator.md#now)*
 
-*Defined in [Generator.ts:27](https://github.com/TerenceJefferies/STime/blob/2958401/src/Generator.ts#L27)*
+*Defined in [Generator.ts:27](https://github.com/TerenceJefferies/STime/blob/e560a22/src/Generator.ts#L27)*
 
 Get the current time
 
@@ -169,7 +169,7 @@ ___
 
 ▸ **parse**(`date`: string, `format`: string): *[Time](_time_.time.md)*
 
-*Defined in [STime.ts:61](https://github.com/TerenceJefferies/STime/blob/2958401/src/STime.ts#L61)*
+*Defined in [STime.ts:61](https://github.com/TerenceJefferies/STime/blob/e560a22/src/STime.ts#L61)*
 
 Parse a string into a time
 
@@ -196,7 +196,7 @@ ___
 
 *Inherited from [Generator](_generator_.generator.md).[tomorrow](_generator_.generator.md#tomorrow)*
 
-*Defined in [Generator.ts:43](https://github.com/TerenceJefferies/STime/blob/2958401/src/Generator.ts#L43)*
+*Defined in [Generator.ts:43](https://github.com/TerenceJefferies/STime/blob/e560a22/src/Generator.ts#L43)*
 
 Create a time representing tomorrow
 
@@ -212,7 +212,7 @@ ___
 
 *Inherited from [Generator](_generator_.generator.md).[yesterday](_generator_.generator.md#yesterday)*
 
-*Defined in [Generator.ts:35](https://github.com/TerenceJefferies/STime/blob/2958401/src/Generator.ts#L35)*
+*Defined in [Generator.ts:35](https://github.com/TerenceJefferies/STime/blob/e560a22/src/Generator.ts#L35)*
 
 Create a time representing yesterday at the current time
 

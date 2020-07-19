@@ -23,7 +23,7 @@ A time factory used to create new instances of Time
 
 ▸ **create**(): *[Time](_time_.time.md)*
 
-*Defined in [TimeFactory.ts:11](https://github.com/TerenceJefferies/STime/blob/2958401/src/TimeFactory.ts#L11)*
+*Defined in [TimeFactory.ts:11](https://github.com/TerenceJefferies/STime/blob/e560a22/src/TimeFactory.ts#L11)*
 
 Create a new time at the current date
 
@@ -37,7 +37,7 @@ ___
 
 ▸ **createForTomorrow**(): *[Time](_time_.time.md)*
 
-*Defined in [TimeFactory.ts:29](https://github.com/TerenceJefferies/STime/blob/2958401/src/TimeFactory.ts#L29)*
+*Defined in [TimeFactory.ts:29](https://github.com/TerenceJefferies/STime/blob/e560a22/src/TimeFactory.ts#L29)*
 
 Create a time representing tomorrow
 
@@ -51,7 +51,7 @@ ___
 
 ▸ **createForYesterday**(): *[Time](_time_.time.md)*
 
-*Defined in [TimeFactory.ts:19](https://github.com/TerenceJefferies/STime/blob/2958401/src/TimeFactory.ts#L19)*
+*Defined in [TimeFactory.ts:19](https://github.com/TerenceJefferies/STime/blob/e560a22/src/TimeFactory.ts#L19)*
 
 Create a time representing yesterday at the current time
 
@@ -65,7 +65,7 @@ ___
 
 ▸ **fromDate**(`date`: Date): *[Time](_time_.time.md)*
 
-*Defined in [TimeFactory.ts:40](https://github.com/TerenceJefferies/STime/blob/2958401/src/TimeFactory.ts#L40)*
+*Defined in [TimeFactory.ts:40](https://github.com/TerenceJefferies/STime/blob/e560a22/src/TimeFactory.ts#L40)*
 
 Retrieve a new instance from a javascript date
 
