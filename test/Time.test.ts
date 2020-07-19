@@ -1,4 +1,5 @@
 import Time from '../src/Time';
+import Formats from '../src/Format/Formats';
 
 describe('Time', () => {
     it('Should return a unix timestamp as a whole number', () => {
@@ -70,21 +71,21 @@ describe('Time Formatting', () => {
 
   it('Should return 04/06/1955 19:55:27', () => {
     const time = new Time(new Date('06-04-1955 19:55:27'));
-    const formatted = time.format(':leadingDay:/:leadingMonth:/:fullYear: :leadingHour:::leadingMinute:::leadingSecond:');
+    const formatted = time.format(':leadingDay:/:leadingMonth:/:fullYear: ' + Formats.HOUR_TWENTYFOUR_LEADING_ZERO + '::leadingMinute:::leadingSecond:');
 
     expect(formatted).toEqual('04/06/1955 19:55:27');
   });
 
   it('Should return 04/06/1955 19:55:27 PM', () => {
     const time = new Time(new Date('06-04-1955 19:55:27'));
-    const formatted = time.format(':leadingDay:/:leadingMonth:/:fullYear: :leadingHour:::leadingMinute:::leadingSecond: :amPmUpper:');
+    const formatted = time.format(':leadingDay:/:leadingMonth:/:fullYear: ' + Formats.HOUR_TWENTYFOUR_LEADING_ZERO + '::leadingMinute:::leadingSecond: :amPmUpper:');
 
     expect(formatted).toEqual('04/06/1955 19:55:27 PM');
   });
 
   it('Should return 04/06/1955 08:55:27 AM', () => {
     const time = new Time(new Date('06-04-1955 08:55:27'));
-    const formatted = time.format(':leadingDay:/:leadingMonth:/:fullYear: :leadingHour:::leadingMinute:::leadingSecond: :amPmUpper:');
+    const formatted = time.format(':leadingDay:/:leadingMonth:/:fullYear: ' + Formats.HOUR_TWENTYFOUR_LEADING_ZERO + '::leadingMinute:::leadingSecond: :amPmUpper:');
 
     expect(formatted).toEqual('04/06/1955 08:55:27 AM');
   });

@@ -1,5 +1,6 @@
 import Format from '../Format';
 import Formattable from '../Formattable';
+import Formats from './Formats';
 
 /**
  * Hour format
@@ -25,11 +26,11 @@ class Hour extends Format {
       format: string,
   ): string {
     let formatted = format.replace(
-        /:leadingHour:/g,
+        new RegExp(Formats.HOUR_TWENTYFOUR_LEADING_ZERO, 'g'),
         this.formatNumber(time.getHours(), true),
     );
     formatted = formatted.replace(
-        /:hour:/g,
+        new RegExp(Formats.HOUR_TWENTYFOUR_NUMBER, 'g'),
         this.formatNumber(time.getHours(), false),
     );
     return formatted;
@@ -48,11 +49,11 @@ class Hour extends Format {
     }
 
     let formatted = format.replace(
-        /:leadingHourTwelve:/g,
+        new RegExp(Formats.HOUR_TWELVE_LEADING_ZERO, 'g'),
         this.formatNumber(hour, true),
     );
     formatted = formatted.replace(
-        /:hourTwelve:/g,
+        new RegExp(Formats.HOUR_TWELVE_NUMBER, 'g'),
         this.formatNumber(hour, false),
     );
 
