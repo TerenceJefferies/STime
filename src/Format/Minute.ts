@@ -1,5 +1,6 @@
 import Format from '../Format';
 import Formattable from '../Formattable';
+import Formats from './Formats';
 
 /**
  * Minute format
@@ -10,11 +11,11 @@ class Minute extends Format {
    */
   format(time: Formattable, format: string): string {
     let formatted = format.replace(
-        /:leadingMinute:/g,
+        new RegExp(Formats.MINUTE_LEADING_ZERO, 'g'),
         this.formatNumber(time.getMinutes(), true),
     );
     formatted = formatted.replace(
-        /:minute:/g,
+        new RegExp(Formats.MINUTE_NUMBER, 'g'),
         this.formatNumber(time.getMinutes(), false),
     );
     return formatted;
