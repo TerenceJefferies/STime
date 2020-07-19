@@ -1,11 +1,12 @@
 import Time from '../../src/Time';
 import Second from '../../src/Format/Second';
+import Formats from '../../src/Format/Formats';
 
 describe('Second', () => {
   it('Should return the second number with leading zeros', () => {
     const time = new Time(new Date('06-09-20 03:00:05'));
     const format = new Second();
-    const formatted = time.format(':leadingSecond:');
+    const formatted = time.format(Formats.SECOND_LEADING_ZERO);
   
     expect(formatted).toEqual('05');
   });
@@ -13,7 +14,7 @@ describe('Second', () => {
   it('Should return the second number without leading zeros', () => {
     const time = new Time(new Date('06-09-20 09:00:07'));
     const format = new Second();
-    const formatted = time.format(':second:');
+    const formatted = time.format(Formats.SECOND_NUMBER);
   
     expect(formatted).toEqual('7');
   });

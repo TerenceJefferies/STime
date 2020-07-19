@@ -71,21 +71,21 @@ describe('Time Formatting', () => {
 
   it('Should return 04/06/1955 19:55:27', () => {
     const time = new Time(new Date('06-04-1955 19:55:27'));
-    const formatted = time.format(':leadingDay:/:leadingMonth:/:fullYear: ' + Formats.HOUR_TWENTYFOUR_LEADING_ZERO + ':' + Formats.MINUTE_LEADING_ZERO + '::leadingSecond:');
+    const formatted = time.format(':leadingDay:/:leadingMonth:/:fullYear: ' + Formats.HOUR_TWENTYFOUR_LEADING_ZERO + ':' + Formats.MINUTE_LEADING_ZERO + ':' + Formats.SECOND_LEADING_ZERO);
 
     expect(formatted).toEqual('04/06/1955 19:55:27');
   });
 
   it('Should return 04/06/1955 19:55:27 PM', () => {
     const time = new Time(new Date('06-04-1955 19:55:27'));
-    const formatted = time.format(':leadingDay:/:leadingMonth:/:fullYear: ' + Formats.HOUR_TWENTYFOUR_LEADING_ZERO + ':' + Formats.MINUTE_LEADING_ZERO + '::leadingSecond: :amPmUpper:');
+    const formatted = time.format(':leadingDay:/:leadingMonth:/:fullYear: ' + Formats.HOUR_TWENTYFOUR_LEADING_ZERO + ':' + Formats.MINUTE_LEADING_ZERO + ':' + Formats.SECOND_LEADING_ZERO + ' :amPmUpper:');
 
     expect(formatted).toEqual('04/06/1955 19:55:27 PM');
   });
 
   it('Should return 04/06/1955 08:55:27 AM', () => {
     const time = new Time(new Date('06-04-1955 08:55:27'));
-    const formatted = time.format(':leadingDay:/:leadingMonth:/:fullYear: ' + Formats.HOUR_TWENTYFOUR_LEADING_ZERO + ':' + Formats.MINUTE_LEADING_ZERO + '::leadingSecond: :amPmUpper:');
+    const formatted = time.format(':leadingDay:/:leadingMonth:/:fullYear: ' + Formats.HOUR_TWENTYFOUR_LEADING_ZERO + ':' + Formats.MINUTE_LEADING_ZERO + ':' + Formats.SECOND_LEADING_ZERO + ' :amPmUpper:');
 
     expect(formatted).toEqual('04/06/1955 08:55:27 AM');
   });

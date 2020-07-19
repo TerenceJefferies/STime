@@ -1,5 +1,6 @@
 import Format from '../Format';
 import Formattable from '../Formattable';
+import Formats from './Formats';
 
 /**
  * Second format
@@ -10,11 +11,11 @@ class Second extends Format {
    */
   format(time: Formattable, format: string): string {
     let formatted = format.replace(
-        /:leadingSecond:/g,
+        new RegExp(Formats.SECOND_LEADING_ZERO, 'g'),
         this.formatNumber(time.getSeconds(), true),
     );
     formatted = formatted.replace(
-        /:second:/g,
+        new RegExp(Formats.SECOND_NUMBER, 'g'),
         this.formatNumber(time.getSeconds(), false),
     );
     return formatted;
