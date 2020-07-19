@@ -1,5 +1,6 @@
 import Format from '../Format';
 import Formattable from '../Formattable';
+import Formats from './Formats';
 
 /**
  * AmPm formatting
@@ -18,11 +19,11 @@ class AmPm extends Format {
   format(time: Formattable, format: string): string {
     const amOrPm = this.getAmOrPm(time);
     let formatted = format.replace(
-        /:amPmUpper:/g,
+        new RegExp(Formats.AM_PM_UPPERCASE, 'g'),
         amOrPm.toUpperCase(),
     );
     formatted = formatted.replace(
-        /:amPmLower:/g,
+        new RegExp(Formats.AM_PM_LOWERCASE, 'g'),
         amOrPm.toLowerCase(),
     );
     return formatted;
