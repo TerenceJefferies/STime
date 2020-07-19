@@ -1,5 +1,6 @@
 import Time from '../../src/Time';
 import DayOfWeek from '../../src/Format/DayOfWeek';
+import Formats from '../../src/Format/Formats';
 
 describe('Day Of Week', () => {
   it('Should return Tuesday for an L format', () => {
@@ -7,7 +8,7 @@ describe('Day Of Week', () => {
     const time = new Time(date);
     const format = new DayOfWeek();
 
-    const result = format.format(time, ':weekday:');
+    const result = format.format(time, Formats.WEEKDAY_NAME);
 
     expect(result).toEqual('Tuesday');
   });
@@ -17,7 +18,7 @@ describe('Day Of Week', () => {
     const time = new Time(date);
     const format = new DayOfWeek();
 
-    const result = format.format(time, ':shortWeekday:');
+    const result = format.format(time, Formats.SHORT_WEEKDAY_NAME);
 
     expect(result).toEqual('Fri');
   });

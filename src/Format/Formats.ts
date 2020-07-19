@@ -16,7 +16,9 @@ enum Formats {
   SECOND_LEADING_ZERO = ':leadingSeconds:',
   SECOND_NUMBER = ':seconds:',
   AM_PM_UPPERCASE = ':amPmUpper:',
-  AM_PM_LOWERCASE = ':amPmLower:'
+  AM_PM_LOWERCASE = ':amPmLower:',
+  WEEKDAY_NAME = ':weekday:',
+  SHORT_WEEKDAY_NAME = ':shortWeekday:'
 }
 
 export default Formats;

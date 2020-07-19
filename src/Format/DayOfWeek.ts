@@ -1,5 +1,6 @@
 import Format from '../Format';
 import Formattable from '../Formattable';
+import Formats from './Formats';
 
 /**
  * Day of the week formatter
@@ -55,11 +56,11 @@ class DayOfWeek extends Format {
    */
   format(time: Formattable, format: string): string {
     let formatted = format.replace(
-        /:weekday:/g,
+        new RegExp(Formats.WEEKDAY_NAME, 'g'),
         this.getFullDayName(time.getDayOfWeek()),
     );
     formatted = formatted.replace(
-        /:shortWeekday:/g,
+        new RegExp(Formats.SHORT_WEEKDAY_NAME, 'g'),
         this.getShortDayName(time.getDayOfWeek()),
     );
     return formatted;
