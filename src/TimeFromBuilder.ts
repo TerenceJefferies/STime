@@ -21,11 +21,11 @@ class TimeFromBuilder {
 
     fromCurrent: number;
 
-    unit: Unit | null;
+    unit: Unit | undefined;
 
-    direction: number | null;
+    direction: number | undefined;
 
-    origin: Time | null;
+    origin: Time | undefined;
 
     /**
      * Create a new TimeFromBuilder
@@ -36,12 +36,13 @@ class TimeFromBuilder {
     constructor(fromCurrent: number, unit: Unit);
     constructor(fromCurrent: number, unit: Unit, direction: number);
     constructor(fromCurrent: number, unit?: Unit, direction?: number, origin?: Time);
+    constructor(fromCurrent: number, unit: Unit, direction?: number, origin?: Time);
     constructor(fromCurrent: number, unit: Unit, direction: number, origin: Time);
     constructor(fromCurrent: number, unit?: Unit, direction?: number, origin?: Time) {
         this.fromCurrent = fromCurrent;
-        this.unit = unit || null;
-        this.direction = direction || null;
-        this.origin = origin || null;
+        this.unit = unit;
+        this.direction = direction;
+        this.origin = origin;
     }
 
     /**
@@ -49,7 +50,12 @@ class TimeFromBuilder {
      * @return {TimeFromBuilder}
      */
     days(): TimeFromBuilder {
-        return new TimeFromBuilder(this.fromCurrent, new Day());
+        return new TimeFromBuilder(
+            this.fromCurrent,
+            new Day(),
+            this.direction,
+            this.origin,
+        );
     }
 
     /**
@@ -57,7 +63,12 @@ class TimeFromBuilder {
      * @return {TimeFromBuilder}
      */
     seconds(): TimeFromBuilder {
-        return new TimeFromBuilder(this.fromCurrent, new Second());
+        return new TimeFromBuilder(
+            this.fromCurrent,
+            new Second(),
+            this.direction,
+            this.origin,
+        );
     }
 
     /**
@@ -65,7 +76,12 @@ class TimeFromBuilder {
      * @return {TimeFromBuilder}
      */
     minutes(): TimeFromBuilder {
-        return new TimeFromBuilder(this.fromCurrent, new Minute());
+        return new TimeFromBuilder(
+            this.fromCurrent,
+            new Minute(),
+            this.direction,
+            this.origin,
+        );
     }
 
     /**
@@ -73,7 +89,12 @@ class TimeFromBuilder {
      * @return {TimeFromBuilder}
      */
     hours(): TimeFromBuilder {
-        return new TimeFromBuilder(this.fromCurrent, new Hour());
+        return new TimeFromBuilder(
+            this.fromCurrent,
+            new Hour(),
+            this.direction,
+            this.origin,
+        );
     }
 
     /**
@@ -81,7 +102,12 @@ class TimeFromBuilder {
      * @return {TimeFromBuilder}
      */
     months(): TimeFromBuilder {
-        return new TimeFromBuilder(this.fromCurrent, new Month());
+        return new TimeFromBuilder(
+            this.fromCurrent,
+            new Month(),
+            this.direction,
+            this.origin,
+        );
     }
 
     /**
@@ -89,7 +115,12 @@ class TimeFromBuilder {
      * @return {TimeFromBuilder}
      */
     years(): TimeFromBuilder {
-        return new TimeFromBuilder(this.fromCurrent, new Year());
+        return new TimeFromBuilder(
+            this.fromCurrent,
+            new Year(),
+            this.direction,
+            this.origin,
+        );
     }
 
     /**
@@ -101,7 +132,12 @@ class TimeFromBuilder {
             throw new Error('Must provide type before specifying direction');
         }
 
-        return new TimeFromBuilder(this.fromCurrent, this.unit, this.FUTURE);
+        return new TimeFromBuilder(
+            this.fromCurrent,
+            this.unit,
+            this.FUTURE,
+            this.origin,
+        );
     }
 
     /**
@@ -113,7 +149,12 @@ class TimeFromBuilder {
             throw new Error('Must provide type before specifying direction');
         }
 
-        return new TimeFromBuilder(this.fromCurrent, this.unit, this.PAST);
+        return new TimeFromBuilder(
+            this.fromCurrent,
+            this.unit,
+            this.PAST,
+            this.origin,
+        );
     }
 
     /**
@@ -164,6 +205,20 @@ class TimeFromBuilder {
 
         const offset = (this.direction == this.PAST) ? -this.fromCurrent : this.fromCurrent;
         return this.unit.createIn(this.origin, offset);
+    }
+
+    /**
+     * @return {Time}
+     */
+    inFuture(): Time {
+        return this.from().get();
+    }
+
+    /**
+     * @return {Time}
+     */
+    inPast(): Time {
+        return this.before().get();
     }
 }
 

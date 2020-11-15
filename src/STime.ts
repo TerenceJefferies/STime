@@ -56,7 +56,8 @@ class STime extends Generator {
    * time.getYear(); // 2000
    * ```
    * @param {string} date String to convert into a time
-   * @param {string} format Format to parse the string in
+   * @param {string} format Format to parse the string i
+   * @return {Time}
    */
     parse(date: string, format: string): Time {
         return (new Parser(date, format)).parse();
