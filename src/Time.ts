@@ -1,4 +1,5 @@
 import Formattable from './Formattable';
+import TimeFromBuilder from './TimeFromBuilder';
 
 /**
  * A representation of time
@@ -14,8 +15,8 @@ class Time extends Formattable {
      * @param {Date} root Native date to base the time on
      */
     constructor(root: Date) {
-      super();
-      this.root = root;
+        super();
+        this.root = root;
     }
 
     /**
@@ -25,7 +26,7 @@ class Time extends Formattable {
      * @return {number} Unix timetamp
      */
     toTimestamp(): number {
-      return parseInt((this.root.getTime() / 1000).toFixed(0));
+        return parseInt((this.root.getTime() / 1000).toFixed(0));
     }
 
     /**
@@ -33,7 +34,7 @@ class Time extends Formattable {
      * @return {number} Day of the month
      */
     getDay(): number {
-      return this.root.getDate();
+        return this.root.getDate();
     }
 
     /**
@@ -65,7 +66,7 @@ class Time extends Formattable {
      * @return {number} Minutes
      */
     getMinutes(): number {
-      return this.root.getMinutes();
+        return this.root.getMinutes();
     }
 
     /**
@@ -73,7 +74,7 @@ class Time extends Formattable {
      * @return {number} Hours
      */
     getHours(): number {
-      return this.root.getHours();
+        return this.root.getHours();
     }
 
     /**
@@ -81,16 +82,30 @@ class Time extends Formattable {
      * @return {number} 0-6 / Sunday-Saturday
      */
     getDayOfWeek(): number {
-      return this.root.getDay();
+        return this.root.getDay();
     }
 
     /**
      * Get the time as a locale string
      * @param {string} locales Locales to get the string for
      * @param {any} options
+     * @return {string}
      */
     toLocaleString(locales: string, options: any): string {
-      return this.root.toLocaleString(locales, options);
+        return this.root.toLocaleString(locales, options);
+    }
+
+    /**
+     * Create a new builder originating at this time
+     * @param {number} units Number of unit to build with
+     * @return {TimeFromBuilder}
+     * @example ```javascript
+     * time.build(3).days().inFuture();
+     * ```
+     */
+    build(units: number): TimeFromBuilder {
+        const builder = new TimeFromBuilder(units, undefined, undefined, this);
+        return builder;
     }
 }
 

@@ -2,6 +2,20 @@ import Time from '../src/Time';
 import Formats from '../src/Format/Formats';
 
 describe('Time', () => {
+    it('Should return a builder with the units configured', () => {
+        const units = 3;
+        const time = new Time(new Date());
+        const builder = time.build(units);
+
+        expect(builder.fromCurrent).toEqual(units);
+    });
+
+    it('Should return a builder with the time instance', () => {
+        const time = new Time(new Date());
+        const builder = time.build(1);
+        expect(builder.origin).toEqual(time);
+    });
+
     it('Should return a unix timestamp as a whole number', () => {
         const time = new Time(new Date());
 
