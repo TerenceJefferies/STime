@@ -12,7 +12,7 @@ class Generator {
    * @param {TimeFactory} timeFactory
    */
   constructor(timeFactory: TimeFactory) {
-    this.timeFactory = timeFactory;
+      this.timeFactory = timeFactory;
   }
 
   /**
@@ -25,7 +25,7 @@ class Generator {
    * @return {Time} Current time
    */
   now(): Time {
-    return this.timeFactory.create();
+      return this.timeFactory.create();
   }
 
   /**
@@ -33,7 +33,7 @@ class Generator {
    * @return {Time} Representation of yesterday
    */
   yesterday(): Time {
-    return this.timeFactory.createForYesterday();
+      return this.timeFactory.createForYesterday();
   }
 
   /**
@@ -41,9 +41,9 @@ class Generator {
    * @return {Time} Representation of tomorrow
    */
   tomorrow(): Time {
-    return this.timeFactory.createForTomorrow();
+      return this.timeFactory.createForTomorrow();
   }
-  
+
   /**
    * Create a new Time from a native Date
    * @example
@@ -55,7 +55,7 @@ class Generator {
    * @return {Time} created from the date provided
    */
   fromDate(date: Date): Time {
-    return this.timeFactory.fromDate(date);
+      return this.timeFactory.fromDate(date);
   }
 }
 

@@ -13,7 +13,7 @@ abstract class DifferenceYearAware {
    * @return {number} Number of years between the two times
    */
   getTotalYears(): number {
-    return Math.abs((this.timeOne.getYear() - this.timeTwo.getYear()));
+      return Math.abs((this.timeOne.getYear() - this.timeTwo.getYear()));
   }
 }
 

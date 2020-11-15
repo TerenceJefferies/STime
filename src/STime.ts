@@ -9,15 +9,15 @@ import Parser from './Parser';
  * STime facade used to access the Simple Time
  */
 class STime extends Generator {
-  /**
+    /**
    * Create a new instance of STime
    * @param {TimeFactory} timeFactory Factory to use to create time instances
    */
-  constructor(timeFactory: TimeFactory) {
-    super(timeFactory);
-  }
+    constructor(timeFactory: TimeFactory) {
+        super(timeFactory);
+    }
 
-  /**
+    /**
    * Create a date before or after the current date
    * @example
    * ```javascript
@@ -29,11 +29,11 @@ class STime extends Generator {
    * @param {number} units Number of units to add or sutract to/from the current date
    * @return {TimeFromBuilder}
    */
-  create(units: number): TimeFromBuilder {
-    return new TimeFromBuilder(units);
-  }
+    create(units: number): TimeFromBuilder {
+        return new TimeFromBuilder(units);
+    }
 
-  /**
+    /**
    * Get the difference between two times
    * @example
    * ```javascript
@@ -44,11 +44,11 @@ class STime extends Generator {
    * @param {Time} timeTwo Time to compare to timeOne
    * @return {Difference} between the two times
    */
-  difference(timeOne: Time, timeTwo: Time): Difference {
-    return new Difference(timeOne, timeTwo);
-  }
+    difference(timeOne: Time, timeTwo: Time): Difference {
+        return new Difference(timeOne, timeTwo);
+    }
 
-  /**
+    /**
    * Parse a string into a time
    * @example
    * ```javascript
@@ -58,9 +58,9 @@ class STime extends Generator {
    * @param {string} date String to convert into a time
    * @param {string} format Format to parse the string in
    */
-  parse(date: string, format: string): Time {
-    return (new Parser(date, format)).parse();
-  }
+    parse(date: string, format: string): Time {
+        return (new Parser(date, format)).parse();
+    }
 }
 
 export default STime;

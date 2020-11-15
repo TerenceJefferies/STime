@@ -7,100 +7,100 @@ import Formats from './Formats';
  */
 class Month extends Format {
   private readonly monthMap = [
-    {
-      longName: 'January',
-      shortName: 'Jan',
-      number: 1,
-    }, {
-      longName: 'February',
-      shortName: 'Feb',
-      number: 2,
-    }, {
-      longName: 'March',
-      shortName: 'Mar',
-      number: 3,
-    }, {
-      longName: 'April',
-      shortName: 'Apr',
-      number: 4,
-    }, {
-      longName: 'May',
-      shortName: 'May',
-      number: 5,
-    }, {
-      longName: 'June',
-      shortName: 'Jun',
-      number: 6,
-    }, {
-      longName: 'July',
-      shortName: 'Jul',
-      number: 7,
-    }, {
-      longName: 'August',
-      shortName: 'Aug',
-      number: 8,
-    }, {
-      longName: 'September',
-      shortName: 'Sep',
-      number: 9,
-    }, {
-      longName: 'October',
-      shortName: 'Oct',
-      number: 10,
-    }, {
-      longName: 'November',
-      shortName: 'Nov',
-      number: 11,
-    }, {
-      longName: 'December',
-      shortName: 'Dec',
-      number: 12,
-    },
+      {
+          longName: 'January',
+          shortName: 'Jan',
+          number: 1,
+      }, {
+          longName: 'February',
+          shortName: 'Feb',
+          number: 2,
+      }, {
+          longName: 'March',
+          shortName: 'Mar',
+          number: 3,
+      }, {
+          longName: 'April',
+          shortName: 'Apr',
+          number: 4,
+      }, {
+          longName: 'May',
+          shortName: 'May',
+          number: 5,
+      }, {
+          longName: 'June',
+          shortName: 'Jun',
+          number: 6,
+      }, {
+          longName: 'July',
+          shortName: 'Jul',
+          number: 7,
+      }, {
+          longName: 'August',
+          shortName: 'Aug',
+          number: 8,
+      }, {
+          longName: 'September',
+          shortName: 'Sep',
+          number: 9,
+      }, {
+          longName: 'October',
+          shortName: 'Oct',
+          number: 10,
+      }, {
+          longName: 'November',
+          shortName: 'Nov',
+          number: 11,
+      }, {
+          longName: 'December',
+          shortName: 'Dec',
+          number: 12,
+      },
   ];
 
   /**
    * @inheritdoc
    */
   format(time: Formattable, format: string): string {
-    let formatted = format.replace(
-        new RegExp(Formats.FULL_MONTH_NAME, 'g'),
-        this.getMonthName('long', time),
-    );
-    formatted = formatted.replace(
-        new RegExp(Formats.THREE_CHARACTER_MONTH_NAME, 'g'),
-        this.getMonthName('short', time),
-    );
-    formatted = formatted.replace(
-        new RegExp(Formats.MONTH_NUMBER_LEADING_ZERO, 'g'),
-        this.formatNumber(time.getMonth(), true),
-    );
-    formatted = formatted.replace(
-        new RegExp(Formats.MONTH_NUMBER, 'g'),
-        this.formatNumber(time.getMonth(), false),
-    );
-    return formatted;
+      let formatted = format.replace(
+          new RegExp(Formats.FULL_MONTH_NAME, 'g'),
+          this.getMonthName('long', time),
+      );
+      formatted = formatted.replace(
+          new RegExp(Formats.THREE_CHARACTER_MONTH_NAME, 'g'),
+          this.getMonthName('short', time),
+      );
+      formatted = formatted.replace(
+          new RegExp(Formats.MONTH_NUMBER_LEADING_ZERO, 'g'),
+          this.formatNumber(time.getMonth(), true),
+      );
+      formatted = formatted.replace(
+          new RegExp(Formats.MONTH_NUMBER, 'g'),
+          this.formatNumber(time.getMonth(), false),
+      );
+      return formatted;
   }
 
   /**
    * @inheritdoc
    */
   parse(parsable: string, format: string): number {
-    const longNameMonthPosition = format.indexOf('M'.repeat(4));
-    if (longNameMonthPosition > -1) {
-      return this.parseLongMonthNumberFromParsable(
-          longNameMonthPosition,
-          parsable,
-      );
-    }
+      const longNameMonthPosition = format.indexOf('M'.repeat(4));
+      if (longNameMonthPosition > -1) {
+          return this.parseLongMonthNumberFromParsable(
+              longNameMonthPosition,
+              parsable,
+          );
+      }
 
-    const shortNameMonthPosition = format.indexOf('M'.repeat(3));
-    if (shortNameMonthPosition > -1) {
-      return this.parseShortMonthNumberFromParsable(
-          longNameMonthPosition,
-          parsable,
-      );
-    }
-    return this.parsePaddedAndUnpaddedUnits(parsable, format, 'M');
+      const shortNameMonthPosition = format.indexOf('M'.repeat(3));
+      if (shortNameMonthPosition > -1) {
+          return this.parseShortMonthNumberFromParsable(
+              longNameMonthPosition,
+              parsable,
+          );
+      }
+      return this.parsePaddedAndUnpaddedUnits(parsable, format, 'M');
   }
 
   /**
@@ -113,16 +113,16 @@ class Month extends Format {
       position: number,
       parsable: string,
   ): number {
-    const shortMonthName = this.parseMonthNameFromPosition(position, parsable);
-    const mapEntry = this.monthMap.filter((entry) => {
-      return entry.shortName.toUpperCase() == shortMonthName.toUpperCase();
-    });
+      const shortMonthName = this.parseMonthNameFromPosition(position, parsable);
+      const mapEntry = this.monthMap.filter((entry) => {
+          return entry.shortName.toUpperCase() == shortMonthName.toUpperCase();
+      });
 
-    if (!mapEntry || !mapEntry.length) {
-      throw new Error('Invalid month name ' + shortMonthName);
-    }
+      if (!mapEntry || !mapEntry.length) {
+          throw new Error('Invalid month name ' + shortMonthName);
+      }
 
-    return mapEntry[0].number;
+      return mapEntry[0].number;
   }
 
   /**
@@ -135,19 +135,19 @@ class Month extends Format {
       position: number,
       parsable: string,
   ): number {
-    const longMonthName = this.parseMonthNameFromPosition(
-        position,
-        parsable,
-    );
-    const mapEntry = this.monthMap.filter((entry) => {
-      return entry.longName.toUpperCase() == longMonthName.toUpperCase();
-    });
+      const longMonthName = this.parseMonthNameFromPosition(
+          position,
+          parsable,
+      );
+      const mapEntry = this.monthMap.filter((entry) => {
+          return entry.longName.toUpperCase() == longMonthName.toUpperCase();
+      });
 
-    if (!mapEntry || !mapEntry.length) {
-      throw new Error('Invalid month name ' + longMonthName);
-    }
+      if (!mapEntry || !mapEntry.length) {
+          throw new Error('Invalid month name ' + longMonthName);
+      }
 
-    return mapEntry[0].number;
+      return mapEntry[0].number;
   }
 
   /**
@@ -161,12 +161,12 @@ class Month extends Format {
       position: number,
       parsable: string,
   ): string {
-    const focusString = parsable.substring(position);
-    const matches = focusString.match(/([a-zA-Z]+)(\s|$)/i);
-    if (!matches) {
-      throw new Error('Cannot find long month name in ' + parsable);
-    }
-    return matches[1];
+      const focusString = parsable.substring(position);
+      const matches = focusString.match(/([a-zA-Z]+)(\s|$)/i);
+      if (!matches) {
+          throw new Error('Cannot find long month name in ' + parsable);
+      }
+      return matches[1];
   }
 
   /**
@@ -176,7 +176,7 @@ class Month extends Format {
    * @return {string} Formatted string including months
    */
   private getMonthName(type: string, time: Formattable): string {
-    return time.toLocaleString('default', {month: type});
+      return time.toLocaleString('default', {month: type});
   }
 }
 

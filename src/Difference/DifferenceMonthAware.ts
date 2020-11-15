@@ -28,12 +28,12 @@ abstract class DifferenceMonthAware extends DifferenceYearAware {
    * @return {number} Number of months between the two dates
    */
   getTotalMonths(): number {
-    const yearDifference = this.getTotalYears();
-    const monthsFromYearDiff = (yearDifference * 12);
-    const monthsInSameYear =
+      const yearDifference = this.getTotalYears();
+      const monthsFromYearDiff = (yearDifference * 12);
+      const monthsInSameYear =
       Math.abs((this.timeOne.getMonth() - this.timeTwo.getMonth()));
 
-    return (monthsFromYearDiff + monthsInSameYear);
+      return (monthsFromYearDiff + monthsInSameYear);
   }
 }
 

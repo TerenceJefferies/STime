@@ -24,11 +24,11 @@ class Difference extends DifferenceMonthAware {
    * @param {Time} timeTwo Second time to compare to timeOne
    */
   constructor(timeOne: Time, timeTwo: Time) {
-    super();
-    this.differenceInSeconds =
+      super();
+      this.differenceInSeconds =
       Math.abs(timeOne.toTimestamp() - timeTwo.toTimestamp());
-    this.timeOne = timeOne;
-    this.timeTwo = timeTwo;
+      this.timeOne = timeOne;
+      this.timeTwo = timeTwo;
   }
 
   /**
@@ -38,7 +38,7 @@ class Difference extends DifferenceMonthAware {
    * @return {number} Total number of seconds between two dates
    */
   getTotalSeconds(): number {
-    return this.differenceInSeconds;
+      return this.differenceInSeconds;
   }
 
   /**
@@ -46,7 +46,7 @@ class Difference extends DifferenceMonthAware {
    * @return {number} Total number of minutes between two times
    */
   getTotalMinutes(): number {
-    return Math.floor((this.differenceInSeconds / 60));
+      return Math.floor((this.differenceInSeconds / 60));
   }
 
   /**
@@ -54,7 +54,7 @@ class Difference extends DifferenceMonthAware {
    * @return {number} Total number of hours between two times
    */
   getTotalHours(): number {
-    return Math.floor((this.getTotalMinutes() / 60));
+      return Math.floor((this.getTotalMinutes() / 60));
   }
 
   /**
@@ -62,7 +62,7 @@ class Difference extends DifferenceMonthAware {
    * @return {number} Total number of days between two times
    */
   getTotalDays(): number {
-    return Math.floor((this.getTotalHours() / 24));
+      return Math.floor((this.getTotalHours() / 24));
   }
 
   /**
@@ -70,7 +70,7 @@ class Difference extends DifferenceMonthAware {
    * @return {number} Total number of weeks between two times
    */
   getTotalWeeks(): number {
-    return Math.floor((this.getTotalDays() / 7));
+      return Math.floor((this.getTotalDays() / 7));
   }
 }
 

@@ -123,7 +123,7 @@ class TimeFromBuilder {
     now(): Time {
         if (!this.unit || !this.direction) {
             throw new Error(
-                'Called final chain method before fully configuring instance'
+                'Called final chain method before fully configuring instance',
             );
         }
 
@@ -149,7 +149,7 @@ class TimeFromBuilder {
             this.fromCurrent,
             this.unit,
             this.direction,
-            time
+            time,
         )).get();
     }
 
