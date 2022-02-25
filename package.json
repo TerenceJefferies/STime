@@ -1,7 +1,7 @@
 {
   "name": "stime",
-  "version": "1.0.0",
-  "description": "Time package for easy time maniupulation",
+  "version": "1.1.0",
+  "description": "Time package for easy time manipulation",
   "main": "dist/Main.js",
   "types": "dist/Main.d.ts",
   "files": [
