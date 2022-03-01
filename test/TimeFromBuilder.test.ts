@@ -38,15 +38,17 @@ describe('TimeFromBuilder', () => {
     testDate.setDate(testDate.getDate() - 1);
     const sample = new Time(testDate);
     const time = builder.days().from().time(sample);
-    
-    expect(time.getDay()).toEqual(sample.getDay() + 1);
+
+    const fixture = new Date();
+
+    expect(time.getDay()).toEqual(fixture.getDate());
   });
 
   it('Should return a time 10 seconds after the specified time', () => {
     const builder = new TimeFromBuilder(10);
     const sample = new Time(new Date('01-01-2020 00:00:30'));
     const time = builder.seconds().from().time(sample);
-    
+
     expect(time.getSeconds()).toEqual(40);
   });
 
@@ -54,7 +56,7 @@ describe('TimeFromBuilder', () => {
     const builder = new TimeFromBuilder(30);
     const sample = new Time(new Date('01-01-2020 00:30:30'));
     const time = builder.minutes().before().time(sample);
-    
+
     expect(time.getMinutes()).toEqual(0);
   });
 
@@ -62,7 +64,7 @@ describe('TimeFromBuilder', () => {
     const builder = new TimeFromBuilder(3);
     const sample = new Time(new Date('01-01-2020 00:30:30'));
     const time = builder.hours().from().time(sample);
-    
+
     expect(time.getHours()).toEqual(3);
   });
 
@@ -70,7 +72,7 @@ describe('TimeFromBuilder', () => {
     const builder = new TimeFromBuilder(3);
     const sample = new Time(new Date('01-01-2020 00:30:30'));
     const time = builder.months().before().time(sample);
-    
+
     expect(time.getMonth()).toEqual(10);
   });
 
@@ -78,7 +80,7 @@ describe('TimeFromBuilder', () => {
     const builder = new TimeFromBuilder(3);
     const sample = new Time(new Date('01-01-2020 00:30:30'));
     const time = builder.years().from().time(sample);
-    
+
     expect(time.getYear()).toEqual(2023);
   });
 });
