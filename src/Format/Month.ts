@@ -167,11 +167,16 @@ class Month extends Format {
 
   /**
    * Get a month name in a particular format
-   * @param {string} type long or short
+   * @param {
+   * 'numeric' | '2-digit' | 'long' | 'short' | 'narrow'
+   * } type long or short
    * @param {Formattable} time Time to format from
    * @return {string} Formatted string including months
    */
-  private getMonthName(type: string, time: Formattable): string {
+  private getMonthName(
+      type: 'numeric' | '2-digit' | 'long' | 'short' | 'narrow',
+      time: Formattable,
+  ): string {
     return time.root.toLocaleString('default', {month: type});
   }
 }

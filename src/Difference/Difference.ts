@@ -16,7 +16,7 @@ class Difference extends DifferenceMonthAware {
   /**
    * @var {Time} timeTwo Time to compare to timeOne
    */
-  readonly timeTwo: Time
+  readonly timeTwo: Time;
 
   /**
    * Create a difference
